@@ -5,4 +5,5 @@ Công nghệ:
 + React (Javascript)
 + Blazor (C#)
 ```
-Demo Blazor: https://dacsblazor.azurewebsites.net/
+[Demo React](https://sharkchat.000webhostapp.com) <br/>
+[Demo Blazor](https://dacsblazor.azurewebsites.net)
