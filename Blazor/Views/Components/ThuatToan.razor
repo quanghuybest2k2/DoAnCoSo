@@ -1,8 +1,50 @@
 ﻿@page "/thuattoan"
-
+@*@using website.Controllers*@
 <h3>Thuật Toán Bubble Sort</h3>
-
+<br />
+<div class="container">
+    <div class="d-flex flex-column">
+        <div class="p-3">
+            <h5>Dữ liệu</h5>
+            <select class="custom-select custom-select-lg">
+                <option value="0"
+                        selected="selected"
+                        disabled="disabled"
+                        hidden="hidden">
+                    Chọn Dữ Liệu
+                </option>
+                <option value="1">Chữ</option>
+                <option value="2">Số</option>
+            </select>
+        </div>
+        @*End Dữ liệu*@
+        <div class="p-3">
+            <h5>Thuật toán</h5>
+            <select class="custom-select custom-select-lg">
+                <option value="0"
+                        selected="selected"
+                        disabled="disabled"
+                        hidden="hidden">
+                    Chọn thuật toán
+                </option>
+                <option value="1">Bubble Sort</option>
+                <option value="2">Quick Sort</option>
+            </select>
+        </div>
+        @*<p>hien tai: @count</p>*@
+        @* End Thuật toán*@
+        <div class="p-3">
+            <button type="button" class="btn btn-success btn-lg"  @onclick="BatDau">Bắt đầu</button>
+        </div>
+    </div>
+    </div>
 
 @code {
+    private int count = 0;
+
+    private void BatDau()
+    {
+        count+=4;
+    }
 
 }
