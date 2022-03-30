@@ -28,6 +28,11 @@ namespace website.Controllers
             return View();
         }
 
+        public IActionResult ThuatToan()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
