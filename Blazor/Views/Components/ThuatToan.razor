@@ -1,5 +1,6 @@
-﻿@page "/thuattoan"
-@*@using website.Controllers*@
+﻿@inject IJSRuntime JS
+@page "/thuattoan"
+
 <h3>Thuật Toán Bubble Sort</h3>
 <br />
 <div class="container">
@@ -40,11 +41,8 @@
     </div>
 
 @code {
-    private int count = 0;
-
-    private void BatDau()
+    private async Task BatDau()
     {
-        count+=4;
+        await JS.InvokeVoidAsync("ShowAlert", "Abc");
     }
-
 }

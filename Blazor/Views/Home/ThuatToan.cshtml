@@ -1,10 +1,17 @@
 ﻿@using website.Views.Components
-@{ ViewData["Title"] = "Thuật toán"; }
+@{ 
+	ViewData["Title"] = "Thuật toán"; 
+}
 
-@*<h1>@ViewData["Title"]</h1>*@
 <div class="text-center">
     <component type="typeof(ThuatToan)" render-mode="ServerPrerendered" />
 </div>
 
-@{
+@section Scripts{
+	<!--Minh họa gọi JS từ C#-->
+	<script>
+		window.ShowAlert = (message) => {
+			alert(message);
+		}
+	</script>
 }
