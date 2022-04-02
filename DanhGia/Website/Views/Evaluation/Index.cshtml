@@ -10,7 +10,31 @@
     <script>
         function Chay() {
             fetch('https://localhost:44328/api/DocFile/string1.txt').then(rs => rs.text()).then(rs => {
-                console.log(rs);
+                
+                var arr = rs.split("\n");
+                // Creating the bblSort function
+                function bblSort(arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        // Last i elements are already in place  
+                        for (var j = 0; j < (arr.length - i - 1); j++) {
+
+                            // Checking if the item at present iteration 
+                            // is greater than the next iteration
+                            if (arr[j] > arr[j + 1]) {
+
+                                // If the condition is true then swap them
+                                var temp = arr[j]
+                                arr[j] = arr[j + 1]
+                                arr[j + 1] = temp
+                            }
+                        }
+                    }
+                    // Print the sorted array
+                    console.log(arr);
+                }
+                bblSort(arr);
             });
         }
 
@@ -22,20 +46,6 @@
             console.log(message);
         }
 
-        function bubbleSort(arr) {
-            //Outer pass
-            for (let i = 0; i < arr.length; i++) {
-                //Inner pass
-                for (let j = 0; j < arr.length - i - 1; j++) {
-                    //Value comparison using ascending order
-                    if (arr[j + 1] < arr[j]) {
-                        //Swapping
-                        [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]]
-                    }
-                }
-            };
-            return arr;
-        };
 
     </script>
 }

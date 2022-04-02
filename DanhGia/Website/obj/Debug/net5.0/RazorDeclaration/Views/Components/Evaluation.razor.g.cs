@@ -84,23 +84,38 @@ using System.Net.Http;
         var response = await client.GetAsync("https://localhost:44328/api/DocFile/string1.txt");
         string content = await response.Content.ReadAsStringAsync();
         await JS.InvokeVoidAsync("ShowLog", content);
+
+        String[] arr = content.Split(' ');
+
+        String[] ch = arr.ToArray();
+        foreach (String c in ch)
+        {
+            Console.WriteLine(c);
+        }
+
+        int n = arr.Length;
+        bubbleSort(arr, n);
+        for (int i = 0; i < n; i++)
+            Console.WriteLine("String " + (i + 1) +
+                              " is " + arr[i]);
     }
 
-    private int[] bubbleSort(int[] arr)
+    private static void bubbleSort(String[] arr, int n)
     {
-        for (int i = 0; i < arr.Length; i++)
+        String temp;
+        // Sorting strings using bubble sort
+        for (int j = 0; j < n - 1; j++)
         {
-            for (int j = 0; j < arr.Length - i - 1; j++)
+            for (int i = j + 1; i < n; i++)
             {
-                if (arr[j + 1] < arr[j])
+                if (arr[j].CompareTo(arr[i]) > 0)
                 {
-                    int t = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = t;
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
                 }
             }
         }
-        return arr;
     }
 
 #line default
