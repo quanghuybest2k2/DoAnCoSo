@@ -7,3 +7,4 @@ Công nghệ:
 ```
 [Demo React](https://sharkchat.000webhostapp.com) <br/>
 [Demo Blazor](https://dacsblazor.azurewebsites.net)
+Cập nhật Duật cute
