@@ -1,0 +1,30 @@
+﻿@inject IJSRuntime JS
+
+<h3>Evaluation</h3>
+
+<button type="button" @onclick="Chay">Nút C#</button>
+<button type="button" onclick="Chay()">Nút JS</button>
+
+@code {
+    private async Task Chay()
+    {
+        await JS.InvokeVoidAsync("ShowAlert", "hello");
+    }
+
+    private int[] bubbleSort(int[] arr)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            for (int j = 0; j < arr.Length - i - 1; j++)
+            {
+                if (arr[j + 1] < arr[j])
+                {
+                    int t = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = t;
+                }
+            }
+        }
+        return arr;
+    }
+}

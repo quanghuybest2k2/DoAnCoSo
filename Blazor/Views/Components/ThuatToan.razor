@@ -1,5 +1,7 @@
-﻿@inject IJSRuntime JS
-@page "/thuattoan"
+﻿@using System.Threading.Tasks;
+@using website.Controllers;
+@inject IJSRuntime JS
+@inject HttpClient Http
 
 <h3>Thuật Toán Bubble Sort</h3>
 <br />
@@ -32,7 +34,6 @@
                 <option value="2">Quick Sort</option>
             </select>
         </div>
-        @*<p>hien tai: @count</p>*@
         @* End Thuật toán*@
         <div class="p-3">
             <button type="button" class="btn btn-success btn-lg"  @onclick="BatDau">Bắt đầu</button>
@@ -44,5 +45,10 @@
     private async Task BatDau()
     {
         await JS.InvokeVoidAsync("ShowAlert", "Abc");
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        var content = await Http.GetStringAsync("wwwwroot/files/string1.txt");
+
     }
 }
