@@ -9,11 +9,17 @@
     <!--Minh họa gọi JS từ C#-->
     <script>
         function Chay() {
-            alert("hello");
+            fetch('https://localhost:44328/api/DocFile/string1.txt').then(rs => rs.text()).then(rs => {
+                console.log(rs);
+            });
         }
 
         window.ShowAlert = (message) => {
             alert(message);
+        }
+
+        window.ShowLog = (message) => {
+            console.log(message);
         }
 
         function bubbleSort(arr) {

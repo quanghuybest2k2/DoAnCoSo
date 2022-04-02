@@ -13,13 +13,6 @@ namespace WebsiteBlazor.Views.Components
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\_Imports.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
@@ -68,6 +61,13 @@ using WebsiteBlazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
     public partial class Evaluation : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -76,11 +76,14 @@ using WebsiteBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 44 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     private async Task Chay()
     {
-        await JS.InvokeVoidAsync("ShowAlert", "hello");
+        HttpClient client = new HttpClient();
+        var response = await client.GetAsync("https://localhost:44328/api/DocFile/string1.txt");
+        string content = await response.Content.ReadAsStringAsync();
+        await JS.InvokeVoidAsync("ShowLog", content);
     }
 
     private int[] bubbleSort(int[] arr)
