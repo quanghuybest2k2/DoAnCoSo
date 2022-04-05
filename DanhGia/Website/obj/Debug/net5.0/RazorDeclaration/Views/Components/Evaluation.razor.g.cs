@@ -68,6 +68,13 @@ using System.Net.Http;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+using System.Diagnostics;
+
+#line default
+#line hidden
+#nullable disable
     public partial class Evaluation : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -76,37 +83,29 @@ using System.Net.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 45 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 46 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     private async Task Chay()
     {
         HttpClient client = new HttpClient();
-        var response = await client.GetAsync("https://localhost:44328/api/DocFile/string1.txt");
+        var response = await client.GetAsync("https://localhost:44328/api/DocFile/dulieuso/data_s.txt");
         string content = await response.Content.ReadAsStringAsync();
-        await JS.InvokeVoidAsync("ShowLog", content);
 
-        String[] arr = { };
-
-
-        int n = arr.Length;
-        bubbleSort(arr, n);
-        for (int i = 0; i < n; i++)
-        {
-            //Console.WriteLine("String " + (i + 1) +
-            //  " is " + arr[i]);
-            
-        }
+        String[] arr = content.Split("\n");
+        long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
+        long time = ExecutionTime(() => bubbleSort_so(arr_so));
+        await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms");
     }
 
-    private static void bubbleSort(String[] arr, int n)
+    private static void bubbleSort(string[] arr)
     {
-        String temp;
+        string temp;
         // Sorting strings using bubble sort
-        for (int j = 0; j < n - 1; j++)
+        for (int i = 0; i < arr.Length; i++)
         {
-            for (int i = j + 1; i < n; i++)
+            for (int j = 0; j < (arr.Length - i - 1); j++)
             {
-                if (arr[j].CompareTo(arr[i]) > 0)
+                if (arr[j].CompareTo(arr[j + 1]) > 0)
                 {
                     temp = arr[j];
                     arr[j] = arr[i];
@@ -114,6 +113,31 @@ using System.Net.Http;
                 }
             }
         }
+    }
+    private static void bubbleSort_so(long[] arr)
+    {
+        long temp;
+        // Sorting strings using bubble sort
+        for (int i = 0; i < arr.Length; i++)
+        {
+            for (int j = 0; j < (arr.Length - i - 1); j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+    }
+
+    private long ExecutionTime(Action function)
+    {
+        Stopwatch stopwatch = Stopwatch.StartNew();
+        function();
+        stopwatch.Stop();
+        return stopwatch.ElapsedMilliseconds;
     }
 
 #line default

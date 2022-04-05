@@ -7,36 +7,24 @@
 
 @section Scripts{
     <!--Minh họa gọi JS từ C#-->
+    <script src="~/js/site.js"></script>
     <script>
         function Chay() {
-            fetch('https://localhost:44328/api/DocFile/dulieuso/data_m.txt').then(rs => {
+            fetch('https://localhost:44328/api/DocFile/dulieuso/data_s.txt').then(rs => {
                 return rs.text();
             }).then(rs => {
-                
+
                 var arr = rs.split("\n");
+                var arr_so = arr.map((item) => parseInt(item));
                 // Creating the bblSort function
-                function bblSort(arr) {
+                //xoa cai nay
+                //bblSort(arr);
 
-                    for (var i = 0; i < arr.length; i++) {
-
-                        // Last i elements are already in place  
-                        for (var j = 0; j < (arr.length - i - 1); j++) {
-
-                            // Checking if the item at present iteration 
-                            // is greater than the next iteration
-                            if (arr[j] > arr[j + 1]) {
-
-                                // If the condition is true then swap them
-                                var temp = arr[j]
-                                arr[j] = arr[j + 1]
-                                arr[j + 1] = temp
-                            }
-                        }
-                    }
-                    // Print the sorted array
-                    console.log(arr);
-                }
-                bblSort(arr);
+                // end xoa
+                var time = execution_time(function () {
+                    bblSort(arr_so);
+                });
+                console.log("Thời gian chạy JS là: " + time + " ms") //ms
             });
         }
 
@@ -47,7 +35,5 @@
         window.ShowLog = (message) => {
             console.log(message);
         }
-
-
     </script>
 }
