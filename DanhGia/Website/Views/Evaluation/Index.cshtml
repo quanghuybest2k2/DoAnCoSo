@@ -9,7 +9,9 @@
     <!--Minh họa gọi JS từ C#-->
     <script>
         function Chay() {
-            fetch('https://localhost:44328/api/DocFile/string1.txt').then(rs => rs.text()).then(rs => {
+            fetch('https://localhost:44328/api/DocFile/dulieuso/data_m.txt').then(rs => {
+                return rs.text();
+            }).then(rs => {
                 
                 var arr = rs.split("\n");
                 // Creating the bblSort function

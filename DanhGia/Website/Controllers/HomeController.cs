@@ -43,10 +43,10 @@ namespace WebsiteBlazor.Controllers
 			return View("_Host");
 		}
 
-		[HttpGet("api/DocFile/{tenFile}")]
-		public IActionResult DocFile(string tenFile)
+		[HttpGet("api/DocFile/{tenthumuc}/{tenFile}")]
+		public IActionResult DocFile(string tenthumuc,string tenFile)
         {
-			string filePath = Path.Combine(_appEnvironment.WebRootPath, "files", tenFile);
+			string filePath = Path.Combine(_appEnvironment.WebRootPath, "files", tenthumuc,tenFile);
             if (System.IO.File.Exists(filePath))
             {
 				return Content(System.IO.File.ReadAllText(filePath));

@@ -76,7 +76,7 @@ using System.Net.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 45 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     private async Task Chay()
     {
@@ -85,19 +85,17 @@ using System.Net.Http;
         string content = await response.Content.ReadAsStringAsync();
         await JS.InvokeVoidAsync("ShowLog", content);
 
-        String[] arr = content.Split(' ');
+        String[] arr = { };
 
-        String[] ch = arr.ToArray();
-        foreach (String c in ch)
-        {
-            Console.WriteLine(c);
-        }
 
         int n = arr.Length;
         bubbleSort(arr, n);
         for (int i = 0; i < n; i++)
-            Console.WriteLine("String " + (i + 1) +
-                              " is " + arr[i]);
+        {
+            //Console.WriteLine("String " + (i + 1) +
+            //  " is " + arr[i]);
+            
+        }
     }
 
     private static void bubbleSort(String[] arr, int n)
