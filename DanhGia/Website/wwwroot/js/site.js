@@ -64,12 +64,15 @@ function selectionSort(arr) {
         // Swap the found minimum element with the first element
         swap(arr, min_idx, i);
     }
-}
 
-function printArray(arr) {
     for (var i = 0; i < arr.length; i++)
         console.log(arr[i] + " ");
 }
+
+//function printArray(arr) {
+//    for (var i = 0; i < arr.length; i++)
+//        console.log(arr[i] + " ");
+//}
 
 
 //end Selection Sort
