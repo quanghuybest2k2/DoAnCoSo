@@ -38,7 +38,7 @@
             <button type="button" class="btn btn-success btn-lg" @onclick="Chay">Nút C#</button>
             <button type="button" class="btn btn-success btn-lg" onclick="Chay()">Nút JS</button>
         </div>
-
+        
     </div>
 </div>
 
@@ -53,9 +53,9 @@
         String[] arr = content.Split("\n");
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
         //long time = ExecutionTime(() => bubbleSort_so(arr_so));
-        long time = ExecutionTime(() => selection_sort(arr_so));
-        long mang = ExecutionTime(() => printArray(arr_so));
-        await JS.InvokeVoidAsync("ShowLog", mang + " ");
+        long sort = ExecutionTime(() => selection_sort(arr_so));
+        long time = ExecutionTime(() => printArray(arr_so));
+        //await JS.InvokeVoidAsync("ShowLog", mang + " ");
         await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms");
 
     }
@@ -115,12 +115,12 @@
         }
 
     }
-    static void printArray(long[] arr)
+    private static void printArray(long[] arr)
     {
         for (int i = 0; i < arr.Length; ++i)
         {
 
-            // Console.Write(arr[i] + " ");
+            Console.WriteLine(arr[i] + " ");
         }
     }
 

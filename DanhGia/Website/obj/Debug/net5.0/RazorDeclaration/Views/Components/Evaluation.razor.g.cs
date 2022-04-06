@@ -94,10 +94,11 @@ using System.Diagnostics;
         String[] arr = content.Split("\n");
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
         //long time = ExecutionTime(() => bubbleSort_so(arr_so));
-        long time = ExecutionTime(() => sort(arr_so));
-        long mang = ExecutionTime(() => printArray(arr_so));
-        await JS.InvokeVoidAsync("ShowLog", mang+"");
-        await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms");
+        long sort = ExecutionTime(() => selection_sort(arr_so));
+        long time = ExecutionTime(() => printArray(arr_so));
+        //await JS.InvokeVoidAsync("ShowLog", mang + " ");
+        await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms" + sort);
+
     }
 
     //private static void bubbleSort(string[] arr)
@@ -135,7 +136,7 @@ using System.Diagnostics;
         }
     }
     //Selection Sort
-    private static void sort(long[] arr)
+    private static void selection_sort(long[] arr)
     {
 
         // One by one move boundary of unsorted subarray
@@ -155,12 +156,12 @@ using System.Diagnostics;
         }
 
     }
-    static void printArray(long[] arr)
+    private static void printArray(long[] arr)
     {
         for (int i = 0; i < arr.Length; ++i)
         {
 
-            // Console.Write(arr[i] + " ");
+            Console.WriteLine(arr[i] + " ");
         }
     }
 
