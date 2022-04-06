@@ -93,27 +93,30 @@ using System.Diagnostics;
 
         String[] arr = content.Split("\n");
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
-        long time = ExecutionTime(() => bubbleSort_so(arr_so));
+        //long time = ExecutionTime(() => bubbleSort_so(arr_so));
+        long time = ExecutionTime(() => sort(arr_so));
+        long mang = ExecutionTime(() => printArray(arr_so));
+        await JS.InvokeVoidAsync("ShowLog", mang+"");
         await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms");
     }
 
-    private static void bubbleSort(string[] arr)
-    {
-        string temp;
-        // Sorting strings using bubble sort
-        for (int i = 0; i < arr.Length; i++)
-        {
-            for (int j = 0; j < (arr.Length - i - 1); j++)
-            {
-                if (arr[j].CompareTo(arr[j + 1]) > 0)
-                {
-                    temp = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = temp;
-                }
-            }
-        }
-    }
+    //private static void bubbleSort(string[] arr)
+    //{
+    //    string temp;
+    //    // Sorting strings using bubble sort
+    //    for (int i = 0; i < arr.Length; i++)
+    //    {
+    //        for (int j = 0; j < (arr.Length - i - 1); j++)
+    //        {
+    //            if (arr[j].CompareTo(arr[j + 1]) > 0)
+    //            {
+    //                temp = arr[j];
+    //                arr[j] = arr[i];
+    //                arr[i] = temp;
+    //            }
+    //        }
+    //    }
+    //}
     private static void bubbleSort_so(long[] arr)
     {
         long temp;
@@ -131,6 +134,37 @@ using System.Diagnostics;
             }
         }
     }
+    //Selection Sort
+    private static void sort(long[] arr)
+    {
+
+        // One by one move boundary of unsorted subarray
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i + 1; j < arr.Length; j++)
+                if (arr[j] < arr[min_idx])
+                    min_idx = j;
+
+            // Swap the found minimum element with the first
+            // element
+            long temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
+        }
+
+    }
+    static void printArray(long[] arr)
+    {
+        for (int i = 0; i < arr.Length; ++i)
+        {
+
+            // Console.Write(arr[i] + " ");
+        }
+    }
+
+    //end Selection Sort
 
     private long ExecutionTime(Action function)
     {
