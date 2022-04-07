@@ -17,6 +17,8 @@
         }
     }
     // Print the sorted array
+    for (var i = 0; i < arr.length; i++)
+        console.log(arr[i] + " ");
 }
 
 //quick sort
@@ -68,13 +70,6 @@ function selectionSort(arr) {
     for (var i = 0; i < arr.length; i++)
         console.log(arr[i] + " ");
 }
-
-//function printArray(arr) {
-//    for (var i = 0; i < arr.length; i++)
-//        console.log(arr[i] + " ");
-//}
-
-
 //end Selection Sort
 
 function execution_time(func) {

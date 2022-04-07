@@ -93,11 +93,11 @@ using System.Diagnostics;
 
         String[] arr = content.Split("\n");
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
-        //long time = ExecutionTime(() => bubbleSort_so(arr_so));
-        long sort = ExecutionTime(() => selection_sort(arr_so));
+        long time = ExecutionTime(() => bubbleSort_so(arr_so));
+        //long sort = ExecutionTime(() => selection_sort(arr_so));
         //long time = ExecutionTime(() => printArray(arr_so));
         //await JS.InvokeVoidAsync("ShowLog", mang + " ");
-        await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + sort + " ms");
+        await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms");
 
     }
 
@@ -133,6 +133,11 @@ using System.Diagnostics;
                     arr[i] = temp;
                 }
             }
+        }
+        for (int i = 0; i < arr.Length; ++i)
+        {
+
+            Console.WriteLine(arr[i] + " ");
         }
     }
     //Selection Sort

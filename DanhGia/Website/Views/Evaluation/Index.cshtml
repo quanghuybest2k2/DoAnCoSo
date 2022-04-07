@@ -18,11 +18,10 @@
                 var arr_so = arr.map((item) => parseInt(item));
 
                 var time = execution_time(function () {
-                    //console.log(bblSort(arr_so));
+                    bblSort(arr_so);
                     //console.log(QuickSort(arr_so));
                     //console.log(selectionSort(arr_so));
-                    selectionSort(arr_so);
-                    //printArray(arr_so);
+                    //selectionSort(arr_so);
                 });
                 console.log("Thời gian chạy JS là: " + time + " ms") //ms
             });
