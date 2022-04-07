@@ -8,6 +8,7 @@
 @section Scripts{
     <!--Minh họa gọi JS từ C#-->
     <script src="~/js/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         function Chay() {
             fetch('https://localhost:44328/api/DocFile/dulieuso/data_s.txt').then(rs => {
@@ -17,16 +18,32 @@
                 var arr = rs.split("\n");
                 var arr_so = arr.map((item) => parseInt(item));
 
-                var time = execution_time(function () {
-                    bblSort(arr_so);
-                    //console.log(QuickSort(arr_so));
-                    //console.log(selectionSort(arr_so));
-                    //selectionSort(arr_so);
-                });
-                console.log("Thời gian chạy JS là: " + time + " ms") //ms
+                //var time = execution_time(function () {
+                //    bblSort(arr_so);
+                //    //QuickSort(arr_so);
+                //    //selectionSort(arr_so);
+                //});
+
+                //console.log("Thời gian chạy JS là: " + time + " ms") //ms
+
+                console.log(value_select);
+
+                //if (value_select == 1) {
+                //    var time_bbsort = execution_time(function () {
+                //        bblSort(arr_so);
+                //    });
+                //    console.log("Thời gian chạy Bubble Sort JS là: " + time_bbsort + " ms") //ms
+                //}
+                //if (value_select == 2) {
+                //    var time_slsort = execution_time(function () {
+                //        selectionSort(arr_so);
+                //    });
+                //    console.log("Thời gian chạy Selection Sort JS là: " + time_slsort + " ms") //ms
+                //}
+
+
             });
         }
-
         window.ShowAlert = (message) => {
             alert(message);
         }

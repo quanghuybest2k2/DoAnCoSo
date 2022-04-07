@@ -1,4 +1,7 @@
-﻿function bblSort(arr) {
+﻿var thuattoan_select = document.getElementById('thuattoan');
+var value_select = thuattoan_select.options[thuattoan_select.selectedIndex].value;
+
+function bblSort(arr) {
 
     for (var i = 0; i < arr.length; i++) {
 

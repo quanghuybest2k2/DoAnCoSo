@@ -8,12 +8,12 @@
     <div class="d-flex flex-column">
         <div class="p-3">
             <h5>Dữ liệu</h5>
-            <select class="custom-select custom-select-lg">
+            <select class="custom-select custom-select-lg" @bind="DuLieu">
                 <option value="0"
                         selected="selected"
                         disabled="disabled"
                         hidden="hidden">
-                    Chọn Dữ Liệu
+                    Chọn Dữ liệu
                 </option>
                 <option value="1">Chữ</option>
                 <option value="2">Số</option>
@@ -22,7 +22,7 @@
         @*End Dữ liệu*@
         <div class="p-3">
             <h5>Thuật toán</h5>
-            <select class="custom-select custom-select-lg">
+            <select class="custom-select custom-select-lg" id="thuattoan" @bind="ThuatToan">
                 <option value="0"
                         selected="selected"
                         disabled="disabled"
@@ -30,7 +30,7 @@
                     Chọn thuật toán
                 </option>
                 <option value="1">Bubble Sort</option>
-                <option value="2">Quick Sort</option>
+                <option value="2">Selection Sort</option>
             </select>
         </div>
         @* End Thuật toán*@
@@ -38,12 +38,15 @@
             <button type="button" class="btn btn-success btn-lg" @onclick="Chay">Nút C#</button>
             <button type="button" class="btn btn-success btn-lg" onclick="Chay()">Nút JS</button>
         </div>
-
     </div>
 </div>
 
 
 @code {
+    // khai  bao kieu du lieu
+    int DuLieu;
+    int ThuatToan;
+
     private async Task Chay()
     {
         HttpClient client = new HttpClient();
@@ -52,11 +55,16 @@
 
         String[] arr = content.Split("\n");
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
-        long time = ExecutionTime(() => bubbleSort_so(arr_so));
-        //long sort = ExecutionTime(() => selection_sort(arr_so));
-        //long time = ExecutionTime(() => printArray(arr_so));
-        //await JS.InvokeVoidAsync("ShowLog", mang + " ");
-        await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms");
+        if (ThuatToan == 1)
+        {
+            long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort C# là: " + time_bbsort + " ms");
+        }
+        if(ThuatToan == 2)
+        {
+            long time_slsort = ExecutionTime(() => selection_sort(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Selection Sort C# là: " + time_slsort + " ms");
+        }
 
     }
 
@@ -125,14 +133,6 @@
             Console.WriteLine(arr[i] + " ");
         }
     }
-    //private static void printArray(long[] arr)
-    //{
-    //    for (int i = 0; i < arr.Length; ++i)
-    //    {
-
-    //        Console.WriteLine(arr[i] + " ");
-    //    }
-    //}
 
     //end Selection Sort
 

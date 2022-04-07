@@ -83,8 +83,12 @@ using System.Diagnostics;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 45 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
+    // khai  bao kieu du lieu
+    int DuLieu;
+    int ThuatToan;
+
     private async Task Chay()
     {
         HttpClient client = new HttpClient();
@@ -93,11 +97,16 @@ using System.Diagnostics;
 
         String[] arr = content.Split("\n");
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
-        long time = ExecutionTime(() => bubbleSort_so(arr_so));
-        //long sort = ExecutionTime(() => selection_sort(arr_so));
-        //long time = ExecutionTime(() => printArray(arr_so));
-        //await JS.InvokeVoidAsync("ShowLog", mang + " ");
-        await JS.InvokeVoidAsync("ShowLog", "Thời gian chay C# là: " + time + " ms");
+        if (ThuatToan == 1)
+        {
+            long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort C# là: " + time_bbsort + " ms");
+        }
+        if(ThuatToan == 2)
+        {
+            long time_slsort = ExecutionTime(() => selection_sort(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Selection Sort C# là: " + time_slsort + " ms");
+        }
 
     }
 
@@ -166,14 +175,6 @@ using System.Diagnostics;
             Console.WriteLine(arr[i] + " ");
         }
     }
-    //private static void printArray(long[] arr)
-    //{
-    //    for (int i = 0; i < arr.Length; ++i)
-    //    {
-
-    //        Console.WriteLine(arr[i] + " ");
-    //    }
-    //}
 
     //end Selection Sort
 
