@@ -23,25 +23,21 @@
                 //    //QuickSort(arr_so);
                 //    //selectionSort(arr_so);
                 //});
-
                 //console.log("Thời gian chạy JS là: " + time + " ms") //ms
 
-                console.log(value_select);
-
-                //if (value_select == 1) {
-                //    var time_bbsort = execution_time(function () {
-                //        bblSort(arr_so);
-                //    });
-                //    console.log("Thời gian chạy Bubble Sort JS là: " + time_bbsort + " ms") //ms
-                //}
-                //if (value_select == 2) {
-                //    var time_slsort = execution_time(function () {
-                //        selectionSort(arr_so);
-                //    });
-                //    console.log("Thời gian chạy Selection Sort JS là: " + time_slsort + " ms") //ms
-                //}
-
-
+                var thuattoan_select = document.getElementById("thuattoan").value;
+                if (thuattoan_select == 1) {
+                    var time_bbsort = execution_time(function () {
+                        bblSort(arr_so);
+                    });
+                    console.log("Thời gian chạy Bubble Sort JS là: " + time_bbsort + " ms") //ms
+                }
+                if (thuattoan_select == 2) {
+                    var time_slsort = execution_time(function () {
+                        selectionSort(arr_so);
+                    });
+                    console.log("Thời gian chạy Selection Sort JS là: " + time_slsort + " ms") //ms
+                }
             });
         }
         window.ShowAlert = (message) => {
@@ -51,5 +47,6 @@
         window.ShowLog = (message) => {
             console.log(message);
         }
+
     </script>
 }
