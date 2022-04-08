@@ -20,7 +20,6 @@
 
                 //var time = execution_time(function () {
                 //    bblSort(arr_so);
-                //    //QuickSort(arr_so);
                 //    //selectionSort(arr_so);
                 //});
                 //console.log("Thời gian chạy JS là: " + time + " ms") //ms
@@ -37,6 +36,12 @@
                         selectionSort(arr_so);
                     });
                     console.log("Thời gian chạy Selection Sort JS là: " + time_slsort + " ms") //ms
+                }
+                if (thuattoan_select == 3) {
+                    var time_InsertionSort = execution_time(function () {
+                        insertionSort(arr_so);
+                    });
+                    console.log("Thời gian chạy Insertion Sort JS là: " + time_InsertionSort + " ms") //ms
                 }
             });
         }

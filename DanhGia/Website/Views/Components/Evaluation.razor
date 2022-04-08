@@ -31,6 +31,7 @@
                 </option>
                 <option value="1">Bubble Sort</option>
                 <option value="2">Selection Sort</option>
+                <option value="3">Insertion Sort</option>
             </select>
         </div>
         @* End Thuật toán*@
@@ -60,10 +61,15 @@
             long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort C# là: " + time_bbsort + " ms");
         }
-        if(ThuatToan == 2)
+        if (ThuatToan == 2)
         {
             long time_slsort = ExecutionTime(() => selection_sort(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Selection Sort C# là: " + time_slsort + " ms");
+        }
+        if (ThuatToan == 3)
+        {
+            long time_InsertionSort = ExecutionTime(() => InsertionSort(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Insertion Sort C# là: " + time_InsertionSort + " ms");
         }
 
     }
@@ -101,7 +107,7 @@
                 }
             }
         }
-        for (int i = 0; i < arr.Length; ++i)
+        for (int i = 0; i < arr.Length; i++)
         {
 
             Console.WriteLine(arr[i] + " ");
@@ -127,14 +133,34 @@
             arr[i] = temp;
         }
 
-        for (int i = 0; i < arr.Length; ++i)
+        for (int i = 0; i < arr.Length; i++)
         {
+            Console.WriteLine(arr[i] + " ");
+        }
+    }
+    //end Selection Sort
+    //Insertion Sort
+    void InsertionSort(long[] arr)
+    {
+        for (int i = 1; i < arr.Length; i++)
+        {
+            long key = arr[i];
+            int j = i - 1;
 
+            while (j >= 0 && arr[j] > key)
+            {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+        for (int i = 0; i < arr.Length; i++)
+        {
             Console.WriteLine(arr[i] + " ");
         }
     }
 
-    //end Selection Sort
+    // End Insertion Sort
 
     private long ExecutionTime(Action function)
     {

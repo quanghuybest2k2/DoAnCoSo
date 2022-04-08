@@ -83,7 +83,7 @@ using System.Diagnostics;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 45 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 46 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     // khai  bao kieu du lieu
     int DuLieu;
@@ -102,10 +102,15 @@ using System.Diagnostics;
             long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort C# là: " + time_bbsort + " ms");
         }
-        if(ThuatToan == 2)
+        if (ThuatToan == 2)
         {
             long time_slsort = ExecutionTime(() => selection_sort(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Selection Sort C# là: " + time_slsort + " ms");
+        }
+        if (ThuatToan == 3)
+        {
+            long time_InsertionSort = ExecutionTime(() => InsertionSort(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Insertion Sort C# là: " + time_InsertionSort + " ms");
         }
 
     }
@@ -143,7 +148,7 @@ using System.Diagnostics;
                 }
             }
         }
-        for (int i = 0; i < arr.Length; ++i)
+        for (int i = 0; i < arr.Length; i++)
         {
 
             Console.WriteLine(arr[i] + " ");
@@ -169,14 +174,34 @@ using System.Diagnostics;
             arr[i] = temp;
         }
 
-        for (int i = 0; i < arr.Length; ++i)
+        for (int i = 0; i < arr.Length; i++)
         {
+            Console.WriteLine(arr[i] + " ");
+        }
+    }
+    //end Selection Sort
+    //Insertion Sort
+    void InsertionSort(long[] arr)
+    {
+        for (int i = 1; i < arr.Length; i++)
+        {
+            long key = arr[i];
+            int j = i - 1;
 
+            while (j >= 0 && arr[j] > key)
+            {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+        for (int i = 0; i < arr.Length; i++)
+        {
             Console.WriteLine(arr[i] + " ");
         }
     }
 
-    //end Selection Sort
+    // End Insertion Sort
 
     private long ExecutionTime(Action function)
     {

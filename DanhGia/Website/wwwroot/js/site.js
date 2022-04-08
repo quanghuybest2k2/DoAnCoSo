@@ -21,31 +21,6 @@ function bblSort(arr) {
     for (var i = 0; i < arr.length; i++)
         console.log(arr[i] + " ");
 }
-
-//quick sort
-function QuickSort(Arr) {
-    if (Arr.length <= 1) {
-        return Arr;
-    }
-
-    const pivot = Arr[Arr.length - 1];
-    const leftArr = [];
-    const rightArr = [];
-
-    for (let i = 0; i < Arr.length - 1; i++) {
-        if (Arr[i] < pivot) {
-            leftArr.push(Arr[i]);
-        }
-        else {
-            rightArr.push(Arr[i])
-        }
-    }
-
-    return [...QuickSort(leftArr), pivot, ...QuickSort(rightArr)];
-
-}
-//end quick sort
-
 //Selection Sort
 function swap(arr, xp, yp) {
     var temp = arr[xp];
@@ -72,6 +47,25 @@ function selectionSort(arr) {
         console.log(arr[i] + " ");
 }
 //end Selection Sort
+//Insertion Sort
+function insertionSort(arr) {
+    var i, key, j;
+    for (i = 1; i < arr.length; i++) {
+        key = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+    for (var i = 0; i < arr.length; i++)
+        console.log(arr[i] + " ");
+}
+
+
+//end Insertion Sort
+
 
 function execution_time(func) {
     var startTime = performance.now()
