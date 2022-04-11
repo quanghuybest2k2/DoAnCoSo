@@ -11,19 +11,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         function Chay() {
-            fetch('https://localhost:44328/api/DocFile/dulieuso/data_s.txt').then(rs => {
-                return rs.text();
+            //Chọn dữ liệu
+            var dulieu_select = document.getElementById("dulieu").value;
+            if (dulieu_select == 1) {
+                var urlchuoi = 'dulieuchuoi/mangchuoi113kb.txt'
+            }
+            if (dulieu_select == 2) {
+                var urlso = 'dulieuso/data_s.txt'
+            }
+
+            fetch('https://localhost:44328/api/DocFile/'+ urlso).then(rs => {
+                return rs.text()
             }).then(rs => {
 
                 var arr = rs.split("\n");
                 var arr_so = arr.map((item) => parseInt(item));
 
-                //var time = execution_time(function () {
-                //    bblSort(arr_so);
-                //    //selectionSort(arr_so);
-                //});
-                //console.log("Thời gian chạy JS là: " + time + " ms") //ms
-
+                // Chọn thuật toán
                 var thuattoan_select = document.getElementById("thuattoan").value;
                 if (thuattoan_select == 1) {
                     var time_bbsort = execution_time(function () {
