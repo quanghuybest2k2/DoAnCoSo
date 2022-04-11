@@ -1,30 +1,41 @@
-import React, { Component } from 'react';
-import {
-  Routes,
-  Route,
-  BrowserRouter,
-} from 'react-router-dom';
-import Home from './Views/Home/index';
-import Privacy from './Views/Home/Privacy';
-import ThuatToan from './Views/Home/ThuatToan';
+import Layout from "./components/Layout";
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import TraiNghiemDichVu from './pages/trainghiemdichvu';
+import HanhTrinhToaSang from "./pages/HanhTrinhToaSang";
+import KhamPhaKieuToc from "./pages/KhamPhaKieuToc";
+import ShineShop from "./pages/ShineShop";
+import TuyenDung from './pages/TuyenDung'
+import Login from "./pages/login";
 
-
-class App extends Component {
-  render() {
+function App() {
     return (
-      <BrowserRouter>
-        <React.Suspense>
-          <Routes>
-            <Route exact path='/' element={<Home />}></Route>
-            <Route exact path='/home' element={<Home />}></Route>
-            <Route path='/privacy' element={<Privacy />}></Route>
-            <Route path='/thuattoan' element={<ThuatToan />}></Route >
-          </Routes>
-        </React.Suspense>
-      </BrowserRouter>
+        <Layout>
+            <Switch>
+                <Route path="/" exact>
+                    <Home />
+                </Route>
+                <Route path="/trai-nghiem-dich-vu">
+                    <TraiNghiemDichVu />
+                </Route>
+                <Route path="/hanh-trinh-toa-sang">
+                    <HanhTrinhToaSang />
+                </Route>
+                <Route path="/kham-pha-kieu-toc">
+                    <KhamPhaKieuToc />
+                </Route>
+                <Route path="/shine-shop">
+                    <ShineShop />
+                </Route>
+                <Route path="/tuyen-dung">
+                    <TuyenDung />
+                </Route>
+                <Route path="/login">
+                    <Login />
+                </Route>
+            </Switch>
+        </Layout>
     );
-  }
 }
-
 
 export default App;
