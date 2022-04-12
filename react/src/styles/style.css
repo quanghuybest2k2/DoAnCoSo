@@ -81,8 +81,9 @@
   align-items: center;
 }
 
-.header__login-btn>img {
+.header__login-btn img {
   width: 22px;
+  margin-right: 10px;
 }
 
 .header__login-btn {
@@ -92,13 +93,9 @@
   padding: 2px 12px;
   margin-left: 15px;
   cursor: pointer;
-  background-color: var(--gold-cl);
-  border-color: transparent;
-  align-items: center;
-  border-radius: 5px;
 }
 
-.header__login-btn>span {
+.header__login-btn>button {
   font-size: 1.6rem;
   font-weight: 700;
   white-space: nowrap;
@@ -106,7 +103,14 @@
   margin-left: 8px;
   color: var(--black-cl0);
   font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  background: #fc3;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
+
 
 /* css slider layout */
 .home-swiper {
