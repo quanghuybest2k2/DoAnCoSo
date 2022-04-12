@@ -48,9 +48,11 @@ const Header = () => {
                 <div class="header__navbar">
                     {/* logo */}
                     <div class="header__navbar-logo">
-                        <a href="">
-                            <img src={Logo1} alt="" class="header__nav-logo" />
-                        </a>
+                        <Link to="/">
+                            <a href="">
+                                <img src={Logo1} alt="" class="header__nav-logo" />
+                            </a>
+                        </Link>
                     </div>
                     {/* menu list */}
                     <div class="header__navbar-menu">

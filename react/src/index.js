@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import "./styles/index.scss";
-import './styles/style.css';
-import './styles/main.css';
 import App from "./App";
+import './styles/main.css';
+import './styles/style.css';
+import './styles/lightslider.css';
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
