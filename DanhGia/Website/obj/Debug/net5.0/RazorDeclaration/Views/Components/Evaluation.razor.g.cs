@@ -89,10 +89,33 @@ using System.Diagnostics;
     int DuLieu;
     int ThuatToan;
 
+
     private async Task Chay()
     {
+        string url = null;
+        if (DuLieu == 1)
+        {
+            url = "dulieuchuoi/mangchuoi113kb.txt";
+        }
+        if (DuLieu == 2)
+        {
+            url = "dulieuchuoi/mangchuoi3mb.txt";
+        }
+        if (DuLieu == 3)
+        {
+            url = "dulieuso/data_s.txt";
+        }
+        if (DuLieu == 4)
+        {
+            url = "dulieuso/data_m.txt";
+        }
+        if (DuLieu == 5)
+        {
+            url = "dulieuso/data_xl.txt";
+        }
+
         HttpClient client = new HttpClient();
-        var response = await client.GetAsync("https://localhost:44328/api/DocFile/dulieuso/data_s.txt");
+        var response = await client.GetAsync("https://localhost:44328/api/DocFile/" + url);
         string content = await response.Content.ReadAsStringAsync();
 
         String[] arr = content.Split("\n");
