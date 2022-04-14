@@ -15,8 +15,11 @@
                         hidden="hidden">
                     Chọn Dữ liệu
                 </option>
-                <option value="1">Chữ</option>
-                <option value="2">Số</option>
+                <option value="1">Chuoi 1</option>
+                <option value="2">Chuoi 2</option>
+                <option value="3">Số 1</option>
+                <option value="4">Số 2</option>
+                <option value="5">Số 3</option>
             </select>
         </div>
         @*End Dữ liệu*@
@@ -38,6 +41,9 @@
         <div class="p-3">
             <button type="button" class="btn btn-success btn-lg" @onclick="Chay">Nút C#</button>
             <button type="button" class="btn btn-success btn-lg" onclick="Chay()">Nút JS</button>
+        </div>
+        <div class="spinner-border" role="status" style="display:none;" id="spinner">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
 </div>
@@ -74,23 +80,23 @@
 
     }
 
-    //private static void bubbleSort(string[] arr)
-    //{
-    //    string temp;
-    //    // Sorting strings using bubble sort
-    //    for (int i = 0; i < arr.Length; i++)
-    //    {
-    //        for (int j = 0; j < (arr.Length - i - 1); j++)
-    //        {
-    //            if (arr[j].CompareTo(arr[j + 1]) > 0)
-    //            {
-    //                temp = arr[j];
-    //                arr[j] = arr[i];
-    //                arr[i] = temp;
-    //            }
-    //        }
-    //    }
-    //}
+    private static void bubbleSort_chuoi(string[] arr)
+    {
+        string temp;
+        // Sorting strings using bubble sort
+        for (int i = 0; i < arr.Length; i++)
+        {
+            for (int j = 0; j < (arr.Length - i - 1); j++)
+            {
+                if (SoSanh(arr[j], arr[j + 1]) > 0)
+                {
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+    }
     private static void bubbleSort_so(long[] arr)
     {
         long temp;
@@ -106,11 +112,6 @@
                     arr[i] = temp;
                 }
             }
-        }
-        for (int i = 0; i < arr.Length; i++)
-        {
-
-            Console.WriteLine(arr[i] + " ");
         }
     }
     //Selection Sort
@@ -132,11 +133,6 @@
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
-
-        for (int i = 0; i < arr.Length; i++)
-        {
-            Console.WriteLine(arr[i] + " ");
-        }
     }
     //end Selection Sort
     //Insertion Sort
@@ -154,10 +150,6 @@
             }
             arr[j + 1] = key;
         }
-        for (int i = 0; i < arr.Length; i++)
-        {
-            Console.WriteLine(arr[i] + " ");
-        }
     }
 
     // End Insertion Sort
@@ -168,5 +160,11 @@
         function();
         stopwatch.Stop();
         return stopwatch.ElapsedMilliseconds;
+    }
+
+
+    private static int SoSanh(string a, string b)
+    {
+        return a.ToString().ToLower().CompareTo(b.ToString().ToLower());
     }
 }

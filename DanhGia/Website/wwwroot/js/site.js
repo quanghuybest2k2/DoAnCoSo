@@ -17,9 +17,6 @@ function bblSort(arr) {
             }
         }
     }
-    // Print the sorted array
-    for (var i = 0; i < arr.length; i++)
-        console.log(arr[i] + " ");
 }
 //Selection Sort
 function swap(arr, xp, yp) {
@@ -42,9 +39,6 @@ function selectionSort(arr) {
         // Swap the found minimum element with the first element
         swap(arr, min_idx, i);
     }
-
-    for (var i = 0; i < arr.length; i++)
-        console.log(arr[i] + " ");
 }
 //end Selection Sort
 //Insertion Sort
@@ -59,8 +53,6 @@ function insertionSort(arr) {
         }
         arr[j + 1] = key;
     }
-    for (var i = 0; i < arr.length; i++)
-        console.log(arr[i] + " ");
 }
 
 

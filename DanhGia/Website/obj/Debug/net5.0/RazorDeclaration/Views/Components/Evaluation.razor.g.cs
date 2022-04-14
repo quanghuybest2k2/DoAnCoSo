@@ -83,7 +83,7 @@ using System.Diagnostics;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 49 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     // khai  bao kieu du lieu
     int DuLieu;
@@ -115,23 +115,23 @@ using System.Diagnostics;
 
     }
 
-    //private static void bubbleSort(string[] arr)
-    //{
-    //    string temp;
-    //    // Sorting strings using bubble sort
-    //    for (int i = 0; i < arr.Length; i++)
-    //    {
-    //        for (int j = 0; j < (arr.Length - i - 1); j++)
-    //        {
-    //            if (arr[j].CompareTo(arr[j + 1]) > 0)
-    //            {
-    //                temp = arr[j];
-    //                arr[j] = arr[i];
-    //                arr[i] = temp;
-    //            }
-    //        }
-    //    }
-    //}
+    private static void bubbleSort_chuoi(string[] arr)
+    {
+        string temp;
+        // Sorting strings using bubble sort
+        for (int i = 0; i < arr.Length; i++)
+        {
+            for (int j = 0; j < (arr.Length - i - 1); j++)
+            {
+                if (arr[j].ToLower().CompareTo(arr[j + 1].ToLower()) > 0)
+                {
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+    }
     private static void bubbleSort_so(long[] arr)
     {
         long temp;
@@ -148,11 +148,11 @@ using System.Diagnostics;
                 }
             }
         }
-        for (int i = 0; i < arr.Length; i++)
-        {
+        //for (int i = 0; i < arr.Length; i++)
+        //{
 
-            Console.WriteLine(arr[i] + " ");
-        }
+        //    Console.WriteLine(arr[i] + " ");
+        //}
     }
     //Selection Sort
     private static void selection_sort(long[] arr)

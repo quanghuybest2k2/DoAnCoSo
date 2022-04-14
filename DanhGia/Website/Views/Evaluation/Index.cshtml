@@ -13,14 +13,15 @@
         function Chay() {
             //Chọn dữ liệu
             var dulieu_select = document.getElementById("dulieu").value;
+            var url = null
             if (dulieu_select == 1) {
-                var urlchuoi = 'dulieuchuoi/mangchuoi113kb.txt'
+                url = 'dulieuchuoi/mangchuoi113kb.txt'
             }
             if (dulieu_select == 2) {
-                var urlso = 'dulieuso/data_s.txt'
+                url = 'dulieuso/data_s.txt'
             }
 
-            fetch('https://localhost:44328/api/DocFile/'+ urlso).then(rs => {
+            fetch('https://localhost:44328/api/DocFile/' + url).then(rs => {
                 return rs.text()
             }).then(rs => {
 
@@ -49,6 +50,7 @@
                 }
             });
         }
+
         window.ShowAlert = (message) => {
             alert(message);
         }
