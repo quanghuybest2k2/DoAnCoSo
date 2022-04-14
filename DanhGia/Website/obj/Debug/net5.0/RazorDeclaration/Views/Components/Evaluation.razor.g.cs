@@ -83,7 +83,7 @@ using System.Diagnostics;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 52 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     // khai  bao kieu du lieu
     int DuLieu;
@@ -123,7 +123,7 @@ using System.Diagnostics;
         {
             for (int j = 0; j < (arr.Length - i - 1); j++)
             {
-                if (arr[j].ToLower().CompareTo(arr[j + 1].ToLower()) > 0)
+                if (SoSanh(arr[j], arr[j + 1]) > 0)
                 {
                     temp = arr[j];
                     arr[j] = arr[i];
@@ -148,11 +148,6 @@ using System.Diagnostics;
                 }
             }
         }
-        //for (int i = 0; i < arr.Length; i++)
-        //{
-
-        //    Console.WriteLine(arr[i] + " ");
-        //}
     }
     //Selection Sort
     private static void selection_sort(long[] arr)
@@ -173,11 +168,6 @@ using System.Diagnostics;
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
-
-        for (int i = 0; i < arr.Length; i++)
-        {
-            Console.WriteLine(arr[i] + " ");
-        }
     }
     //end Selection Sort
     //Insertion Sort
@@ -195,10 +185,6 @@ using System.Diagnostics;
             }
             arr[j + 1] = key;
         }
-        for (int i = 0; i < arr.Length; i++)
-        {
-            Console.WriteLine(arr[i] + " ");
-        }
     }
 
     // End Insertion Sort
@@ -209,6 +195,12 @@ using System.Diagnostics;
         function();
         stopwatch.Stop();
         return stopwatch.ElapsedMilliseconds;
+    }
+
+
+    private static int SoSanh(string a, string b)
+    {
+        return a.ToString().ToLower().CompareTo(b.ToString().ToLower());
     }
 
 #line default

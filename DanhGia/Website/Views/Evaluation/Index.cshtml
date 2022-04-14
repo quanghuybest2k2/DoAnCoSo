@@ -18,7 +18,16 @@
                 url = 'dulieuchuoi/mangchuoi113kb.txt'
             }
             if (dulieu_select == 2) {
+                url = 'dulieuchuoi/mangchuoi3mb.txt'
+            }
+            if (dulieu_select == 3) {
                 url = 'dulieuso/data_s.txt'
+            }
+            if (dulieu_select == 4) {
+                url = 'dulieuso/data_m.txt'
+            }
+            if (dulieu_select == 5) {
+                url = 'dulieuso/data_xl.txt'
             }
 
             fetch('https://localhost:44328/api/DocFile/' + url).then(rs => {

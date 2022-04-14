@@ -15,11 +15,11 @@
                         hidden="hidden">
                     Chọn Dữ liệu
                 </option>
-                <option value="1">Chuoi 1</option>
-                <option value="2">Chuoi 2</option>
-                <option value="3">Số 1</option>
-                <option value="4">Số 2</option>
-                <option value="5">Số 3</option>
+                <option value="1">Dữ liệu chuỗi 113KB</option>
+                <option value="2">Dữ liệu chuỗi 3MB</option>
+                <option value="3">Dữ liệu số size S</option>
+                <option value="4">Dữ liệu số size M</option>
+                <option value="5">Dữ liệu số size XL</option>
             </select>
         </div>
         @*End Dữ liệu*@
@@ -54,8 +54,31 @@
     int DuLieu;
     int ThuatToan;
 
+    
     private async Task Chay()
     {
+        string url = null;
+        if (DuLieu == 1)
+        {
+            url = "dulieuchuoi/mangchuoi113kb.txt";
+                }
+        if (DuLieu == 2)
+        {
+            url = "dulieuchuoi/mangchuoi3mb.txt";
+            }
+        if (DuLieu == 3)
+        {
+            url = "dulieuso/data_s.txt";
+            }
+        if (DuLieu == 4)
+        {
+            url = "dulieuso/data_m.txt";
+            }
+        if (DuLieu == 5)
+        {
+            url = "dulieuso/data_xl.txt";
+            }
+
         HttpClient client = new HttpClient();
         var response = await client.GetAsync("https://localhost:44328/api/DocFile/dulieuso/data_s.txt");
         string content = await response.Content.ReadAsStringAsync();
