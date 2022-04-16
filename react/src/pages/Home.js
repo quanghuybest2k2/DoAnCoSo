@@ -18,8 +18,8 @@ import uon4 from '../assets/img/30shine-uon-4.jpg'
 import tantam1 from '../assets/img/lang-nghe-tan-tam-1.jpg'
 import tantam2 from '../assets/img/lang-nghe-tan-tam-2.jpg'
 import tantam3 from '../assets/img/lang-nghe-tan-tam-3.jpg'
-
-
+import ngoaihinh from '../assets/img/30shine-thay-doi-ngoai-hinh.jpg'
+import mullet from '../assets/img/30shine-toc-mullet.jpg'
 
 
 import React from "react";
@@ -289,7 +289,7 @@ const Home = () => {
                             </div>
                             <div className="layout__head-view-all">
                                 <span>Xem tất cả</span>
-                                <img src="./assets/img/chevronRight.0f447c60.svg" alt="" />
+                                <img src={chevronRight} alt="" />
                             </div>
                         </div>
                     </a>
@@ -300,7 +300,7 @@ const Home = () => {
                                 <div className="swiper__slide" style="width: 570px; margin-right: 30px;">
                                     <a href="">
                                         <div className="blog__media">
-                                            <img src="./assets/img/30shine-thay-doi-ngoai-hinh.jpg" alt="" />
+                                            <img src={ngoaihinh} alt="" />
                                         </div>
                                     </a>
                                     <a href="">
@@ -313,7 +313,7 @@ const Home = () => {
                                 <div className="swiper__slide" style="width: 570px; margin-right: 30px;">
                                     <a href="">
                                         <div className="blog__media">
-                                            <img src="./assets/img/30shine-toc-mullet.jpg" alt="" />
+                                            <img src={mullet} alt="" />
                                         </div>
                                     </a>
                                     <a href="">
