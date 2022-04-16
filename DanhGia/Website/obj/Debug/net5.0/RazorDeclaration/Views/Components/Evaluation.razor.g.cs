@@ -83,7 +83,7 @@ using System.Diagnostics;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 52 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 53 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     // khai  bao kieu du lieu
     int DuLieu;
@@ -95,21 +95,25 @@ using System.Diagnostics;
         string url = null;
         if (DuLieu == 1)
         {
-            url = "dulieuchuoi/mangchuoi113kb.txt";
+            url = "dulieuchuoi/mangchuoi456kb.txt";
         }
         if (DuLieu == 2)
         {
-            url = "dulieuchuoi/mangchuoi3mb.txt";
+            url = "dulieuchuoi/dulieuchuoi2MB.txt";
         }
         if (DuLieu == 3)
         {
-            url = "dulieuso/data_s.txt";
+            url = "dulieuchuoi/mangchuoi3mb.txt";
         }
         if (DuLieu == 4)
         {
-            url = "dulieuso/data_m.txt";
+            url = "dulieuso/data_s.txt";
         }
         if (DuLieu == 5)
+        {
+            url = "dulieuso/data_m.txt";
+        }
+        if (DuLieu == 6)
         {
             url = "dulieuso/data_xl.txt";
         }

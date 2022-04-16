@@ -15,11 +15,12 @@
                         hidden="hidden">
                     Chọn Dữ liệu
                 </option>
-                <option value="1">Dữ liệu chuỗi 113KB</option>
-                <option value="2">Dữ liệu chuỗi 3MB</option>
-                <option value="3">Dữ liệu số size S</option>
-                <option value="4">Dữ liệu số size M</option>
-                <option value="5">Dữ liệu số size XL</option>
+                <option value="1">Dữ liệu chuỗi 456KB</option>
+                <option value="2">Dữ liệu chuỗi 2MB</option>
+                <option value="3">Dữ liệu chuỗi 3MB</option>
+                <option value="4">Dữ liệu số size S</option>
+                <option value="5">Dữ liệu số size M</option>
+                <option value="6">Dữ liệu số size XL</option>
             </select>
         </div>
         @*End Dữ liệu*@
@@ -60,21 +61,25 @@
         string url = null;
         if (DuLieu == 1)
         {
-            url = "dulieuchuoi/mangchuoi113kb.txt";
+            url = "dulieuchuoi/mangchuoi456kb.txt";
         }
         if (DuLieu == 2)
         {
-            url = "dulieuchuoi/mangchuoi3mb.txt";
+            url = "dulieuchuoi/dulieuchuoi2MB.txt";
         }
         if (DuLieu == 3)
         {
-            url = "dulieuso/data_s.txt";
+            url = "dulieuchuoi/mangchuoi3mb.txt";
         }
         if (DuLieu == 4)
         {
-            url = "dulieuso/data_m.txt";
+            url = "dulieuso/data_s.txt";
         }
         if (DuLieu == 5)
+        {
+            url = "dulieuso/data_m.txt";
+        }
+        if (DuLieu == 6)
         {
             url = "dulieuso/data_xl.txt";
         }
@@ -100,9 +105,8 @@
             long time_InsertionSort = ExecutionTime(() => InsertionSort(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Insertion Sort C# là: " + time_InsertionSort + " ms");
         }
-
     }
-
+    // ================================== Thuật toán số ====================================
     private static void bubbleSort_chuoi(string[] arr)
     {
         string temp;
@@ -120,6 +124,7 @@
             }
         }
     }
+    // ================================== Thuật toán số ======================================
     private static void bubbleSort_so(long[] arr)
     {
         long temp;
