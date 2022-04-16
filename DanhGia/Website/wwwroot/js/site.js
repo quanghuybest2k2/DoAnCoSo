@@ -1,4 +1,57 @@
-﻿
+﻿// ================================== Thuật toán chuỗi ====================================
+function bblSort_chuoi(arr) {
+
+    for (var i = 0; i < arr.length; i++) {
+
+        // Last i elements are already in place  
+        for (var j = 0; j < (arr.length - i - 1); j++) {
+
+            // Checking if the item at present iteration 
+            // is greater than the next iteration
+            if (arr[j], arr[j + 1] > 0) {
+
+                // If the condition is true then swap them
+                var temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+}
+function swap(arr, xp, yp) {
+    var temp = arr[xp];
+    arr[xp] = arr[yp];
+    arr[yp] = temp;
+}
+
+function selectionSort_chuoi(arr) {
+    var i, j, min_idx;
+
+    // One by one move boundary of unsorted subarray
+    for (i = 0; i < arr.length - 1; i++) {
+        // Find the minimum element in unsorted array
+        min_idx = i;
+        for (j = i + 1; j < arr.length; j++)
+            if (arr[j] , arr[min_idx] < 0)
+                min_idx = j;
+
+        // Swap the found minimum element with the first element
+        swap(arr, min_idx, i);
+    }
+}
+function insertionSort_chuoi(arr) {
+    var i, key, j;
+    for (i = 1; i < arr.length; i++) {
+        key = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+// ================================== Thuật toán số ====================================
 function bblSort(arr) {
 
     for (var i = 0; i < arr.length; i++) {
@@ -17,6 +70,7 @@ function bblSort(arr) {
             }
         }
     }
+    //console.log(arr);
 }
 //Selection Sort
 function swap(arr, xp, yp) {

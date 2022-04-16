@@ -43,22 +43,40 @@
                 // Chọn thuật toán
                 var thuattoan_select = document.getElementById("thuattoan").value;
                 if (thuattoan_select == 1) {
+                    var time_bbsort_chuoi = execution_time(function () {
+                        bblSort_chuoi(arr);
+                    });
+                    console.log("thời gian chạy bubble sort chuỗi js là: " + time_bbsort_chuoi + " ms") //ms
+                }
+                if (thuattoan_select == 2) {
+                    var time_slsort_chuoi = execution_time(function () {
+                        selectionSort_chuoi(arr);
+                    });
+                    console.log("Thời gian chạy Selection Sort chuỗi JS là: " + time_slsort_chuoi + " ms") //ms
+                }
+                if (thuattoan_select == 3) {
+                    var time_InsertionSort_chuoi = execution_time(function () {
+                        insertionSort_chuoi(arr);
+                    });
+                    console.log("Thời gian chạy Insertion Sort chuỗi JS là: " + time_InsertionSort_chuoi + " ms") //ms
+                }
+                if (thuattoan_select == 4) {
                     var time_bbsort = execution_time(function () {
                         bblSort(arr_so);
                     });
-                    console.log("Thời gian chạy Bubble Sort JS là: " + time_bbsort + " ms") //ms
+                    console.log("Thời gian chạy Bubble Sort Số JS là: " + time_bbsort + " ms") //ms
                 }
-                if (thuattoan_select == 2) {
+                if (thuattoan_select == 5) {
                     var time_slsort = execution_time(function () {
                         selectionSort(arr_so);
                     });
-                    console.log("Thời gian chạy Selection Sort JS là: " + time_slsort + " ms") //ms
+                    console.log("Thời gian chạy Selection Sort Số JS là: " + time_slsort + " ms") //ms
                 }
-                if (thuattoan_select == 3) {
+                if (thuattoan_select == 6) {
                     var time_InsertionSort = execution_time(function () {
                         insertionSort(arr_so);
                     });
-                    console.log("Thời gian chạy Insertion Sort JS là: " + time_InsertionSort + " ms") //ms
+                    console.log("Thời gian chạy Insertion Sort Số JS là: " + time_InsertionSort + " ms") //ms
                 }
             });
         }

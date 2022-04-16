@@ -83,7 +83,7 @@ using System.Diagnostics;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 53 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
+#line 56 "D:\Đồ án cơ sở\DoAnCoSo\DanhGia\Website\Views\Components\Evaluation.razor"
        
     // khai  bao kieu du lieu
     int DuLieu;
@@ -126,22 +126,37 @@ using System.Diagnostics;
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
         if (ThuatToan == 1)
         {
-            long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
-            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort C# là: " + time_bbsort + " ms");
+            //long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
+            //await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort Số C# là: " + time_bbsort + " ms");
+            //string arr_chuoi = ExecutionTime(() => bubbleSort_chuoi(arr));
         }
         if (ThuatToan == 2)
         {
-            long time_slsort = ExecutionTime(() => selection_sort(arr_so));
-            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Selection Sort C# là: " + time_slsort + " ms");
+            //long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
+            //await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort Số C# là: " + time_bbsort + " ms");
         }
         if (ThuatToan == 3)
         {
-            long time_InsertionSort = ExecutionTime(() => InsertionSort(arr_so));
-            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Insertion Sort C# là: " + time_InsertionSort + " ms");
+            //long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
+            //await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort Số C# là: " + time_bbsort + " ms");
         }
-
+        if (ThuatToan == 4)
+        {
+            long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort Số C# là: " + time_bbsort + " ms");
+        }
+        if (ThuatToan == 5)
+        {
+            long time_slsort = ExecutionTime(() => selection_sort(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Selection Sort Số C# là: " + time_slsort + " ms");
+        }
+        if (ThuatToan == 6)
+        {
+            long time_InsertionSort = ExecutionTime(() => InsertionSort(arr_so));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Insertion Sort Số C# là: " + time_InsertionSort + " ms");
+        }
     }
-
+    // ================================== Thuật toán chuỗi ====================================
     private static void bubbleSort_chuoi(string[] arr)
     {
         string temp;
@@ -159,6 +174,7 @@ using System.Diagnostics;
             }
         }
     }
+    // ================================== Thuật toán số ======================================
     private static void bubbleSort_so(long[] arr)
     {
         long temp;
@@ -198,7 +214,7 @@ using System.Diagnostics;
     }
     //end Selection Sort
     //Insertion Sort
-    void InsertionSort(long[] arr)
+    private static void InsertionSort(long[] arr)
     {
         for (int i = 1; i < arr.Length; i++)
         {
