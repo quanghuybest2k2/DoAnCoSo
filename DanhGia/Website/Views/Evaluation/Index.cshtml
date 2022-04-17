@@ -18,7 +18,8 @@
                 url = "dulieuchuoi/mangchuoi456kb.txt";
             }
             if (dulieu_select == 2) {
-                url = url = "dulieuchuoi/dulieuchuoi2MB.txt";
+               // url = url = "dulieuchuoi/dulieuchuoi2MB.txt";
+                url = "dulieuchuoi/chuoi.txt";
             }
             if (dulieu_select == 3) {
                 url = "dulieuchuoi/mangchuoi3mb.txt";
@@ -37,26 +38,27 @@
                 return rs.text()
             }).then(rs => {
 
-                var arr = rs.split("\n");
+                var arr_chuoi = rs.split("\r\n");// chuyển thành mảng chuỗi
+                var arr = rs.split("\n"); // chuyển thành mảng số
                 var arr_so = arr.map((item) => parseInt(item));
 
                 // Chọn thuật toán
                 var thuattoan_select = document.getElementById("thuattoan").value;
                 if (thuattoan_select == 1) {
                     var time_bbsort_chuoi = execution_time(function () {
-                        bblSort_chuoi(arr);
+                        bblSort_chuoi(arr_chuoi);
                     });
                     console.log("thời gian chạy bubble sort chuỗi js là: " + time_bbsort_chuoi + " ms") //ms
                 }
                 if (thuattoan_select == 2) {
                     var time_slsort_chuoi = execution_time(function () {
-                        selectionSort_chuoi(arr);
+                        selectionSort_chuoi(arr_chuoi);
                     });
                     console.log("Thời gian chạy Selection Sort chuỗi JS là: " + time_slsort_chuoi + " ms") //ms
                 }
                 if (thuattoan_select == 3) {
                     var time_InsertionSort_chuoi = execution_time(function () {
-                        insertionSort_chuoi(arr);
+                        insertionSort_chuoi(arr_chuoi);
                     });
                     console.log("Thời gian chạy Insertion Sort chuỗi JS là: " + time_InsertionSort_chuoi + " ms") //ms
                 }

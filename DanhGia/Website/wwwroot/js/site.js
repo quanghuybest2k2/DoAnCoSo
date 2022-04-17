@@ -6,10 +6,7 @@ function bblSort_chuoi(arr) {
         // Last i elements are already in place  
         for (var j = 0; j < (arr.length - i - 1); j++) {
 
-            // Checking if the item at present iteration 
-            // is greater than the next iteration
-            if (arr[j], arr[j + 1] > 0) {
-
+            if (sosanh(arr[j], arr[j + 1]) > 0) { //sosanh(arr[j], arr[j + 1]) > 0 ;;;;//arr[j].localeCompare(arr[j + 1]) > 0
                 // If the condition is true then swap them
                 var temp = arr[j]
                 arr[j] = arr[j + 1]
@@ -17,6 +14,7 @@ function bblSort_chuoi(arr) {
             }
         }
     }
+    //console.log(arr);
 }
 function swap(arr, xp, yp) {
     var temp = arr[xp];
@@ -32,12 +30,13 @@ function selectionSort_chuoi(arr) {
         // Find the minimum element in unsorted array
         min_idx = i;
         for (j = i + 1; j < arr.length; j++)
-            if (arr[j] , arr[min_idx] < 0)
+            if (arr[j], arr[min_idx] < 0)
                 min_idx = j;
 
         // Swap the found minimum element with the first element
         swap(arr, min_idx, i);
     }
+    //console.log(arr);
 }
 function insertionSort_chuoi(arr) {
     var i, key, j;
@@ -50,6 +49,7 @@ function insertionSort_chuoi(arr) {
         }
         arr[j + 1] = key;
     }
+    //console.log(arr);
 }
 // ================================== Thuật toán số ====================================
 function bblSort(arr) {
@@ -121,4 +121,8 @@ function execution_time(func) {
     var endTime = performance.now()
 
     return endTime - startTime; // ms
+}
+
+function sosanh(a, b) {
+    return a.toString().toLowerCase().localeCompare(b.toString().toLowerCase());
 }
