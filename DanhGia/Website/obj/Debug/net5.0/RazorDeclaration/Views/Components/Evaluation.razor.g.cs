@@ -174,6 +174,45 @@ using System.Diagnostics;
             }
         }
     }
+    //Selection Sort string
+    private static void selection_sort_chuoi(string[] arr)
+    {
+        string temp;
+        // One by one move boundary of unsorted subarray
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i + 1; j < arr.Length; j++)
+            {
+                if (SoSanh(arr[j], arr[min_idx]) < 0)
+                    min_idx = j;
+            }
+            // Swap the found minimum element with the first
+            // element
+            temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
+        }
+    }
+    //end Selection Sort
+    //Insertion Sort
+    private static void InsertionSort_chuoi(string[] arr)
+    {
+        for (int i = 1; i < arr.Length; i++)
+        {
+            string key = arr[i];
+            int j = i - 1;
+
+            while (j >= 0 && SoSanh(arr[j], key) > 0) //j >= 0 && sosanh(arr[j], key) > 0
+            {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+    }
+    // End Insertion Sort
     // ================================== Thuật toán số ======================================
     private static void bubbleSort_so(long[] arr)
     {
@@ -202,11 +241,11 @@ using System.Diagnostics;
             // Find the minimum element in unsorted array
             int min_idx = i;
             for (int j = i + 1; j < arr.Length; j++)
+            {
                 if (arr[j] < arr[min_idx])
                     min_idx = j;
-
+            }
             // Swap the found minimum element with the first
-            // element
             long temp = arr[min_idx];
             arr[min_idx] = arr[i];
             arr[i] = temp;
@@ -243,7 +282,8 @@ using System.Diagnostics;
 
     private static int SoSanh(string a, string b)
     {
-        return a.ToString().ToLower().CompareTo(b.ToString().ToLower());
+        //return a.ToString().ToLower().CompareTo(b.ToString().ToLower());
+        return a.ToString().CompareTo(b.ToString());
     }
 
 #line default

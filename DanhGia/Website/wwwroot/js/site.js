@@ -2,7 +2,6 @@
 function bblSort_chuoi(arr) {
 
     for (var i = 0; i < arr.length; i++) {
-
         // Last i elements are already in place  
         for (var j = 0; j < (arr.length - i - 1); j++) {
 
@@ -30,7 +29,7 @@ function selectionSort_chuoi(arr) {
         // Find the minimum element in unsorted array
         min_idx = i;
         for (j = i + 1; j < arr.length; j++)
-            if (arr[j], arr[min_idx] < 0)
+            if (sosanh(arr[j], arr[min_idx]) < 0) //sosanh(arr[j], arr[min_idx]) > 0
                 min_idx = j;
 
         // Swap the found minimum element with the first element
@@ -43,7 +42,7 @@ function insertionSort_chuoi(arr) {
     for (i = 1; i < arr.length; i++) {
         key = arr[i];
         j = i - 1;
-        while (j >= 0 && arr[j] > key) {
+        while (j >= 0 && sosanh(arr[j], key) > 0) { //j >= 0 && sosanh(arr[j], key) > 0
             arr[j + 1] = arr[j];
             j = j - 1;
         }
@@ -124,5 +123,6 @@ function execution_time(func) {
 }
 
 function sosanh(a, b) {
-    return a.toString().toLowerCase().localeCompare(b.toString().toLowerCase());
+    //return a.toString().toLowerCase().localeCompare(b.toString().toLowerCase());
+    return a.toString().localeCompare(b.toString());
 }
