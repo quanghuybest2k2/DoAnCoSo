@@ -1,9 +1,9 @@
 import React from "react";
 
-const PageTwo = () => {
+const KhamPhaKieuToc = () => {
     return (
         <h1>Khám phá kiểu tóc</h1>
     );
 };
 
-export default PageTwo;
+export default KhamPhaKieuToc;

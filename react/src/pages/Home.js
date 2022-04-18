@@ -1,92 +1,93 @@
+import { Link } from "react-router-dom";
 // import img banner slider
-import Mocaw1 from "../assets/img/20220210_Banner_30Shine_Moca_w1.jpg";
-import BannerSC100w2 from "../assets/img/20220119_BannerSC100_w2.jpg";
-import Mocaw3 from "../assets/img/20220210_Banner_30Shine_Moca_w3.jpg";
-import vqmmw4 from "../assets/img/20220316_banner_vqmm_w4.jpg";
-import ToaSangw5 from "../assets/img/210814_Banner_toa_sang_w5.jpg";
-import Antoanw6 from "../assets/img/210814_Banner_an_toan_w6.jpg";
+import Mocaw1 from "../assets/img/banner/20220210_Banner_30Shine_Moca_w1.jpg";
+import BannerSC100w2 from "../assets/img/banner/20220119_BannerSC100_w2.jpg";
+import Mocaw3 from "../assets/img/banner/20220210_Banner_30Shine_Moca_w3.jpg";
+import vqmmw4 from "../assets/img/banner/20220316_banner_vqmm_w4.jpg";
+import ToaSangw5 from "../assets/img/banner/210814_Banner_toa_sang_w5.jpg";
+import Antoanw6 from "../assets/img/banner/210814_Banner_an_toan_w6.jpg";
 // import icon arrow right
 import chevronRight from "../assets/img/chevronRight.0f447c60.svg";
 // import trai nghiem dich vu
-import bannercombo1 from "../assets/img/20220104-30shine-banner-shine-combo-1.jpg";
-import CatGoi2 from "../assets/img/30shine-cat-goi-massage-2.jpg";
-import uondv2 from "../assets/img/30shine-uon-2.jpg";
-import nhuon2 from "../assets/img/30shine-nhuom-2.jpg";
-import dichvukhac2 from "../assets/img/30shine-dich-vu-khac-2.jpg";
+import bannercombo1 from "../assets/img/trainghiemdichvu/20220104-30shine-banner-shine-combo-1.jpg";
+import CatGoi2 from "../assets/img/trainghiemdichvu/30shine-cat-goi-massage-2.jpg";
+import uondv2 from "../assets/img/trainghiemdichvu/30shine-uon-2.jpg";
+import nhuon2 from "../assets/img/trainghiemdichvu/30shine-nhuom-2.jpg";
+import dichvukhac2 from "../assets/img/trainghiemdichvu/30shine-dich-vu-khac-2.jpg";
 
-import khoiuonpc from "../assets/img/30shine-banner-khoi-uon-pc.jpg";
-import uon1 from "../assets/img/30shine-uon-1.jpg";
-import uon2 from "../assets/img/30shine-uon2.jpg";
-import uon3 from "../assets/img/30shine-uon-3.jpg";
-import uon4 from "../assets/img/30shine-uon-4.jpg";
+import khoiuonpc from "../assets/img/top1dichvu/30shine-banner-khoi-uon-pc.jpg";
+import uon1 from "../assets/img/top1dichvu/30shine-uon-1.jpg";
+import uon2 from "../assets/img/top1dichvu/30shine-uon2.jpg";
+import uon3 from "../assets/img/top1dichvu/30shine-uon-3.jpg";
+import uon4 from "../assets/img/top1dichvu/30shine-uon-4.jpg";
 
-import tantam1 from "../assets/img/lang-nghe-tan-tam-1.jpg";
-import tantam2 from "../assets/img/lang-nghe-tan-tam-2.jpg";
-import tantam3 from "../assets/img/lang-nghe-tan-tam-3.jpg";
+import tantam1 from "../assets/img/langnghetantam/lang-nghe-tan-tam-1.jpg";
+import tantam2 from "../assets/img/langnghetantam/lang-nghe-tan-tam-2.jpg";
+import tantam3 from "../assets/img/langnghetantam/lang-nghe-tan-tam-3.jpg";
 
-import ngoaihinh from "../assets/img/30shine-thay-doi-ngoai-hinh.jpg";
-import hotboy from "../assets/img/30shine-lot-xac-thanh-hot-boy.jpg";
-import mullet from "../assets/img/30shine-toc-mullet.jpg";
-import kientruc from "../assets/img/30shine-nam-sinh-kien-truc-lot-xac.jpg";
+import ngoaihinh from "../assets/img/hanhtrinhtoasang/30shine-thay-doi-ngoai-hinh.jpg";
+import hotboy from "../assets/img/hanhtrinhtoasang/30shine-lot-xac-thanh-hot-boy.jpg";
+import mullet from "../assets/img/hanhtrinhtoasang/30shine-toc-mullet.jpg";
+import kientruc from "../assets/img/hanhtrinhtoasang/30shine-nam-sinh-kien-truc-lot-xac.jpg";
 
-import gril1 from "../assets/img/10089.jpg";
-import gril2 from "../assets/img/1949.jpg";
-import gril3 from "../assets/img/4801.jpg";
-import gril4 from "../assets/img/5760.jpg";
-import gril5 from "../assets/img/5950.jpg";
-import gril6 from "../assets/img/6943.jpg";
-import gril7 from "../assets/img/7423.jpg";
-import gril8 from "../assets/img/8076.jpg";
-import gril9 from "../assets/img/9298.jpg";
-import gril10 from "../assets/img/9687.jpg";
-import gril11 from "../assets/img/9773.jpg";
-import gril12 from "../assets/img/9984.jpg";
+import gril1 from "../assets/img/30shineangles/10089.jpg";
+import gril2 from "../assets/img/30shineangles/1949.jpg";
+import gril3 from "../assets/img/30shineangles/4801.jpg";
+import gril4 from "../assets/img/30shineangles/5760.jpg";
+import gril5 from "../assets/img/30shineangles/5950.jpg";
+import gril6 from "../assets/img/30shineangles/6943.jpg";
+import gril7 from "../assets/img/30shineangles/7423.jpg";
+import gril8 from "../assets/img/30shineangles/8076.jpg";
+import gril9 from "../assets/img/30shineangles/9298.jpg";
+import gril10 from "../assets/img/30shineangles/9687.jpg";
+import gril11 from "../assets/img/30shineangles/9773.jpg";
+import gril12 from "../assets/img/30shineangles/9984.jpg";
 // khong gian thiet bi
-import khongian1 from "../assets/img/30shine-banner-khong-gian-salon.jpg";
-import khongian2 from "../assets/img/30shinecon-cept-khong-gian-rong-lon-1.jpg";
-import khongian3 from "../assets/img/30shinecon-cept-khong-gian-rong-lon-2.jpg";
-import khongian4 from "../assets/img/30shinecon-cept-khong-gian-rong-lon-3.jpg";
-import khongian5 from "../assets/img/30shine-concept-khong-gian-rong-lon-6.jpg";
+import khongian1 from "../assets/img/khonggianthietbi/30shine-banner-khong-gian-salon.jpg";
+import khongian2 from "../assets/img/khonggianthietbi/30shinecon-cept-khong-gian-rong-lon-1.jpg";
+import khongian3 from "../assets/img/khonggianthietbi/30shinecon-cept-khong-gian-rong-lon-2.jpg";
+import khongian4 from "../assets/img/khonggianthietbi/30shinecon-cept-khong-gian-rong-lon-3.jpg";
+import khongian5 from "../assets/img/khonggianthietbi/30shine-concept-khong-gian-rong-lon-6.jpg";
 // nguoi truyen cam hung
-import camhung1 from "../assets/img/30shine-ca-si-le-bao-binh.jpg";
-import camhung2 from "../assets/img/30shine-ca-si-hoang-dung.jpg";
-import camhung3 from "../assets/img/30shine-ca-si-lk.jpg";
-import camhung4 from "../assets/img/30shine-dien-vien-thanh-son.jpg";
+import camhung1 from "../assets/img/nguoitruyencamhung/30shine-ca-si-le-bao-binh.jpg";
+import camhung2 from "../assets/img/nguoitruyencamhung/30shine-ca-si-hoang-dung.jpg";
+import camhung3 from "../assets/img/nguoitruyencamhung/30shine-ca-si-lk.jpg";
+import camhung4 from "../assets/img/nguoitruyencamhung/30shine-dien-vien-thanh-son.jpg";
 // kham pha kieu toc
-import kieutocbaner1 from "../assets/img/30shine-banner-kham-pha-kieu-to.jpg";
-import kieutoc2 from "../assets/img/30shine-kham-pha-kieu-toc.png";
-import kieutoc3 from "../assets/img/30shine-kham-pha-kieu-toc-style-mater.png";
+import kieutocbaner1 from "../assets/img/khamphakieutoc/30shine-banner-kham-pha-kieu-to.jpg";
+import kieutoc2 from "../assets/img/khamphakieutoc/30shine-kham-pha-kieu-toc.png";
+import kieutoc3 from "../assets/img/khamphakieutoc/30shine-kham-pha-kieu-toc-style-mater.png";
 // an tam tin tuong
-import antam1 from "../assets/img/30shine-so-1-ve-an-toan-3.jpg";
-import antam2 from "../assets/img/30shine-so-1-ve-an-toan-4.jpg";
-import antam3 from "../assets/img/30shine-so-1-ve-an-toan-5.jpg";
+import antam1 from "../assets/img/antamtintuong/30shine-so-1-ve-an-toan-3.jpg";
+import antam2 from "../assets/img/antamtintuong/30shine-so-1-ve-an-toan-4.jpg";
+import antam3 from "../assets/img/antamtintuong/30shine-so-1-ve-an-toan-5.jpg";
 // uu dai
-import uudai1 from "../assets/img/small_Balance_Skin_Shine_Box_663898d441.jpg";
-import uudai2 from "../assets/img/small_Brightening_Shine_Box_c57e154415.jpg";
-import uudai3 from "../assets/img/small_Firming_Shine_Box_697f959a69.jpg";
-import uudai4 from "../assets/img/small_Renewal_Shine_Box_52e0afdf59.jpg";
-import uudai5 from "../assets/img/small_Shimmering_Shine_Box_efc516076e.jpg";
-import uudai6 from "../assets/img/small_Smoothing_Shine_Box_148913eb8e.jpg";
+import uudai1 from "../assets/img/uudai/small_Balance_Skin_Shine_Box_663898d441.jpg";
+import uudai2 from "../assets/img/uudai/small_Brightening_Shine_Box_c57e154415.jpg";
+import uudai3 from "../assets/img/uudai/small_Firming_Shine_Box_697f959a69.jpg";
+import uudai4 from "../assets/img/uudai/small_Renewal_Shine_Box_52e0afdf59.jpg";
+import uudai5 from "../assets/img/uudai/small_Shimmering_Shine_Box_efc516076e.jpg";
+import uudai6 from "../assets/img/uudai/small_Smoothing_Shine_Box_148913eb8e.jpg";
 // 30shine shop and member
-import bannershop from "../assets/img/banner-shop.jpg";
-import member1 from "../assets/img/20220103-ShineMember2022-v2.jpg";
+import bannershop from "../assets/img/30shineshopmember/banner-shop.jpg";
+import member1 from "../assets/img/30shineshopmember/20220103-ShineMember2022-v2.jpg";
 // 30shine moment
-import moment1 from "../assets/img/A1.jpg";
-import moment2 from "../assets/img/A2.jpg";
-import moment3 from "../assets/img/A3.jpg";
-import moment4 from "../assets/img/A4.jpg";
-import moment5 from "../assets/img/A5.jpg";
-import moment6 from "../assets/img/A6.jpg";
-import moment7 from "../assets/img/A7.jpg";
-import moment8 from "../assets/img/A8.jpg";
-import moment9 from "../assets/img/A9.jpg";
-import moment10 from "../assets/img/A10.jpg";
+import moment1 from "../assets/img/shinemoment/A1.jpg";
+import moment2 from "../assets/img/shinemoment/A2.jpg";
+import moment3 from "../assets/img/shinemoment/A3.jpg";
+import moment4 from "../assets/img/shinemoment/A4.jpg";
+import moment5 from "../assets/img/shinemoment/A5.jpg";
+import moment6 from "../assets/img/shinemoment/A6.jpg";
+import moment7 from "../assets/img/shinemoment/A7.jpg";
+import moment8 from "../assets/img/shinemoment/A8.jpg";
+import moment9 from "../assets/img/shinemoment/A9.jpg";
+import moment10 from "../assets/img/shinemoment/A10.jpg";
 // cam ket
-import camketbn from "../assets/img/banner-30shine-care-5.jpg";
-import camket7 from "../assets/img/care/2-care.png";
-import camket30 from "../assets/img/care/30days-care.jpg";
-import camket15 from "../assets/img/care/3-care.png";
-import camket20 from "../assets/img/care/4-care.png";
+import camketbn from "../assets/img/camketcare/banner-30shine-care-5.jpg";
+import camket7 from "../assets/img/camketcare/2-care.png";
+import camket30 from "../assets/img/camketcare/30days-care.jpg";
+import camket15 from "../assets/img/camketcare/3-care.png";
+import camket20 from "../assets/img/camketcare/4-care.png";
 // tim 30shine gan nhat
 import gannhat1 from "../assets/img/maps/salon-hcm.png";
 import gannhat2 from "../assets/img/maps/salon-hanoi.png";
@@ -144,7 +145,7 @@ const Home = () => {
             {/* <!-- service trải nghiệm dịch vụ --> */}
             <div className="layout layout__service">
                 <div className="container">
-                    <a href="">
+                    <Link to={"/trai-nghiem-dich-vu"}>
                         <div className="layout__head">
                             <div>
                                 <div className="head__title">Trải nghiệm dịch vụ</div>
@@ -157,13 +158,14 @@ const Home = () => {
                                 <img src={chevronRight} alt="" />
                             </div>
                         </div>
-                    </a>
+                    </Link>
                     <div className="layout__banner">
-                        <a href="">
+                        <Link to={"/trai-nghiem-dich-vu"}>
                             <div className="layout__banner-media">
                                 <img src={bannercombo1} alt="" />
                             </div>
-                        </a>
+
+                        </Link>
                     </div>
                     <div className="layout__list ">
                         <div className="layout__list-wraper row">
