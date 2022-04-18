@@ -127,18 +127,18 @@ using System.Diagnostics;
         long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
         if (ThuatToan == 1)
         {
-            //string time_bbsort_chuoi = ExecutionTime(() => bubbleSort_chuoi(arr_chuoi));
-            //await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort chuỗi C# là: " + time_bbsort_chuoi + " ms");
+            long time_bbsort_chuoi = ExecutionTime(() => bubbleSort_chuoi(arr_chuoi));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort chuỗi C# là: " + time_bbsort_chuoi + " ms");
         }
         if (ThuatToan == 2)
         {
-            //long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_chuoi));
-            //await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort Số C# là: " + time_bbsort + " ms");
+            long time_bbsort = ExecutionTime(() => bubbleSort_chuoi(arr_chuoi));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort chuỗi C# là: " + time_bbsort + " ms");
         }
         if (ThuatToan == 3)
         {
-            //long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_chuoi));
-            //await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort Số C# là: " + time_bbsort + " ms");
+            long time_bbsort = ExecutionTime(() => bubbleSort_chuoi(arr_chuoi));
+            await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort chuỗi C# là: " + time_bbsort + " ms");
         }
         if (ThuatToan == 4)
         {
