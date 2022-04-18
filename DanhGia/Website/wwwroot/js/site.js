@@ -1,6 +1,5 @@
 ﻿// ================================== Thuật toán chuỗi ====================================
 function bblSort_chuoi(arr) {
-
     for (var i = 0; i < arr.length; i++) {
         // Last i elements are already in place  
         for (var j = 0; j < (arr.length - i - 1); j++) {
@@ -15,27 +14,24 @@ function bblSort_chuoi(arr) {
     }
     //console.log(arr);
 }
-function swap(arr, xp, yp) {
-    var temp = arr[xp];
-    arr[xp] = arr[yp];
-    arr[yp] = temp;
-}
 
 function selectionSort_chuoi(arr) {
     var i, j, min_idx;
-
     // One by one move boundary of unsorted subarray
     for (i = 0; i < arr.length - 1; i++) {
         // Find the minimum element in unsorted array
         min_idx = i;
-        for (j = i + 1; j < arr.length; j++)
+        for (j = i + 1; j < arr.length; j++) {
             if (sosanh(arr[j], arr[min_idx]) < 0) //sosanh(arr[j], arr[min_idx]) > 0
+            {
                 min_idx = j;
-
-        // Swap the found minimum element with the first element
-        swap(arr, min_idx, i);
+            }
+        }
+        temp = arr[min_idx];
+        arr[min_idx] = arr[i];
+        arr[i] = temp;
     }
-    //console.log(arr);
+   // console.log(arr);
 }
 function insertionSort_chuoi(arr) {
     var i, key, j;
@@ -57,9 +53,6 @@ function bblSort(arr) {
 
         // Last i elements are already in place  
         for (var j = 0; j < (arr.length - i - 1); j++) {
-
-            // Checking if the item at present iteration 
-            // is greater than the next iteration
             if (arr[j] > arr[j + 1]) {
 
                 // If the condition is true then swap them
@@ -72,12 +65,6 @@ function bblSort(arr) {
     //console.log(arr);
 }
 //Selection Sort
-function swap(arr, xp, yp) {
-    var temp = arr[xp];
-    arr[xp] = arr[yp];
-    arr[yp] = temp;
-}
-
 function selectionSort(arr) {
     var i, j, min_idx;
 
@@ -85,30 +72,34 @@ function selectionSort(arr) {
     for (i = 0; i < arr.length - 1; i++) {
         // Find the minimum element in unsorted array
         min_idx = i;
-        for (j = i + 1; j < arr.length; j++)
+        for (j = i + 1; j < arr.length; j++) {
             if (arr[j] < arr[min_idx])
+            {
                 min_idx = j;
-
-        // Swap the found minimum element with the first element
-        swap(arr, min_idx, i);
+            }
+        }
+        temp = arr[min_idx];
+        arr[min_idx] = arr[i];
+        arr[i] = temp;
     }
+    //console.log(arr);
 }
 //end Selection Sort
 //Insertion Sort
-function insertionSort(arr) {
-    var i, key, j;
-    for (i = 1; i < arr.length; i++) {
-        key = arr[i];
-        j = i - 1;
-        while (j >= 0 && arr[j] > key) {
+function insertionSort(arr)
+{
+    for (var i = 1; i < arr.length; i++)
+    {
+        var key = arr[i];
+        var j = i - 1;
+        while (j >= 0 && arr[j] > key){
             arr[j + 1] = arr[j];
             j = j - 1;
         }
         arr[j + 1] = key;
     }
+    //console.log(arr);
 }
-
-
 //end Insertion Sort
 
 

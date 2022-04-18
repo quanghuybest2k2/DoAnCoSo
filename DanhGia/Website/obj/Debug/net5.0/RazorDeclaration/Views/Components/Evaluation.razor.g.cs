@@ -95,16 +95,17 @@ using System.Diagnostics;
         string url = null;
         if (DuLieu == 1)
         {
-            url = "dulieuchuoi/mangchuoi456kb.txt";
+            url = "dulieuchuoi/mangchuoi331kb.txt";
         }
         if (DuLieu == 2)
         {
-            url = "dulieuchuoi/dulieuchuoi2MB.txt";
+            url = "dulieuchuoi/mangchuoi661kb.txt";
         }
         if (DuLieu == 3)
         {
-            url = "dulieuchuoi/mangchuoi3mb.txt";
+            url = "dulieuchuoi/mangchuoi1p766.txt";
         }
+        // number
         if (DuLieu == 4)
         {
             url = "dulieuso/data_s.txt";
@@ -159,7 +160,6 @@ using System.Diagnostics;
     // ================================== Thuật toán chuỗi ====================================
     private static void bubbleSort_chuoi(string[] arr)
     {
-        string temp;
         // Sorting strings using bubble sort
         for (int i = 0; i < arr.Length; i++)
         {
@@ -167,9 +167,9 @@ using System.Diagnostics;
             {
                 if (SoSanh(arr[j], arr[j + 1]) > 0)
                 {
-                    temp = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = temp;
+                    string temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
@@ -186,10 +186,11 @@ using System.Diagnostics;
             for (int j = i + 1; j < arr.Length; j++)
             {
                 if (SoSanh(arr[j], arr[min_idx]) < 0)
+                {
                     min_idx = j;
+                }
             }
             // Swap the found minimum element with the first
-            // element
             temp = arr[min_idx];
             arr[min_idx] = arr[i];
             arr[i] = temp;
@@ -216,17 +217,19 @@ using System.Diagnostics;
     // ================================== Thuật toán số ======================================
     private static void bubbleSort_so(long[] arr)
     {
-        long temp;
         // Sorting strings using bubble sort
         for (int i = 0; i < arr.Length; i++)
         {
-            for (int j = 0; j < (arr.Length - i - 1); j++)
+            // Last i elements are already in place
+            for (var j = 0; j < (arr.Length - i - 1); j++)
             {
                 if (arr[j] > arr[j + 1])
                 {
-                    temp = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = temp;
+
+                    // If the condition is true then swap them
+                    long temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
@@ -234,8 +237,6 @@ using System.Diagnostics;
     //Selection Sort
     private static void selection_sort(long[] arr)
     {
-
-        // One by one move boundary of unsorted subarray
         for (int i = 0; i < arr.Length - 1; i++)
         {
             // Find the minimum element in unsorted array
@@ -243,7 +244,9 @@ using System.Diagnostics;
             for (int j = i + 1; j < arr.Length; j++)
             {
                 if (arr[j] < arr[min_idx])
+                {
                     min_idx = j;
+                }
             }
             // Swap the found minimum element with the first
             long temp = arr[min_idx];
