@@ -1,0 +1,77 @@
+.service {
+  background-color: #eeeeee;
+}
+.service .container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.service__block {
+  margin: 1.5rem 0 3rem;
+}
+.service__tile {
+  position: relative;
+  font-size: 2rem;
+  padding: 5px 0px 5px 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Oswald;
+  margin-bottom: 1.5rem;
+}
+.service__tile:before {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 100%;
+  background-color: #fc3;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service-row {
+  /* margin-top: -1.5rem; */
+  margin-bottom: 1.5rem;
+  display: flex;
+  margin: 0px -8px 0px;
+}
+.service_img {
+  overflow: hidden;
+}
+.service_img:hover {
+  transition: all 0.3s ease-in-out;
+}
+.service_img > img {
+  transition: all 0.3s ease;
+}
+.service_img > img:hover {
+  transform: scale(1.03);
+}
+.service__text {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.service_image {
+  padding: 1.5rem 0.8rem;
+}
+
+.service_image {
+  overflow: hidden;
+  width: 281px;
+}
+.service_image:hover {
+  transition: all 0.3s ease-in-out;
+}
+.service_image > a > div {
+  overflow: hidden;
+}
+.service_image > a > div > img {
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.service_image > a > div > img:hover {
+  transform: scale(1.03);
+}

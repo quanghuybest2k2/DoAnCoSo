@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 // import img banner slider
 import Mocaw1 from "../assets/img/banner/20220210_Banner_30Shine_Moca_w1.jpg";
 import BannerSC100w2 from "../assets/img/banner/20220119_BannerSC100_w2.jpg";
@@ -145,7 +146,7 @@ const Home = () => {
             {/* <!-- service trải nghiệm dịch vụ --> */}
             <div className="layout layout__service">
                 <div className="container">
-                    <Link to={"/trai-nghiem-dich-vu"}>
+                    <Link to="/trai-nghiem-dich-vu">
                         <div className="layout__head">
                             <div>
                                 <div className="head__title">Trải nghiệm dịch vụ</div>
@@ -160,11 +161,10 @@ const Home = () => {
                         </div>
                     </Link>
                     <div className="layout__banner">
-                        <Link to={"/trai-nghiem-dich-vu"}>
+                        <Link to="/trai-nghiem-dich-vu">
                             <div className="layout__banner-media">
                                 <img src={bannercombo1} alt="" />
                             </div>
-
                         </Link>
                     </div>
                     <div className="layout__list ">
@@ -376,7 +376,7 @@ const Home = () => {
             {/* <!-- layout blog hành trình tỏa sáng --> */}
             <div className="layout layout__blog">
                 <div className="container">
-                    <a href="">
+                    <Link to="/hanh-trinh-toa-sang">
                         <div className="layout__head">
                             <div>
                                 <div className="head__title">Hành trình tỏa sáng</div>
@@ -389,7 +389,7 @@ const Home = () => {
                                 <img src={chevronRight} alt="" />
                             </div>
                         </div>
-                    </a>
+                    </Link>
                     <div className="layout__blog">
                         <div className="swiper__container">
                             <div className="swiper__wrapper slider">
@@ -842,7 +842,7 @@ const Home = () => {
             {/* <!-- Khám phá kiểu tóc --> */}
             <div className="layout layout__blog">
                 <div className="container">
-                    <a href="">
+                    <Link to="/kham-pha-kieu-toc">
                         <div className="layout__head">
                             <div>
                                 <div className="head__title">Khám phá kiểu tóc</div>
@@ -855,14 +855,14 @@ const Home = () => {
                                 <img src={chevronRight} alt="" />
                             </div>
                         </div>
-                    </a>
+                    </Link>
                     <div className="layout__banner2">
                         <div>
-                            <a href="">
+                            <Link to="/kham-pha-kieu-toc">
                                 <div className="layout__banner2-media">
                                     <img src={kieutocbaner1} alt="" />
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="banner__wrapper">
                             <div className="banner__title">KHÁM PHÁ KIỂU TÓC</div>
@@ -1060,7 +1060,7 @@ const Home = () => {
             {/* <!-- 30 shine shop  --> */}
             <div className="layout layout__service">
                 <div className="container">
-                    <a href="">
+                    <a href="https://shop.30shine.com/" target="__blank">
                         <div className="layout__head">
                             <div>
                                 <div className="head__title">30Shine Shop</div>
@@ -1075,7 +1075,7 @@ const Home = () => {
                         </div>
                     </a>
                     <div className="layout__banner">
-                        <a href="">
+                        <a href="https://shop.30shine.com/" target="__blank">
                             <div className="layout__banner-media">
                                 <img src={bannershop} alt="" />
                             </div>
