@@ -1,2 +1,3 @@
 # 30Shine
-Công nghệ React
+
+Công nghệ Reactjs
