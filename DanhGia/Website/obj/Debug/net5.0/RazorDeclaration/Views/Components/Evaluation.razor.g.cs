@@ -125,7 +125,7 @@ using System.Diagnostics;
 
         String[] arr_chuoi = content.Split("\r\n");
         String[] arr = content.Split("\n");
-        long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
+        //long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
         if (ThuatToan == 1)
         {
             long time_bbsort_chuoi = ExecutionTime(() => bubbleSort_chuoi(arr_chuoi));
@@ -143,16 +143,22 @@ using System.Diagnostics;
         }
         if (ThuatToan == 4)
         {
+            long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
+
             long time_bbsort = ExecutionTime(() => bubbleSort_so(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Bubble Sort Số C# là: " + time_bbsort + " ms");
         }
         if (ThuatToan == 5)
         {
+            long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
+
             long time_slsort = ExecutionTime(() => selection_sort(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Selection Sort Số C# là: " + time_slsort + " ms");
         }
         if (ThuatToan == 6)
         {
+            long[] arr_so = Array.ConvertAll(arr, s => long.Parse(s));
+
             long time_InsertionSort = ExecutionTime(() => InsertionSort(arr_so));
             await JS.InvokeVoidAsync("ShowLog", "Thời gian chạy thuật toán Insertion Sort Số C# là: " + time_InsertionSort + " ms");
         }

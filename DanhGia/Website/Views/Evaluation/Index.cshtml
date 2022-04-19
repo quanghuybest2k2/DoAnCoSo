@@ -39,7 +39,7 @@
 
                 var arr_chuoi = rs.split("\r\n");// chuyển thành mảng chuỗi
                 var arr = rs.split("\n"); // chuyển thành mảng số
-                var arr_so = arr.map((item) => parseInt(item));
+                //var arr_so = arr.map((item) => parseInt(item));
 
                 // Chọn thuật toán
                 var thuattoan_select = document.getElementById("thuattoan").value;
@@ -62,18 +62,24 @@
                     console.log("Thời gian chạy Insertion Sort chuỗi JS là: " + time_InsertionSort_chuoi + " ms") //ms
                 }
                 if (thuattoan_select == 4) {
+                    var arr_so = arr.map((item) => parseInt(item));
+
                     var time_bbsort = execution_time(function () {
                         bblSort(arr_so);
                     });
                     console.log("Thời gian chạy Bubble Sort Số JS là: " + time_bbsort + " ms") //ms
                 }
                 if (thuattoan_select == 5) {
+                    var arr_so = arr.map((item) => parseInt(item));
+
                     var time_slsort = execution_time(function () {
                         selectionSort(arr_so);
                     });
                     console.log("Thời gian chạy Selection Sort Số JS là: " + time_slsort + " ms") //ms
                 }
                 if (thuattoan_select == 6) {
+                    var arr_so = arr.map((item) => parseInt(item));
+
                     var time_InsertionSort = execution_time(function () {
                         insertionSort(arr_so);
                     });
