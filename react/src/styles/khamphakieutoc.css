@@ -1,0 +1,58 @@
+.discover .container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+}
+.discover__header {
+  padding-top: 3rem;
+}
+.discover__header .discover__header-btn {
+  display: flex;
+  padding: 4rem 0;
+}
+.discover__button {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+}
+.discover__col {
+  grid-column: span 1 / span 1;
+}
+
+.discover__col .discover_btn {
+  width: 16rem;
+  padding: 1rem;
+  height: auto;
+  font-weight: 400;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  border-radius: 3.2rem;
+  border: 1px solid #ccc;
+}
+.discover_btn {
+  background-color: #fff;
+}
+.discover_btn--active {
+  background-color: #000;
+  color: #fff;
+}
+.discover_btn:hover {
+  border-color: #40a9ff;
+}
+.discover__title {
+  max-width: 420px;
+  margin: auto;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Oswald;
+}
+.discover__title > span {
+  display: block;
+  font-weight: 700;
+}
