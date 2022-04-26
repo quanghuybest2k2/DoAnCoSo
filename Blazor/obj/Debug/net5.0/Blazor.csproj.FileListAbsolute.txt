@@ -39,5 +39,3 @@ D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.pdb
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.genruntimeconfig.cache
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.csproj.CopyComplete
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\TraiNghiemDichVu.cshtml.g.cs
-D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\includes\Footer.cshtml.g.cs
-D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\includes\Header.cshtml.g.cs
