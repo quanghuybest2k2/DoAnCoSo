@@ -1,6 +1,6 @@
 using System;
 
-namespace website.Models
+namespace Blazor.Models
 {
     public class ErrorViewModel
     {
