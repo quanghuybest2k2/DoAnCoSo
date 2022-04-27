@@ -87,7 +87,6 @@ const Header = () => {
                         </ul>
                     </div>
                     {/* <!-- login --> */}
-
                     <div class="header__navbar-action">
                         <div class="header__login-btn">
                             <button onClick={ctaClickHandler}>

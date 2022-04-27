@@ -24,7 +24,6 @@ D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.TagHelpers.input.c
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.TagHelpers.output.cache
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.RazorCoreGenerate.cache
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -39,3 +38,8 @@ D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.pdb
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.genruntimeconfig.cache
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Blazor.csproj.CopyComplete
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\TraiNghiemDichVu.cshtml.g.cs
+D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\HanhTrinhToaSang.cshtml.g.cs
+D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\KhamPhaKieuToc.cshtml.g.cs
+D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\DangNhap.cshtml.g.cs
+D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\ShineShop.cshtml.g.cs
+D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\TuyenDung.cshtml.g.cs

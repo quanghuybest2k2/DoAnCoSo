@@ -31,6 +31,26 @@ namespace Blazor.Controllers
         {
             return View();
         }
+        public IActionResult HanhTrinhToaSang()
+        {
+            return View();
+        }
+        public IActionResult KhamPhaKieuToc()
+        {
+            return View();
+        }
+        public IActionResult ShineShop()
+        {
+            return View();
+        }
+        public IActionResult TuyenDung()
+        {
+            return View();
+        }
+        public IActionResult DangNhap()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
