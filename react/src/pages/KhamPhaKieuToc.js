@@ -25,6 +25,34 @@ import khampha14 from "../assets/img/PageKhamPhaKieuToc/14.jpg";
 import khampha15 from "../assets/img/PageKhamPhaKieuToc/15.jpg";
 import khampha16 from "../assets/img/PageKhamPhaKieuToc/16.png";
 
+// col 3
+import khampha17 from "../assets/img/PageKhamPhaKieuToc/17.jpg";
+import khampha18 from "../assets/img/PageKhamPhaKieuToc/18.jpg";
+import khampha19 from "../assets/img/PageKhamPhaKieuToc/19.jpg";
+import khampha20 from "../assets/img/PageKhamPhaKieuToc/20.jpg";
+import khampha21 from "../assets/img/PageKhamPhaKieuToc/21.png";
+import khampha22 from "../assets/img/PageKhamPhaKieuToc/22.png";
+import khampha23 from "../assets/img/PageKhamPhaKieuToc/23.png";
+
+// col 4
+import khampha24 from "../assets/img/PageKhamPhaKieuToc/24.png";
+import khampha25 from "../assets/img/PageKhamPhaKieuToc/25.png";
+import khampha26 from "../assets/img/PageKhamPhaKieuToc/26.png";
+import khampha27 from "../assets/img/PageKhamPhaKieuToc/27.png";
+import khampha28 from "../assets/img/PageKhamPhaKieuToc/28.png";
+import khampha29 from "../assets/img/PageKhamPhaKieuToc/29.png";
+import khampha30 from "../assets/img/PageKhamPhaKieuToc/30.png";
+
+// col 5
+import khampha31 from "../assets/img/PageKhamPhaKieuToc/31.png";
+import khampha32 from "../assets/img/PageKhamPhaKieuToc/31.jpg";
+
+import khampha33 from "../assets/img/PageKhamPhaKieuToc/32.jpg";
+import khampha34 from "../assets/img/PageKhamPhaKieuToc/33.jpg";
+import khampha35 from "../assets/img/PageKhamPhaKieuToc/34.jpg";
+import khampha36 from "../assets/img/PageKhamPhaKieuToc/35.jpg";
+import khampha37 from "../assets/img/PageKhamPhaKieuToc/36.jpg";
+
 const KhamPhaKieuToc = () => {
   return (
     <>
@@ -265,7 +293,6 @@ const KhamPhaKieuToc = () => {
                   </div>
                 </div>
               </div>
-
               {/* col 2 */}
               <div className="discover__column">
                 {/* col 1 item 9 */}
@@ -470,7 +497,542 @@ const KhamPhaKieuToc = () => {
                   </div>
                 </div>
               </div>
-              
+              {/* col 3 */}
+              <div className="discover__column">
+                {/* col 1 item 17 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha17} alt="" height="331.138px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Biến Hoá Đa Phong Cách Với Kiểu Tóc Middle Part
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 18 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha18} alt="" height="331.138px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Tự Làm Tóc Dreadlock Tại Nhà
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 19 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha19} alt="" height="297.312px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        30Shine Concept Mới - Đỉnh như Starbucks
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 20 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha20} alt="" height="314.205px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Kiểu Tóc Khiến LK Thoát Ly "Chiếc Mũ Huyền Thoại"
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 21 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha21} alt="" height="332.132px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Chán Side Part Cổ Điển Thì Phải Làm Gì?
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 22 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha22} alt="" height="315.1px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Mặt Tròn Có Để Được Kiểu Tóc Layer Không?
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 23 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha23} alt="" height="336.17px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Theo Chân Khách Ruột Của 30Shine Đi Cắt Kiểu Tóc Sport
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* col 4 */}
+              <div className="discover__column">
+                {/* col 1 item 24 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha24} alt="" height="331.138px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Sport - Kiểu Tóc Dành Cho Đàn Ông Chuẩn Men
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 25 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha25} alt="" height="229.729px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Thử Đổi Kiểu Tóc Cho Cậu Bạn Hot Boy Trường Y
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 26 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha26} alt="" height="332.132px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Side Part Violet Cho Dân Văn Phòng
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 27 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha27} alt="" height="333.133px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Lột Xác Giám Đốc Thiết Kế Của 30Shine
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 28 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha28} alt="" height="331.138px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Side Part - Kiểu tóc lịch lãm "cứ để là đẹp"
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 29 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha29} alt="" height="312.429px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Kiểu Tóc "Cộp Mác" Ca Sĩ Lê Bảo Bình
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 30 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha30} alt="" height="333.133px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Đồng Nghiệp Phải Trầm Trồ Trước Màu Tóc Mới Của Anh Bạn
+                        Phó Giám Đốc
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* col 5 */}
+              <div className="discover__column">
+                {/* col 1 item 31 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha31} alt="" height="331.138px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Sport - Kiểu Tóc Dành Cho Đàn Ông Chuẩn Men
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 32 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha32} alt="" height="229.729px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Kiểu Tóc Đẹp Cho Gương Mặt Vuông
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 33 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha33} alt="" height="332.132px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Tóc Bò Liếm Vẫn Đẹp Trai Như Binz
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 34 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha34} alt="" height="333.133px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Sport Nhuộm Khói Xanh Như Sơn Tùng MTP
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 35 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha35} alt="" height="331.138px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Mặt Béo Và Tròn Để Tóc Gì Cho Đẹp?
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 36 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha36} alt="" height="312.429px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Top 4 Kiểu tóc cưng muốn xỉu cho các bé trai
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* item 37 */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha37} alt="" height="333.133px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Diễn viên Thanh Sơn Và Câu Chuyện Chinh Phục Vai Diễn
+                        "Chẳng Ai Mong Muốn"
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
