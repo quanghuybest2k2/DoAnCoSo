@@ -22,12 +22,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
           integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+
+    <link href="~/styles/lightslider.css" rel="stylesheet" />
+    <link href="~/styles/main.css" rel="stylesheet" />
+    <link href="~/styles/style.css" rel="stylesheet" />
+    <link href="~/styles/trainghiemdichvu.css" rel="stylesheet" />
+    <link href="~/styles/hanhtrinhtoasang.css" rel="stylesheet" />
     <!-- jquery -->
     <script src="~/lib/js/Jquery.js"></script>
     <script src="~/lib/js/lightslider.js"></script>
-    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
-    @*<link rel="stylesheet" href="~/css/site.css" />*@
 </head>
 <body>
     <div class="App">
@@ -67,7 +70,7 @@
                             <!-- login -->
                             <div class="header__navbar-action">
                                 <div class="header__login-btn">
-                                    <button onclick="">
+                                    <button >
                                         <a asp-area="" asp-controller="Home" asp-action="DangNhap">
                                             <img src="~/lib/img/30shine.38a2a504.svg" />
                                             <span>ĐĂNG NHẬP</span>
@@ -219,3 +222,7 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+@{
+
+}

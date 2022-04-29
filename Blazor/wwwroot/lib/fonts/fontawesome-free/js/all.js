@@ -2181,7 +2181,7 @@
     'brands': 'fab',
     'kit': 'fak'
   };
-  var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
+  var LAYERS_TEXT_class = 'fa-layers-text';
   var FONT_FAMILY_PATTERN = /Font Awesome ([5 ]*)(Solid|Regular|Light|Duotone|Brands|Free|Pro|Kit).*/i; // TODO: do we need to handle font-weight for kit SVG pseudo-elements?
 
   var FONT_WEIGHT_TO_PREFIX = {
@@ -3888,7 +3888,7 @@
   function generateMutation(node) {
     var nodeMeta = parseMeta(node);
 
-    if (~nodeMeta.extra.classes.indexOf(LAYERS_TEXT_CLASSNAME)) {
+    if (~nodeMeta.extra.classes.indexOf(LAYERS_TEXT_class)) {
       return generateLayersText(node, nodeMeta);
     } else {
       return generateSvgReplacementMutation(node, nodeMeta);
@@ -3909,7 +3909,7 @@
     };
 
     var prefixes = config.autoFetchSvg ? Object.keys(PREFIX_TO_STYLE) : Object.keys(styles$3);
-    var prefixesDomQuery = [".".concat(LAYERS_TEXT_CLASSNAME, ":not([").concat(DATA_FA_I2SVG, "])")].concat(prefixes.map(function (p) {
+    var prefixesDomQuery = [".".concat(LAYERS_TEXT_class, ":not([").concat(DATA_FA_I2SVG, "])")].concat(prefixes.map(function (p) {
       return ".".concat(p, ":not([").concat(DATA_FA_I2SVG, "])");
     })).join(', ');
 

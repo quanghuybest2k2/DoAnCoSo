@@ -242,7 +242,7 @@
     CLOSED: "closed" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var class = {
     ALERT: 'alert',
     FADE: 'fade',
     SHOW: 'show'
@@ -296,7 +296,7 @@
       }
 
       if (!parent) {
-        parent = $(element).closest("." + ClassName.ALERT)[0];
+        parent = $(element).closest("." + class.ALERT)[0];
       }
 
       return parent;
@@ -311,9 +311,9 @@
     _proto._removeElement = function _removeElement(element) {
       var _this = this;
 
-      $(element).removeClass(ClassName.SHOW);
+      $(element).removeClass(class.SHOW);
 
-      if (!$(element).hasClass(ClassName.FADE)) {
+      if (!$(element).hasClass(class.FADE)) {
         this._destroyElement(element);
 
         return;
@@ -399,7 +399,7 @@
   var EVENT_KEY$1 = "." + DATA_KEY$1;
   var DATA_API_KEY$1 = '.data-api';
   var JQUERY_NO_CONFLICT$1 = $.fn[NAME$1];
-  var ClassName$1 = {
+  var class$1 = {
     ACTIVE: 'active',
     BUTTON: 'btn',
     FOCUS: 'focus'
@@ -443,13 +443,13 @@
 
         if (input) {
           if (input.type === 'radio') {
-            if (input.checked && this._element.classList.contains(ClassName$1.ACTIVE)) {
+            if (input.checked && this._element.classList.contains(class$1.ACTIVE)) {
               triggerChangeEvent = false;
             } else {
               var activeElement = rootElement.querySelector(Selector$1.ACTIVE);
 
               if (activeElement) {
-                $(activeElement).removeClass(ClassName$1.ACTIVE);
+                $(activeElement).removeClass(class$1.ACTIVE);
               }
             }
           }
@@ -459,7 +459,7 @@
               return;
             }
 
-            input.checked = !this._element.classList.contains(ClassName$1.ACTIVE);
+            input.checked = !this._element.classList.contains(class$1.ACTIVE);
             $(input).trigger('change');
           }
 
@@ -469,11 +469,11 @@
       }
 
       if (addAriaPressed) {
-        this._element.setAttribute('aria-pressed', !this._element.classList.contains(ClassName$1.ACTIVE));
+        this._element.setAttribute('aria-pressed', !this._element.classList.contains(class$1.ACTIVE));
       }
 
       if (triggerChangeEvent) {
-        $(this._element).toggleClass(ClassName$1.ACTIVE);
+        $(this._element).toggleClass(class$1.ACTIVE);
       }
     };
 
@@ -518,14 +518,14 @@
     event.preventDefault();
     var button = event.target;
 
-    if (!$(button).hasClass(ClassName$1.BUTTON)) {
+    if (!$(button).hasClass(class$1.BUTTON)) {
       button = $(button).closest(Selector$1.BUTTON);
     }
 
     Button._jQueryInterface.call($(button), 'toggle');
   }).on(Event$1.FOCUS_BLUR_DATA_API, Selector$1.DATA_TOGGLE_CARROT, function (event) {
     var button = $(event.target).closest(Selector$1.BUTTON)[0];
-    $(button).toggleClass(ClassName$1.FOCUS, /^focus(in)?$/.test(event.type));
+    $(button).toggleClass(class$1.FOCUS, /^focus(in)?$/.test(event.type));
   });
   /**
    * ------------------------------------------------------------------------
@@ -597,7 +597,7 @@
     LOAD_DATA_API: "load" + EVENT_KEY$2 + DATA_API_KEY$2,
     CLICK_DATA_API: "click" + EVENT_KEY$2 + DATA_API_KEY$2
   };
-  var ClassName$2 = {
+  var class$2 = {
     CAROUSEL: 'carousel',
     ACTIVE: 'active',
     SLIDE: 'slide',
@@ -856,7 +856,7 @@
           return end(event);
         });
 
-        this._element.classList.add(ClassName$2.POINTER_EVENT);
+        this._element.classList.add(class$2.POINTER_EVENT);
       } else {
         $(this._element).on(Event$2.TOUCHSTART, function (event) {
           return start(event);
@@ -931,12 +931,12 @@
     _proto._setActiveIndicatorElement = function _setActiveIndicatorElement(element) {
       if (this._indicatorsElement) {
         var indicators = [].slice.call(this._indicatorsElement.querySelectorAll(Selector$2.ACTIVE));
-        $(indicators).removeClass(ClassName$2.ACTIVE);
+        $(indicators).removeClass(class$2.ACTIVE);
 
         var nextIndicator = this._indicatorsElement.children[this._getItemIndex(element)];
 
         if (nextIndicator) {
-          $(nextIndicator).addClass(ClassName$2.ACTIVE);
+          $(nextIndicator).addClass(class$2.ACTIVE);
         }
       }
     };
@@ -953,21 +953,21 @@
       var nextElementIndex = this._getItemIndex(nextElement);
 
       var isCycling = Boolean(this._interval);
-      var directionalClassName;
-      var orderClassName;
+      var directionalclass;
+      var orderclass;
       var eventDirectionName;
 
       if (direction === Direction.NEXT) {
-        directionalClassName = ClassName$2.LEFT;
-        orderClassName = ClassName$2.NEXT;
+        directionalclass = class$2.LEFT;
+        orderclass = class$2.NEXT;
         eventDirectionName = Direction.LEFT;
       } else {
-        directionalClassName = ClassName$2.RIGHT;
-        orderClassName = ClassName$2.PREV;
+        directionalclass = class$2.RIGHT;
+        orderclass = class$2.PREV;
         eventDirectionName = Direction.RIGHT;
       }
 
-      if (nextElement && $(nextElement).hasClass(ClassName$2.ACTIVE)) {
+      if (nextElement && $(nextElement).hasClass(class$2.ACTIVE)) {
         this._isSliding = false;
         return;
       }
@@ -998,11 +998,11 @@
         to: nextElementIndex
       });
 
-      if ($(this._element).hasClass(ClassName$2.SLIDE)) {
-        $(nextElement).addClass(orderClassName);
+      if ($(this._element).hasClass(class$2.SLIDE)) {
+        $(nextElement).addClass(orderclass);
         Util.reflow(nextElement);
-        $(activeElement).addClass(directionalClassName);
-        $(nextElement).addClass(directionalClassName);
+        $(activeElement).addClass(directionalclass);
+        $(nextElement).addClass(directionalclass);
         var nextElementInterval = parseInt(nextElement.getAttribute('data-interval'), 10);
 
         if (nextElementInterval) {
@@ -1014,16 +1014,16 @@
 
         var transitionDuration = Util.getTransitionDurationFromElement(activeElement);
         $(activeElement).one(Util.TRANSITION_END, function () {
-          $(nextElement).removeClass(directionalClassName + " " + orderClassName).addClass(ClassName$2.ACTIVE);
-          $(activeElement).removeClass(ClassName$2.ACTIVE + " " + orderClassName + " " + directionalClassName);
+          $(nextElement).removeClass(directionalclass + " " + orderclass).addClass(class$2.ACTIVE);
+          $(activeElement).removeClass(class$2.ACTIVE + " " + orderclass + " " + directionalclass);
           _this4._isSliding = false;
           setTimeout(function () {
             return $(_this4._element).trigger(slidEvent);
           }, 0);
         }).emulateTransitionEnd(transitionDuration);
       } else {
-        $(activeElement).removeClass(ClassName$2.ACTIVE);
-        $(nextElement).addClass(ClassName$2.ACTIVE);
+        $(activeElement).removeClass(class$2.ACTIVE);
+        $(nextElement).addClass(class$2.ACTIVE);
         this._isSliding = false;
         $(this._element).trigger(slidEvent);
       }
@@ -1075,7 +1075,7 @@
 
       var target = $(selector)[0];
 
-      if (!target || !$(target).hasClass(ClassName$2.CAROUSEL)) {
+      if (!target || !$(target).hasClass(class$2.CAROUSEL)) {
         return;
       }
 
@@ -1168,7 +1168,7 @@
     HIDDEN: "hidden" + EVENT_KEY$3,
     CLICK_DATA_API: "click" + EVENT_KEY$3 + DATA_API_KEY$3
   };
-  var ClassName$3 = {
+  var class$3 = {
     SHOW: 'show',
     COLLAPSE: 'collapse',
     COLLAPSING: 'collapsing',
@@ -1229,7 +1229,7 @@
 
     // Public
     _proto.toggle = function toggle() {
-      if ($(this._element).hasClass(ClassName$3.SHOW)) {
+      if ($(this._element).hasClass(class$3.SHOW)) {
         this.hide();
       } else {
         this.show();
@@ -1239,7 +1239,7 @@
     _proto.show = function show() {
       var _this = this;
 
-      if (this._isTransitioning || $(this._element).hasClass(ClassName$3.SHOW)) {
+      if (this._isTransitioning || $(this._element).hasClass(class$3.SHOW)) {
         return;
       }
 
@@ -1252,7 +1252,7 @@
             return elem.getAttribute('data-parent') === _this._config.parent;
           }
 
-          return elem.classList.contains(ClassName$3.COLLAPSE);
+          return elem.classList.contains(class$3.COLLAPSE);
         });
 
         if (actives.length === 0) {
@@ -1285,17 +1285,17 @@
 
       var dimension = this._getDimension();
 
-      $(this._element).removeClass(ClassName$3.COLLAPSE).addClass(ClassName$3.COLLAPSING);
+      $(this._element).removeClass(class$3.COLLAPSE).addClass(class$3.COLLAPSING);
       this._element.style[dimension] = 0;
 
       if (this._triggerArray.length) {
-        $(this._triggerArray).removeClass(ClassName$3.COLLAPSED).attr('aria-expanded', true);
+        $(this._triggerArray).removeClass(class$3.COLLAPSED).attr('aria-expanded', true);
       }
 
       this.setTransitioning(true);
 
       var complete = function complete() {
-        $(_this._element).removeClass(ClassName$3.COLLAPSING).addClass(ClassName$3.COLLAPSE).addClass(ClassName$3.SHOW);
+        $(_this._element).removeClass(class$3.COLLAPSING).addClass(class$3.COLLAPSE).addClass(class$3.SHOW);
         _this._element.style[dimension] = '';
 
         _this.setTransitioning(false);
@@ -1313,7 +1313,7 @@
     _proto.hide = function hide() {
       var _this2 = this;
 
-      if (this._isTransitioning || !$(this._element).hasClass(ClassName$3.SHOW)) {
+      if (this._isTransitioning || !$(this._element).hasClass(class$3.SHOW)) {
         return;
       }
 
@@ -1328,7 +1328,7 @@
 
       this._element.style[dimension] = this._element.getBoundingClientRect()[dimension] + "px";
       Util.reflow(this._element);
-      $(this._element).addClass(ClassName$3.COLLAPSING).removeClass(ClassName$3.COLLAPSE).removeClass(ClassName$3.SHOW);
+      $(this._element).addClass(class$3.COLLAPSING).removeClass(class$3.COLLAPSE).removeClass(class$3.SHOW);
       var triggerArrayLength = this._triggerArray.length;
 
       if (triggerArrayLength > 0) {
@@ -1339,8 +1339,8 @@
           if (selector !== null) {
             var $elem = $([].slice.call(document.querySelectorAll(selector)));
 
-            if (!$elem.hasClass(ClassName$3.SHOW)) {
-              $(trigger).addClass(ClassName$3.COLLAPSED).attr('aria-expanded', false);
+            if (!$elem.hasClass(class$3.SHOW)) {
+              $(trigger).addClass(class$3.COLLAPSED).attr('aria-expanded', false);
             }
           }
         }
@@ -1351,7 +1351,7 @@
       var complete = function complete() {
         _this2.setTransitioning(false);
 
-        $(_this2._element).removeClass(ClassName$3.COLLAPSING).addClass(ClassName$3.COLLAPSE).trigger(Event$3.HIDDEN);
+        $(_this2._element).removeClass(class$3.COLLAPSING).addClass(class$3.COLLAPSE).trigger(Event$3.HIDDEN);
       };
 
       this._element.style[dimension] = '';
@@ -1410,10 +1410,10 @@
     };
 
     _proto._addAriaAndCollapsedClass = function _addAriaAndCollapsedClass(element, triggerArray) {
-      var isOpen = $(element).hasClass(ClassName$3.SHOW);
+      var isOpen = $(element).hasClass(class$3.SHOW);
 
       if (triggerArray.length) {
-        $(triggerArray).toggleClass(ClassName$3.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
+        $(triggerArray).toggleClass(class$3.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
       }
     } // Static
     ;
@@ -4115,7 +4115,7 @@
     KEYDOWN_DATA_API: "keydown" + EVENT_KEY$4 + DATA_API_KEY$4,
     KEYUP_DATA_API: "keyup" + EVENT_KEY$4 + DATA_API_KEY$4
   };
-  var ClassName$4 = {
+  var class$4 = {
     DISABLED: 'disabled',
     SHOW: 'show',
     DROPUP: 'dropup',
@@ -4181,13 +4181,13 @@
 
     // Public
     _proto.toggle = function toggle() {
-      if (this._element.disabled || $(this._element).hasClass(ClassName$4.DISABLED)) {
+      if (this._element.disabled || $(this._element).hasClass(class$4.DISABLED)) {
         return;
       }
 
       var parent = Dropdown._getParentFromElement(this._element);
 
-      var isActive = $(this._menu).hasClass(ClassName$4.SHOW);
+      var isActive = $(this._menu).hasClass(class$4.SHOW);
 
       Dropdown._clearMenus();
 
@@ -4231,7 +4231,7 @@
 
 
         if (this._config.boundary !== 'scrollParent') {
-          $(parent).addClass(ClassName$4.POSITION_STATIC);
+          $(parent).addClass(class$4.POSITION_STATIC);
         }
 
         this._popper = new Popper(referenceElement, this._menu, this._getPopperConfig());
@@ -4249,12 +4249,12 @@
 
       this._element.setAttribute('aria-expanded', true);
 
-      $(this._menu).toggleClass(ClassName$4.SHOW);
-      $(parent).toggleClass(ClassName$4.SHOW).trigger($.Event(Event$4.SHOWN, relatedTarget));
+      $(this._menu).toggleClass(class$4.SHOW);
+      $(parent).toggleClass(class$4.SHOW).trigger($.Event(Event$4.SHOWN, relatedTarget));
     };
 
     _proto.show = function show() {
-      if (this._element.disabled || $(this._element).hasClass(ClassName$4.DISABLED) || $(this._menu).hasClass(ClassName$4.SHOW)) {
+      if (this._element.disabled || $(this._element).hasClass(class$4.DISABLED) || $(this._menu).hasClass(class$4.SHOW)) {
         return;
       }
 
@@ -4271,12 +4271,12 @@
         return;
       }
 
-      $(this._menu).toggleClass(ClassName$4.SHOW);
-      $(parent).toggleClass(ClassName$4.SHOW).trigger($.Event(Event$4.SHOWN, relatedTarget));
+      $(this._menu).toggleClass(class$4.SHOW);
+      $(parent).toggleClass(class$4.SHOW).trigger($.Event(Event$4.SHOWN, relatedTarget));
     };
 
     _proto.hide = function hide() {
-      if (this._element.disabled || $(this._element).hasClass(ClassName$4.DISABLED) || !$(this._menu).hasClass(ClassName$4.SHOW)) {
+      if (this._element.disabled || $(this._element).hasClass(class$4.DISABLED) || !$(this._menu).hasClass(class$4.SHOW)) {
         return;
       }
 
@@ -4293,8 +4293,8 @@
         return;
       }
 
-      $(this._menu).toggleClass(ClassName$4.SHOW);
-      $(parent).toggleClass(ClassName$4.SHOW).trigger($.Event(Event$4.HIDDEN, relatedTarget));
+      $(this._menu).toggleClass(class$4.SHOW);
+      $(parent).toggleClass(class$4.SHOW).trigger($.Event(Event$4.HIDDEN, relatedTarget));
     };
 
     _proto.dispose = function dispose() {
@@ -4352,17 +4352,17 @@
       var $parentDropdown = $(this._element.parentNode);
       var placement = AttachmentMap.BOTTOM; // Handle dropup
 
-      if ($parentDropdown.hasClass(ClassName$4.DROPUP)) {
+      if ($parentDropdown.hasClass(class$4.DROPUP)) {
         placement = AttachmentMap.TOP;
 
-        if ($(this._menu).hasClass(ClassName$4.MENURIGHT)) {
+        if ($(this._menu).hasClass(class$4.MENURIGHT)) {
           placement = AttachmentMap.TOPEND;
         }
-      } else if ($parentDropdown.hasClass(ClassName$4.DROPRIGHT)) {
+      } else if ($parentDropdown.hasClass(class$4.DROPRIGHT)) {
         placement = AttachmentMap.RIGHT;
-      } else if ($parentDropdown.hasClass(ClassName$4.DROPLEFT)) {
+      } else if ($parentDropdown.hasClass(class$4.DROPLEFT)) {
         placement = AttachmentMap.LEFT;
-      } else if ($(this._menu).hasClass(ClassName$4.MENURIGHT)) {
+      } else if ($(this._menu).hasClass(class$4.MENURIGHT)) {
         placement = AttachmentMap.BOTTOMEND;
       }
 
@@ -4461,7 +4461,7 @@
 
         var dropdownMenu = context._menu;
 
-        if (!$(parent).hasClass(ClassName$4.SHOW)) {
+        if (!$(parent).hasClass(class$4.SHOW)) {
           continue;
         }
 
@@ -4483,8 +4483,8 @@
         }
 
         toggles[i].setAttribute('aria-expanded', 'false');
-        $(dropdownMenu).removeClass(ClassName$4.SHOW);
-        $(parent).removeClass(ClassName$4.SHOW).trigger($.Event(Event$4.HIDDEN, relatedTarget));
+        $(dropdownMenu).removeClass(class$4.SHOW);
+        $(parent).removeClass(class$4.SHOW).trigger($.Event(Event$4.HIDDEN, relatedTarget));
       }
     };
 
@@ -4515,13 +4515,13 @@
       event.preventDefault();
       event.stopPropagation();
 
-      if (this.disabled || $(this).hasClass(ClassName$4.DISABLED)) {
+      if (this.disabled || $(this).hasClass(class$4.DISABLED)) {
         return;
       }
 
       var parent = Dropdown._getParentFromElement(this);
 
-      var isActive = $(parent).hasClass(ClassName$4.SHOW);
+      var isActive = $(parent).hasClass(class$4.SHOW);
 
       if (!isActive || isActive && (event.which === ESCAPE_KEYCODE || event.which === SPACE_KEYCODE)) {
         if (event.which === ESCAPE_KEYCODE) {
@@ -4645,7 +4645,7 @@
     MOUSEDOWN_DISMISS: "mousedown.dismiss" + EVENT_KEY$5,
     CLICK_DATA_API: "click" + EVENT_KEY$5 + DATA_API_KEY$5
   };
-  var ClassName$5 = {
+  var class$5 = {
     SCROLLABLE: 'modal-dialog-scrollable',
     SCROLLBAR_MEASURER: 'modal-scrollbar-measure',
     BACKDROP: 'modal-backdrop',
@@ -4698,7 +4698,7 @@
         return;
       }
 
-      if ($(this._element).hasClass(ClassName$5.FADE)) {
+      if ($(this._element).hasClass(class$5.FADE)) {
         this._isTransitioning = true;
       }
 
@@ -4758,7 +4758,7 @@
       }
 
       this._isShown = false;
-      var transition = $(this._element).hasClass(ClassName$5.FADE);
+      var transition = $(this._element).hasClass(class$5.FADE);
 
       if (transition) {
         this._isTransitioning = true;
@@ -4769,7 +4769,7 @@
       this._setResizeEvent();
 
       $(document).off(Event$5.FOCUSIN);
-      $(this._element).removeClass(ClassName$5.SHOW);
+      $(this._element).removeClass(class$5.SHOW);
       $(this._element).off(Event$5.CLICK_DISMISS);
       $(this._dialog).off(Event$5.MOUSEDOWN_DISMISS);
 
@@ -4820,7 +4820,7 @@
     _proto._showElement = function _showElement(relatedTarget) {
       var _this3 = this;
 
-      var transition = $(this._element).hasClass(ClassName$5.FADE);
+      var transition = $(this._element).hasClass(class$5.FADE);
 
       if (!this._element.parentNode || this._element.parentNode.nodeType !== Node.ELEMENT_NODE) {
         // Don't move modal's DOM position
@@ -4833,7 +4833,7 @@
 
       this._element.setAttribute('aria-modal', true);
 
-      if ($(this._dialog).hasClass(ClassName$5.SCROLLABLE)) {
+      if ($(this._dialog).hasClass(class$5.SCROLLABLE)) {
         this._dialog.querySelector(Selector$5.MODAL_BODY).scrollTop = 0;
       } else {
         this._element.scrollTop = 0;
@@ -4843,7 +4843,7 @@
         Util.reflow(this._element);
       }
 
-      $(this._element).addClass(ClassName$5.SHOW);
+      $(this._element).addClass(class$5.SHOW);
 
       if (this._config.focus) {
         this._enforceFocus();
@@ -4921,7 +4921,7 @@
       this._isTransitioning = false;
 
       this._showBackdrop(function () {
-        $(document.body).removeClass(ClassName$5.OPEN);
+        $(document.body).removeClass(class$5.OPEN);
 
         _this7._resetAdjustments();
 
@@ -4941,11 +4941,11 @@
     _proto._showBackdrop = function _showBackdrop(callback) {
       var _this8 = this;
 
-      var animate = $(this._element).hasClass(ClassName$5.FADE) ? ClassName$5.FADE : '';
+      var animate = $(this._element).hasClass(class$5.FADE) ? class$5.FADE : '';
 
       if (this._isShown && this._config.backdrop) {
         this._backdrop = document.createElement('div');
-        this._backdrop.className = ClassName$5.BACKDROP;
+        this._backdrop.class = class$5.BACKDROP;
 
         if (animate) {
           this._backdrop.classList.add(animate);
@@ -4973,7 +4973,7 @@
           Util.reflow(this._backdrop);
         }
 
-        $(this._backdrop).addClass(ClassName$5.SHOW);
+        $(this._backdrop).addClass(class$5.SHOW);
 
         if (!callback) {
           return;
@@ -4987,7 +4987,7 @@
         var backdropTransitionDuration = Util.getTransitionDurationFromElement(this._backdrop);
         $(this._backdrop).one(Util.TRANSITION_END, callback).emulateTransitionEnd(backdropTransitionDuration);
       } else if (!this._isShown && this._backdrop) {
-        $(this._backdrop).removeClass(ClassName$5.SHOW);
+        $(this._backdrop).removeClass(class$5.SHOW);
 
         var callbackRemove = function callbackRemove() {
           _this8._removeBackdrop();
@@ -4997,7 +4997,7 @@
           }
         };
 
-        if ($(this._element).hasClass(ClassName$5.FADE)) {
+        if ($(this._element).hasClass(class$5.FADE)) {
           var _backdropTransitionDuration = Util.getTransitionDurationFromElement(this._backdrop);
 
           $(this._backdrop).one(Util.TRANSITION_END, callbackRemove).emulateTransitionEnd(_backdropTransitionDuration);
@@ -5062,7 +5062,7 @@
         $(document.body).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + this._scrollbarWidth + "px");
       }
 
-      $(document.body).addClass(ClassName$5.OPEN);
+      $(document.body).addClass(class$5.OPEN);
     };
 
     _proto._resetScrollbar = function _resetScrollbar() {
@@ -5091,7 +5091,7 @@
     _proto._getScrollbarWidth = function _getScrollbarWidth() {
       // thx d.walsh
       var scrollDiv = document.createElement('div');
-      scrollDiv.className = ClassName$5.SCROLLBAR_MEASURER;
+      scrollDiv.class = class$5.SCROLLBAR_MEASURER;
       document.body.appendChild(scrollDiv);
       var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
       document.body.removeChild(scrollDiv);
@@ -5380,7 +5380,7 @@
     MOUSEENTER: "mouseenter" + EVENT_KEY$6,
     MOUSELEAVE: "mouseleave" + EVENT_KEY$6
   };
-  var ClassName$6 = {
+  var class$6 = {
     FADE: 'fade',
     SHOW: 'show'
   };
@@ -5466,7 +5466,7 @@
           context._leave(null, context);
         }
       } else {
-        if ($(this.getTipElement()).hasClass(ClassName$6.SHOW)) {
+        if ($(this.getTipElement()).hasClass(class$6.SHOW)) {
           this._leave(null, this);
 
           return;
@@ -5526,7 +5526,7 @@
         this.setContent();
 
         if (this.config.animation) {
-          $(tip).addClass(ClassName$6.FADE);
+          $(tip).addClass(class$6.FADE);
         }
 
         var placement = typeof this.config.placement === 'function' ? this.config.placement.call(this, tip, this.element) : this.config.placement;
@@ -5567,7 +5567,7 @@
             return _this._handlePopperPlacementChange(data);
           }
         });
-        $(tip).addClass(ClassName$6.SHOW); // If this is a touch-enabled device we add extra
+        $(tip).addClass(class$6.SHOW); // If this is a touch-enabled device we add extra
         // empty mouseover listeners to the body's immediate children;
         // only needed because of broken event delegation on iOS
         // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
@@ -5590,7 +5590,7 @@
           }
         };
 
-        if ($(this.tip).hasClass(ClassName$6.FADE)) {
+        if ($(this.tip).hasClass(class$6.FADE)) {
           var transitionDuration = Util.getTransitionDurationFromElement(this.tip);
           $(this.tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
         } else {
@@ -5631,7 +5631,7 @@
         return;
       }
 
-      $(tip).removeClass(ClassName$6.SHOW); // If this is a touch-enabled device we remove the extra
+      $(tip).removeClass(class$6.SHOW); // If this is a touch-enabled device we remove the extra
       // empty mouseover listeners we added for iOS support
 
       if ('ontouchstart' in document.documentElement) {
@@ -5642,7 +5642,7 @@
       this._activeTrigger[Trigger.FOCUS] = false;
       this._activeTrigger[Trigger.HOVER] = false;
 
-      if ($(this.tip).hasClass(ClassName$6.FADE)) {
+      if ($(this.tip).hasClass(class$6.FADE)) {
         var transitionDuration = Util.getTransitionDurationFromElement(tip);
         $(tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
       } else {
@@ -5675,7 +5675,7 @@
     _proto.setContent = function setContent() {
       var tip = this.getTipElement();
       this.setElementContent($(tip.querySelectorAll(Selector$6.TOOLTIP_INNER)), this.getTitle());
-      $(tip).removeClass(ClassName$6.FADE + " " + ClassName$6.SHOW);
+      $(tip).removeClass(class$6.FADE + " " + class$6.SHOW);
     };
 
     _proto.setElementContent = function setElementContent($element, content) {
@@ -5804,7 +5804,7 @@
         context._activeTrigger[event.type === 'focusin' ? Trigger.FOCUS : Trigger.HOVER] = true;
       }
 
-      if ($(context.getTipElement()).hasClass(ClassName$6.SHOW) || context._hoverState === HoverState.SHOW) {
+      if ($(context.getTipElement()).hasClass(class$6.SHOW) || context._hoverState === HoverState.SHOW) {
         context._hoverState = HoverState.SHOW;
         return;
       }
@@ -5939,7 +5939,7 @@
         return;
       }
 
-      $(tip).removeClass(ClassName$6.FADE);
+      $(tip).removeClass(class$6.FADE);
       this.config.animation = false;
       this.hide();
       this.show();
@@ -6051,7 +6051,7 @@
     content: '(string|element|function)'
   });
 
-  var ClassName$7 = {
+  var class$7 = {
     FADE: 'fade',
     SHOW: 'show'
   };
@@ -6115,7 +6115,7 @@
       }
 
       this.setElementContent($tip.find(Selector$7.CONTENT), content);
-      $tip.removeClass(ClassName$7.FADE + " " + ClassName$7.SHOW);
+      $tip.removeClass(class$7.FADE + " " + class$7.SHOW);
     } // Private
     ;
 
@@ -6240,7 +6240,7 @@
     SCROLL: "scroll" + EVENT_KEY$8,
     LOAD_DATA_API: "load" + EVENT_KEY$8 + DATA_API_KEY$6
   };
-  var ClassName$8 = {
+  var class$8 = {
     DROPDOWN_ITEM: 'dropdown-item',
     DROPDOWN_MENU: 'dropdown-menu',
     ACTIVE: 'active'
@@ -6427,17 +6427,17 @@
 
       var $link = $([].slice.call(document.querySelectorAll(queries.join(','))));
 
-      if ($link.hasClass(ClassName$8.DROPDOWN_ITEM)) {
-        $link.closest(Selector$8.DROPDOWN).find(Selector$8.DROPDOWN_TOGGLE).addClass(ClassName$8.ACTIVE);
-        $link.addClass(ClassName$8.ACTIVE);
+      if ($link.hasClass(class$8.DROPDOWN_ITEM)) {
+        $link.closest(Selector$8.DROPDOWN).find(Selector$8.DROPDOWN_TOGGLE).addClass(class$8.ACTIVE);
+        $link.addClass(class$8.ACTIVE);
       } else {
         // Set triggered link as active
-        $link.addClass(ClassName$8.ACTIVE); // Set triggered links parents as active
+        $link.addClass(class$8.ACTIVE); // Set triggered links parents as active
         // With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
 
-        $link.parents(Selector$8.NAV_LIST_GROUP).prev(Selector$8.NAV_LINKS + ", " + Selector$8.LIST_ITEMS).addClass(ClassName$8.ACTIVE); // Handle special case when .nav-link is inside .nav-item
+        $link.parents(Selector$8.NAV_LIST_GROUP).prev(Selector$8.NAV_LINKS + ", " + Selector$8.LIST_ITEMS).addClass(class$8.ACTIVE); // Handle special case when .nav-link is inside .nav-item
 
-        $link.parents(Selector$8.NAV_LIST_GROUP).prev(Selector$8.NAV_ITEMS).children(Selector$8.NAV_LINKS).addClass(ClassName$8.ACTIVE);
+        $link.parents(Selector$8.NAV_LIST_GROUP).prev(Selector$8.NAV_ITEMS).children(Selector$8.NAV_LINKS).addClass(class$8.ACTIVE);
       }
 
       $(this._scrollElement).trigger(Event$8.ACTIVATE, {
@@ -6447,9 +6447,9 @@
 
     _proto._clear = function _clear() {
       [].slice.call(document.querySelectorAll(this._selector)).filter(function (node) {
-        return node.classList.contains(ClassName$8.ACTIVE);
+        return node.classList.contains(class$8.ACTIVE);
       }).forEach(function (node) {
-        return node.classList.remove(ClassName$8.ACTIVE);
+        return node.classList.remove(class$8.ACTIVE);
       });
     } // Static
     ;
@@ -6539,7 +6539,7 @@
     SHOWN: "shown" + EVENT_KEY$9,
     CLICK_DATA_API: "click" + EVENT_KEY$9 + DATA_API_KEY$7
   };
-  var ClassName$9 = {
+  var class$9 = {
     DROPDOWN_MENU: 'dropdown-menu',
     ACTIVE: 'active',
     DISABLED: 'disabled',
@@ -6576,7 +6576,7 @@
     _proto.show = function show() {
       var _this = this;
 
-      if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $(this._element).hasClass(ClassName$9.ACTIVE) || $(this._element).hasClass(ClassName$9.DISABLED)) {
+      if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $(this._element).hasClass(class$9.ACTIVE) || $(this._element).hasClass(class$9.DISABLED)) {
         return;
       }
 
@@ -6643,7 +6643,7 @@
 
       var activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ? $(container).find(Selector$9.ACTIVE_UL) : $(container).children(Selector$9.ACTIVE);
       var active = activeElements[0];
-      var isTransitioning = callback && active && $(active).hasClass(ClassName$9.FADE);
+      var isTransitioning = callback && active && $(active).hasClass(class$9.FADE);
 
       var complete = function complete() {
         return _this2._transitionComplete(element, active, callback);
@@ -6651,7 +6651,7 @@
 
       if (active && isTransitioning) {
         var transitionDuration = Util.getTransitionDurationFromElement(active);
-        $(active).removeClass(ClassName$9.SHOW).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+        $(active).removeClass(class$9.SHOW).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
       } else {
         complete();
       }
@@ -6659,11 +6659,11 @@
 
     _proto._transitionComplete = function _transitionComplete(element, active, callback) {
       if (active) {
-        $(active).removeClass(ClassName$9.ACTIVE);
+        $(active).removeClass(class$9.ACTIVE);
         var dropdownChild = $(active.parentNode).find(Selector$9.DROPDOWN_ACTIVE_CHILD)[0];
 
         if (dropdownChild) {
-          $(dropdownChild).removeClass(ClassName$9.ACTIVE);
+          $(dropdownChild).removeClass(class$9.ACTIVE);
         }
 
         if (active.getAttribute('role') === 'tab') {
@@ -6671,7 +6671,7 @@
         }
       }
 
-      $(element).addClass(ClassName$9.ACTIVE);
+      $(element).addClass(class$9.ACTIVE);
 
       if (element.getAttribute('role') === 'tab') {
         element.setAttribute('aria-selected', true);
@@ -6679,16 +6679,16 @@
 
       Util.reflow(element);
 
-      if (element.classList.contains(ClassName$9.FADE)) {
-        element.classList.add(ClassName$9.SHOW);
+      if (element.classList.contains(class$9.FADE)) {
+        element.classList.add(class$9.SHOW);
       }
 
-      if (element.parentNode && $(element.parentNode).hasClass(ClassName$9.DROPDOWN_MENU)) {
+      if (element.parentNode && $(element.parentNode).hasClass(class$9.DROPDOWN_MENU)) {
         var dropdownElement = $(element).closest(Selector$9.DROPDOWN)[0];
 
         if (dropdownElement) {
           var dropdownToggleList = [].slice.call(dropdownElement.querySelectorAll(Selector$9.DROPDOWN_TOGGLE));
-          $(dropdownToggleList).addClass(ClassName$9.ACTIVE);
+          $(dropdownToggleList).addClass(class$9.ACTIVE);
         }
 
         element.setAttribute('aria-expanded', true);
@@ -6773,7 +6773,7 @@
     SHOW: "show" + EVENT_KEY$a,
     SHOWN: "shown" + EVENT_KEY$a
   };
-  var ClassName$a = {
+  var class$a = {
     FADE: 'fade',
     HIDE: 'hide',
     SHOW: 'show',
@@ -6820,13 +6820,13 @@
       $(this._element).trigger(Event$a.SHOW);
 
       if (this._config.animation) {
-        this._element.classList.add(ClassName$a.FADE);
+        this._element.classList.add(class$a.FADE);
       }
 
       var complete = function complete() {
-        _this._element.classList.remove(ClassName$a.SHOWING);
+        _this._element.classList.remove(class$a.SHOWING);
 
-        _this._element.classList.add(ClassName$a.SHOW);
+        _this._element.classList.add(class$a.SHOW);
 
         $(_this._element).trigger(Event$a.SHOWN);
 
@@ -6835,9 +6835,9 @@
         }
       };
 
-      this._element.classList.remove(ClassName$a.HIDE);
+      this._element.classList.remove(class$a.HIDE);
 
-      this._element.classList.add(ClassName$a.SHOWING);
+      this._element.classList.add(class$a.SHOWING);
 
       if (this._config.animation) {
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
@@ -6850,7 +6850,7 @@
     _proto.hide = function hide(withoutTimeout) {
       var _this2 = this;
 
-      if (!this._element.classList.contains(ClassName$a.SHOW)) {
+      if (!this._element.classList.contains(class$a.SHOW)) {
         return;
       }
 
@@ -6869,8 +6869,8 @@
       clearTimeout(this._timeout);
       this._timeout = null;
 
-      if (this._element.classList.contains(ClassName$a.SHOW)) {
-        this._element.classList.remove(ClassName$a.SHOW);
+      if (this._element.classList.contains(class$a.SHOW)) {
+        this._element.classList.remove(class$a.SHOW);
       }
 
       $(this._element).off(Event$a.CLICK_DISMISS);
@@ -6898,12 +6898,12 @@
       var _this4 = this;
 
       var complete = function complete() {
-        _this4._element.classList.add(ClassName$a.HIDE);
+        _this4._element.classList.add(class$a.HIDE);
 
         $(_this4._element).trigger(Event$a.HIDDEN);
       };
 
-      this._element.classList.remove(ClassName$a.SHOW);
+      this._element.classList.remove(class$a.SHOW);
 
       if (this._config.animation) {
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
