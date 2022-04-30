@@ -1,0 +1,142 @@
+.discover .container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+}
+.discover__header {
+  padding-top: 3rem;
+}
+.discover__header .discover__header-btn {
+  display: flex;
+  padding: 4rem 0;
+}
+.discover__button {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+}
+.discover__col {
+  grid-column: span 1 / span 1;
+}
+
+.discover__col .discover_btn {
+  width: 16rem;
+  padding: 1rem;
+  height: auto;
+  font-weight: 400;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  border-radius: 3.2rem;
+  border: 1px solid #ccc;
+}
+.discover_btn {
+  background-color: #fff;
+}
+.discover_btn--active {
+  background-color: #000;
+  color: #fff;
+}
+.discover_btn:hover {
+  border-color: #40a9ff;
+}
+.discover__title {
+  max-width: 420px;
+  margin: auto;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Oswald;
+}
+.discover__title > span {
+  display: block;
+  font-weight: 700;
+}
+
+.discover__content {
+  margin-top: 3rem;
+}
+.discover__content-row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+}
+
+.discover__column {
+  padding: 0 8px;
+  display: block;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.discover__content-item {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+}
+.discover__item-image::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, transparent 66.89%, rgba(0, 0, 0, 0.8));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.discover__item-image > img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tag__hair-text {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  line-height: 3.6rem;
+  height: 3.6rem;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  flex: 1 1;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  color: #fff;
+}
+
+.tag__hair-icons {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  z-index: 9;
+}
+
+.tag__icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3.6rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tag__icon > img,
+.tag__icon > a > img{
+  width: 2rem;
+  height: 2rem;
+}
