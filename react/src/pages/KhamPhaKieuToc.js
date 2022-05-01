@@ -53,7 +53,6 @@ import khampha35 from "../assets/img/PageKhamPhaKieuToc/34.jpg";
 import khampha36 from "../assets/img/PageKhamPhaKieuToc/35.jpg";
 import khampha37 from "../assets/img/PageKhamPhaKieuToc/36.jpg";
 
-
 const KhamPhaKieuToc = () => {
   return (
     <>

@@ -8,6 +8,7 @@
 .discover__header {
   padding-top: 3rem;
 }
+
 .discover__header .discover__header-btn {
   display: flex;
   padding: 4rem 0;
@@ -19,6 +20,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+.discover__button{
+}
+
 .discover__col {
   grid-column: span 1 / span 1;
 }
