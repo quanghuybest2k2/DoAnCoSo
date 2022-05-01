@@ -20,8 +20,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-.discover__button{
-}
 
 .discover__col {
   grid-column: span 1 / span 1;
