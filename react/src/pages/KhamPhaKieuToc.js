@@ -1032,6 +1032,33 @@ const KhamPhaKieuToc = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* add test  */}
+                <div className="discover__content-item">
+                  <a href="#">
+                    <div className="discover__item-image">
+                      <img src={khampha37} alt="" height="333.133px" />
+                    </div>
+                  </a>
+                  <div className="tag__hair">
+                    <a href="#">
+                      <p className="tag__hair-text">
+                        Diễn viên Thanh Sơn Và Câu Chuyện Chinh Phục Vai Diễn
+                        "Chẳng Ai Mong Muốn"
+                      </p>
+                    </a>
+                    <div className="tag__hair-icons">
+                      <div className="tag__icon">
+                        <img src={iconheart} alt="" />
+                      </div>
+                      <div className="tag__icon">
+                        <a href="#">
+                          <img src={iconshare} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
