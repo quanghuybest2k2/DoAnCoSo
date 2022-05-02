@@ -3,51 +3,227 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - website</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <base href="~/" />
+    <title>30Shine - Chuỗi salon tóc nam số một Việt Nam</title>
+    <link rel="shortcut icon" href="https://30shine.com/fav.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link href="~/lib/css/main.css" rel="stylesheet" />
+    <link href="~/lib/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="~/lib/fonts/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/css/lightslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="~/styles/lightslider.css" rel="stylesheet" />
+    <link href="~/styles/main.css" rel="stylesheet" />
+    <link href="~/styles/style.css" rel="stylesheet" />
+    <link href="~/styles/trainghiemdichvu.css" rel="stylesheet" />
+    <link href="~/styles/hanhtrinhtoasang.css" rel="stylesheet" />
+    <link href="~/styles/khamphakieutoc.css" rel="stylesheet" />
+    <!-- jquery -->
+    <script src="~/lib/js/Jquery.js"></script>
+    <script src="~/lib/js/lightslider.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">website</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ThuatToan">Thuật toán</a>
-                        </li>
-                    </ul>
+    <div class="App">
+        <div id="content">
+            <div>
+                <!-- header start  -->
+                <section class="new__header">
+                    <div class="header__container">
+                        <div class="header__navbar">
+                            <!-- logo -->
+                            <div class="header__navbar-logo">
+                                <a asp-area="" asp-controller="Home" asp-action="Index">
+                                    <img src="~/lib/img/logo1.jpg" class="header__nav-logo" />
+                                </a>
+                            </div>
+                            <!-- menu list -->
+                            <div class="header__navbar-menu">
+                                <!-- .... resonsive ...-->
+                                <ul class="header__menu-list">
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-text" asp-area="" asp-controller="Home" asp-action="TraiNghiemDichVu">TRẢI NGHIỆM DỊCH VỤ</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-text" asp-area="" asp-controller="Home" asp-action="HanhTrinhToaSang">HÀNH TRÌNH TỎA SÁNG</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-text" asp-area="" asp-controller="Home" asp-action="KhamPhaKieuToc">KHÁM PHÁ KIỂU TÓC</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-text" asp-area="" asp-controller="Home" asp-action="ShineShop">30SHINE SHOP</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-text" asp-area="" asp-controller="Home" asp-action="TuyenDung">TUYỂN DỤNG</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- login -->
+                            <div class="header__navbar-action">
+                                <div class="header__login-btn">
+                                    <button >
+                                        <a asp-area="" asp-controller="Home" asp-action="DangNhap">
+                                            <img src="~/lib/img/30shine.38a2a504.svg" />
+                                            <span>ĐĂNG NHẬP</span>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @* nội dung chính của trang *@
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+                @* Kết thúc nội dung chính *@
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - website - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                @* Footer *@
+                <!-- footer layout -->
+                <section class="footer">
+                    <div class="footer__container">
+                        <!-- footer top -->
+                        <div class="footer__top">
+                            <!-- column 1 -->
+                            <div class="footer__top-col col-sm-4 ">
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">CÔNG TY CỔ PHẦN TMDV 30SHINE</li>
+                                </ul>
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">82 Trần Đại Nghĩa, P.Đồng Tâm, Q. Hai Bà Trưng, HN</li>
+                                </ul>
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">Số giấy chứng nhận kinh doanh: 010.7467.693</li>
+                                </ul>
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">Ngày cấp: 08/06/2016</li>
+                                </ul>
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">Nơi cấp: Sở kế hoạch đầu tư TP Hà Nội</li>
+                                </ul>
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="" class="footer__info-text">Chính sách bảo mật thông tin</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="" class="footer__info-text">Liên hệ quảng cáo 30Shine</a>
+                                    </li>
+                                </ul>
+                                <div class="footer_ca">
+                                    <a href="">
+                                        <img class="moit-icon" src="~/lib/img/footer/congthuongicon.png" />
+                                    </a>
+                                    <a href="">
+                                        <img class="dmca-icon" src="~/lib/img/footer/dmca_protected_26_120.png" />
+                                    </a>
+                                </div>
+                                <div class="footer_app-cash">
+                                    <span>Chấp nhận thanh toán</span>
+                                    <div class="footer__cash-list">
+                                        <div class="footer__app-item">
+                                            <img src="~/lib/img/footer/mastercard.7d32e23f.svg" />
+                                        </div>
+                                        <div class="footer__app-item">
+                                            <img src="~/lib/img/footer/visa.689e1cc5.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column 2 -->
+                            <div class="footer__top-col col-sm-4 ">
+                                <div class="footer__service-time">
+                                    <span class="footer__service-lable">Giờ phục vụ</span>
+                                    <span class="footer__service-detail">
+                                        Thứ 2 đến thứ 6: 8h00 - 21h00
+                                        <br>
+                                        Thứ 7, chủ nhật: 7h30 - 21h00
+                                    </span>
+                                </div>
+                                <div class="footer__hotline">
+                                    <a href="" class="footer__btn-hotline">
+                                        <img src="~/lib/img/footer/phone-2.aecf5e0a.svg" />
+                                        <span>HOTLINE: 1800.28.28.30 (Miễn phí)</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- column 3 -->
+                            <div class="footer__top-col col-sm-4 ">
+                                <div class="footer__app-info">
+                                    <span class="footer__service-lable">TẢI ỨNG DỤNG CỦA 30SHINE</span>
+                                    <span class="footer__service-detail">
+                                        Trải nghiệm đặt lịch nhanh chóng và nhiều tiện ích khác với ứng
+                                        dụng 30Shine.
+                                    </span>
+                                </div>
+                                <div class="footer__app-badge">
+                                    <a href="">
+                                        <img src="~/lib/img/footer/tải xuống.png" />
+                                    </a>
+                                    <a href="">
+                                        <img src="~/lib/img/footer/tải xuống (1).png" />
+                                    </a>
+                                </div>
+                                <div class="footer__socsial-info">
+                                    <div class="footer__app-info">
+                                        <span class="app-info__label">THAM GIA CỘNG ĐỒNG</span>
+                                        <span class="app-info__detail">Cùng 2.5tr thành viên 30Shine</span>
+                                    </div>
+                                    <div class="footer__app-badge">
+                                        <a href="">
+                                            <img src="~/lib/img/footer/tiktok.4b28e96d.svg" />
+                                        </a>
+                                        <a href="">
+                                            <img src="~/lib/img/footer/youtube-social.6d146642.svg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer bottom -->
+                        <div class="footer__bottom">
+                            <span class="copyright">Copyright 2015 30Shine, Inc. All Rights Reserved</span>
+                            <ul class="footer__nav">
+                                <li class="footer-nav__item">
+                                    <a href="">Về 30Shine</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="">Tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-    </footer>
+    </div>
+    <!-- script Use Swiper from CDN slider auto scrol-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/lib/js/main.js"></script>
+    @* Blazor *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="_framework/blazor.server.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+@{
+
+}

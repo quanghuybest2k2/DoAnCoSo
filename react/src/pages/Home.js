@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import $ from "jquery";
 // import img banner slider
 import Mocaw1 from "../assets/img/banner/20220210_Banner_30Shine_Moca_w1.jpg";
 import BannerSC100w2 from "../assets/img/banner/20220119_BannerSC100_w2.jpg";
