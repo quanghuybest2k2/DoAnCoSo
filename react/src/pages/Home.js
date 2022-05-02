@@ -117,14 +117,36 @@ const Home = () => {
     },
   };
 
+  var settings35 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3.5, // số slide hiển thị
+    slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
+  };
 
+  var settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2, // số slide hiển thị
+    slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
+  };
 
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4, // số slide hiển thị
-    slidesToScroll: 2, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
+    slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
+  };
+
+  var settings3 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // số slide hiển thị
+    slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
   };
   return (
     <>
@@ -147,6 +169,11 @@ const Home = () => {
             <div className="swiper-slide">
               <a href="">
                 <img src={vqmmw4} alt="" />
+              </a>
+            </div>
+            <div className="swiper-slide">
+              <a href="">
+                <img src={Mocaw3} alt="" />
               </a>
             </div>
             <div className="swiper-slide">
@@ -349,50 +376,44 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="layout__blog">
-              <div className="swiper__container">
-                {/* <!--slide2: nếu nhiều hình ảnh sử dụng class này slide2 sau class swiper__wrapper--> */}
-                <div className="swiper__wrapper ">
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={tantam1} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Nói gì với stylist để anh có kiểu tóc ưng ý
-                      </div>
-                    </a>
+
+            <Slider {...settings3}>
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={tantam1} alt="" />
                   </div>
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={tantam2} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Supporter thân thiện - Đón tiếp, lắng nghe và hỗ trợ bạn
-                        mọi lúc
-                      </div>
-                    </a>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Nói gì với stylist để anh có kiểu tóc ưng ý
                   </div>
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={tantam3} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Những câu hỏi thường gặp
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
-            </div>
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={tantam2} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Supporter thân thiện - Đón tiếp, lắng nghe và hỗ trợ bạn mọi
+                    lúc
+                  </div>
+                </a>
+              </div>
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={tantam3} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Những câu hỏi thường gặp</div>
+                </a>
+              </div>
+            </Slider>
           </div>
         </div>
         {/* <!-- layout blog hành trình tỏa sáng --> */}
@@ -412,67 +433,63 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <div className="layout__blog">
-              <div className="swiper__container">
-                <div className="swiper__wrapper slider">
-                  {/* <!-- 1 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={ngoaihinh} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến
-                        cô hoa khôi rung động
-                      </div>
-                    </a>
+            <Slider {...settings2}>
+              {/* <!-- 1 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={ngoaihinh} alt="" />
                   </div>
-                  {/* <!-- 2 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={mullet} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới
-                        cực cuốn hút
-                      </div>
-                    </a>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến cô
+                    hoa khôi rung động
                   </div>
-                  {/* <!-- 3 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={hotboy} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Bạn sinh viên IT lột xác thành hot boy vạn người mê
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 4 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={kientruc} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột
-                        xác kiểu tóc mới cực đẹp
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
-            </div>
+              {/* <!-- 2 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={mullet} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới cực
+                    cuốn hút
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 3 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={hotboy} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Bạn sinh viên IT lột xác thành hot boy vạn người mê
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 4 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={kientruc} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột xác
+                    kiểu tóc mới cực đẹp
+                  </div>
+                </a>
+              </div>
+            </Slider>
           </div>
         </div>
         {/* <!-- gril beautyfull  --> */}
@@ -486,202 +503,196 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="layout__blog">
-              <div className="swiper__container">
-                <div className="swiper__wrapper slide2">
-                  {/* <!-- 1 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril1} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Tú Anh - 255 Nguyễn An Ninh, Bình Dương
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, Thân thiện, Sẵn sàng
-                      </div>
-                    </a>
+            <Slider {...settings35}>
+              {/* <!-- 1 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril1} alt="" />
                   </div>
-                  {/* <!-- 2 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril2} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Trà My (Mina) - 152 Thống Nhất, Nha Trang
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, Nhiệt Tình, Cẩn Thận
-                      </div>
-                    </a>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Tú Anh - 255 Nguyễn An Ninh, Bình Dương
                   </div>
-                  {/* <!-- 3 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril3} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Khánh Hằng - 152 Thống Nhất, Nha Trang
-                      </div>
-                      <div className="item__subTitle">Vui vẻ</div>
-                    </a>
+                  <div className="item__subTitle">
+                    Vui vẻ, Thân thiện, Sẵn sàng
                   </div>
-                  {/* <!-- 4 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril4} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Ái Hiền - 113 Trần Hưng Đạo, An Giang
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, hòa nhã, tư vấn khéo
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 5 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril5} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Thanh Hồng - 12 Lạc Trung, Hà Nội
-                      </div>
-                      <div className="item__subTitle">
-                        Xinh xắn, tư vấn khéo, tận tâm
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 6 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril6} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Thu Trang - 36 Phan Huy Ích, TP.HCM
-                      </div>
-                      <div className="item__subTitle">
-                        Hòa đồng, dể thương, vui vẻ
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 7 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril7} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Như Ý - 168 Đặng Văn Bi, TP.HCM
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, hoà đồng, hoạt bát
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 8 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril8} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, khéo léo, tự tin
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 9 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril9} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Quỳnh Nhi - 194 Lê Văn Việt, TP.HCM
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, chăm sóc khách, luôn hỏi ý khách
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 10 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril10} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Hương Giang - 702 Đường Láng, Hà Nội
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, hòa đồng, nhẹ nhàng
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 11 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril11} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Thu Huyền - 175 Phùng Hưng, Hà Nội
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, nhiệt tình, xinh gái
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 12 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={gril12} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Huế (Mít) - 407 Trường Chinh, Hà Nội
-                      </div>
-                      <div className="item__subTitle">
-                        Vui vẻ, biết quan tâm, thân thiện
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
-            </div>
+              {/* <!-- 2 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril2} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Trà My (Mina) - 152 Thống Nhất, Nha Trang
+                  </div>
+                  <div className="item__subTitle">
+                    Vui vẻ, Nhiệt Tình, Cẩn Thận
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 3 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril3} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Khánh Hằng - 152 Thống Nhất, Nha Trang
+                  </div>
+                  <div className="item__subTitle">Vui vẻ</div>
+                </a>
+              </div>
+              {/* <!-- 4 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril4} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Ái Hiền - 113 Trần Hưng Đạo, An Giang
+                  </div>
+                  <div className="item__subTitle">
+                    Vui vẻ, hòa nhã, tư vấn khéo
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 5 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril5} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Thanh Hồng - 12 Lạc Trung, Hà Nội
+                  </div>
+                  <div className="item__subTitle">
+                    Xinh xắn, tư vấn khéo, tận tâm
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 6 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril6} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Thu Trang - 36 Phan Huy Ích, TP.HCM
+                  </div>
+                  <div className="item__subTitle">
+                    Hòa đồng, dể thương, vui vẻ
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 7 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril7} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Như Ý - 168 Đặng Văn Bi, TP.HCM
+                  </div>
+                  <div className="item__subTitle">
+                    Vui vẻ, hoà đồng, hoạt bát
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 8 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril8} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa
+                  </div>
+                  <div className="item__subTitle">Vui vẻ, khéo léo, tự tin</div>
+                </a>
+              </div>
+              {/* <!-- 9 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril9} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Quỳnh Nhi - 194 Lê Văn Việt, TP.HCM
+                  </div>
+                  <div className="item__subTitle">
+                    Vui vẻ, chăm sóc khách, luôn hỏi ý khách
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 10 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril10} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Hương Giang - 702 Đường Láng, Hà Nội
+                  </div>
+                  <div className="item__subTitle">
+                    Vui vẻ, hòa đồng, nhẹ nhàng
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 11 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril11} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Thu Huyền - 175 Phùng Hưng, Hà Nội
+                  </div>
+                  <div className="item__subTitle">
+                    Vui vẻ, nhiệt tình, xinh gái
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 12 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={gril12} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Huế (Mít) - 407 Trường Chinh, Hà Nội
+                  </div>
+                  <div className="item__subTitle">
+                    Vui vẻ, biết quan tâm, thân thiện
+                  </div>
+                </a>
+              </div>
+            </Slider>
           </div>
         </div>
         {/* <!-- ko gian và thiết bị --> */}
@@ -798,67 +809,62 @@ const Home = () => {
                 </div>
               </div>
             </a>
-            <div className="layout__blog">
-              <div className="swiper__container">
-                <div className="swiper__wrapper slider">
-                  {/* <!-- 1 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={camhung1} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Ca sĩ Lê Bảo Bình: Thay đổi để không phải "Bỏ lỡ một
-                        người"
-                      </div>
-                    </a>
+            <Slider {...settings2}>
+              {/* <!-- 1 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={camhung1} alt="" />
                   </div>
-                  {/* <!-- 2 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={camhung2} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại
-                      </div>
-                    </a>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Ca sĩ Lê Bảo Bình: Thay đổi để không phải "Bỏ lỡ một người"
                   </div>
-                  {/* <!-- 3 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={camhung3} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Hoàng Dũng: "Ngoại hình hết sức quan trọng, chỉ sau tài
-                        năng"
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 4 --> */}
-                  <div className="swiper__slide2">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={camhung4} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Diễn viên Thanh Sơn "Cả Một Đời Ân Oán" tìm lại phong
-                        cách trẻ trung đúng tuổi thật
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
-            </div>
+              {/* <!-- 2 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={camhung2} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 3 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={camhung3} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Hoàng Dũng: "Ngoại hình hết sức quan trọng, chỉ sau tài
+                    năng"
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 4 --> */}
+              <div className="swiper__slide2">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={camhung4} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Diễn viên Thanh Sơn "Cả Một Đời Ân Oán" tìm lại phong cách
+                    trẻ trung đúng tuổi thật
+                  </div>
+                </a>
+              </div>
+            </Slider>
           </div>
         </div>
         {/* <!-- Khám phá kiểu tóc --> */}
@@ -941,52 +947,46 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="layout__blog">
-              <div className="swiper__container">
-                {/* <!--slide2: nếu nhiều hình ảnh sử dụng class này slide2 sau class swiper__wrapper--> */}
-                <div className="swiper__wrapper ">
-                  {/* <!-- 1 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={antam1} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Phòng chống Covid-19 - Vì sức khoẻ khách hàng, nhân viên
-                        và cộng đồng
-                      </div>
-                    </a>
+            <Slider {...settings3}>
+              {/* <!-- 1 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={antam1} alt="" />
                   </div>
-                  {/* <!-- 2 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={antam2} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">
-                        Mỹ phẩm & sản phẩm - Cam kết chất lượng - Đảm bảo xuất
-                        xứ
-                      </div>
-                    </a>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Phòng chống Covid-19 - Vì sức khoẻ khách hàng, nhân viên và
+                    cộng đồng
                   </div>
-                  {/* <!-- 3 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={antam3} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">Bảo quản xe cộ, đồ đạc</div>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
-            </div>
+              {/* <!-- 2 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={antam2} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">
+                    Mỹ phẩm & sản phẩm - Cam kết chất lượng - Đảm bảo xuất xứ
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 3 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={antam3} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Bảo quản xe cộ, đồ đạc</div>
+                </a>
+              </div>
+            </Slider>
           </div>
         </div>
         {/* <!-- ưu đãi --> */}
@@ -1006,78 +1006,75 @@ const Home = () => {
                 </div>
               </div>
             </a>
-            <div className="layout__blog">
-              <div className="swiper__container">
-                <div className="swiper__wrapper slide2">
-                  {/* <!-- 1 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={uudai1} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">Renewal Shine Box</div>
-                    </a>
+
+            <Slider {...settings35}>
+              {/* <!-- 1 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={uudai1} alt="" />
                   </div>
-                  {/* <!-- 2 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={uudai2} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">Balance Skin Shine Box</div>
-                    </a>
-                  </div>
-                  {/* <!-- 3 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={uudai3} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">Firming Shine Box </div>
-                    </a>
-                  </div>
-                  {/* <!-- 4 --> */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={uudai4} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">Brightening Shine Box</div>
-                    </a>
-                  </div>
-                  {/* 5 */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={uudai5} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">Smoothing Shine Box </div>
-                    </a>
-                  </div>
-                  {/* 6 */}
-                  <div className="swiper__slide">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={uudai6} alt="" />
-                      </div>
-                    </a>
-                    <a href="">
-                      <div className="blog__title">Shimmering Shine Box </div>
-                    </a>
-                  </div>
-                </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Renewal Shine Box</div>
+                </a>
               </div>
-            </div>
+              {/* <!-- 2 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={uudai2} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Balance Skin Shine Box</div>
+                </a>
+              </div>
+              {/* <!-- 3 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={uudai3} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Firming Shine Box </div>
+                </a>
+              </div>
+              {/* <!-- 4 --> */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={uudai4} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Brightening Shine Box</div>
+                </a>
+              </div>
+              {/* 5 */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={uudai5} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Smoothing Shine Box </div>
+                </a>
+              </div>
+              {/* 6 */}
+              <div className="swiper__slide">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={uudai6} alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div className="blog__title">Shimmering Shine Box </div>
+                </a>
+              </div>
+            </Slider>
           </div>
         </div>
         {/* <!-- 30 shine shop  --> */}
@@ -1150,128 +1147,91 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="layout__blog">
-              <div className="swiper__container">
-                <div className="swiper__wrapper slide3">
-                  {/* <!-- 1 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment1} alt="" />
-                      </div>
-                    </a>
+            <Slider {...settings}>
+              {/* <!-- 1 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment1} alt="" />
                   </div>
-                  {/* <!-- 2 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment2} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 3 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment3} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 4 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment4} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 5 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment5} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 6 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment6} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 7 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment7} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 8 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment8} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 9 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment9} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                  {/* <!-- 10 --> */}
-                  <div className="swiper__slide3">
-                    <a href="">
-                      <div className="blog__media">
-                        <img src={moment10} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
-            </div>
+              {/* <!-- 2 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment2} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 3 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment3} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 4 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment4} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 5 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment5} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 6 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment6} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 7 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment7} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 8 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment8} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 9 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment9} alt="" />
+                  </div>
+                </a>
+              </div>
+              {/* <!-- 10 --> */}
+              <div className="swiper__slide3">
+                <a href="">
+                  <div className="blog__media">
+                    <img src={moment10} alt="" />
+                  </div>
+                </a>
+              </div>
+            </Slider>
           </div>
         </div>
-        {/* test shine moment */}
-        <Slider {...settings}>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-        </Slider>
-        {/* end shine moment */}
+
         {/* <!-- cam kết 30shine care --> */}
         <div className="layout layout__blog">
           <div className="container">
