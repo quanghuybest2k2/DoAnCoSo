@@ -1,3 +1,4 @@
+import $ from "jquery";
 // slide banner
 const swiper = new Swiper(".home-swiper", {
   autoplay: {

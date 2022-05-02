@@ -49,9 +49,7 @@ const Header = () => {
                     {/* logo */}
                     <div class="header__navbar-logo">
                         <Link to="/">
-                            <a href="">
-                                <img src={Logo1} alt="" class="header__nav-logo" />
-                            </a>
+                            <img src={Logo1} alt="" class="header__nav-logo" />
                         </Link>
                     </div>
                     {/* menu list */}
@@ -60,25 +58,31 @@ const Header = () => {
                         <ul class="header__menu-list">
                             <li class="header__menu-item">
                                 <Link to="/trai-nghiem-dich-vu" onClick={menuToggleHandler}>
-                                    <a href=""><div class="header__menu-text">TRẢI NGHIỆM DỊCH VỤ</div></a>
+                                    <div class="header__menu-text">TRẢI NGHIỆM DỊCH VỤ</div>
                                 </Link>
                             </li>
 
                             <li class="header__menu-item">
                                 <Link to="/hanh-trinh-toa-sang" onClick={menuToggleHandler}>
-                                    <a href=""><div class="header__menu-text">HÀNH TRÌNH TỎA SÁNG</div></a>
+                                    <div class="header__menu-text">HÀNH TRÌNH TỎA SÁNG</div>
                                 </Link>
                             </li>
                             <li class="header__menu-item">
                                 <Link to="/kham-pha-kieu-toc" onClick={menuToggleHandler}>
-                                    <a href=""><div class="header__menu-text">KHÁM PHÁ KIỂU TÓC</div></a>
+                                    <div class="header__menu-text">KHÁM PHÁ KIỂU TÓC</div>
                                 </Link>
                             </li>
+
                             <li class="header__menu-item">
                                 <a href="https://shop.30shine.com" target="_blank"><div class="header__menu-text">30SHINE SHOP</div></a>
                             </li>
-                            <li class="header__menu-item">
+                            {/* <li class="header__menu-item">
                                 <a href="https://tuyendung.30shine.com" target="_blank"><div class="header__menu-text">TUYỂN DỤNG</div></a>
+                            </li> */}
+                            <li class="header__menu-item">
+                                <Link to="/tuyen-dung" onClick={menuToggleHandler}>
+                                    <div class="header__menu-text">Tuyen Dung</div>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -91,6 +95,9 @@ const Header = () => {
                             </button>
                         </div>
                     </div>
+                    {/* Viết ở đây */}
+
+                    {/* end login */}
                 </div>
             </div>
         </section>
