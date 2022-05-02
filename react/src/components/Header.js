@@ -75,14 +75,10 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li class="header__menu-item">
-                                <Link to="/shine-shop" onClick={menuToggleHandler}>
-                                    <a href=""><div class="header__menu-text">30SHINE SHOP</div></a>
-                                </Link>
+                                <a href="https://shop.30shine.com" target="_blank"><div class="header__menu-text">30SHINE SHOP</div></a>
                             </li>
                             <li class="header__menu-item">
-                                <Link to="/tuyen-dung" onClick={menuToggleHandler}>
-                                    <a href=""><div class="header__menu-text">TUYỂN DỤNG</div></a>
-                                </Link>
+                                <a href="https://tuyendung.30shine.com" target="_blank"><div class="header__menu-text">TUYỂN DỤNG</div></a>
                             </li>
                         </ul>
                     </div>

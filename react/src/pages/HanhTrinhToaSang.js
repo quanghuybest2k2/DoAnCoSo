@@ -234,9 +234,9 @@ const HanhTrinhToaSang = () => {
                                     </div>
                                     <div className="article__tag">
                                         <span>5 phút đọc | Làm đẹp</span>
-                                        {/* <div className="article__icon">
-                      <img src={iconyt} alt="" />
-                    </div> */}
+                                        <div className="article__icon">
+                                            <img src={iconyt} alt="" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
