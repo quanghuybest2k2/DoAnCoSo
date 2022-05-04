@@ -112,7 +112,7 @@ const Home = () => {
 
     // slider auto scroll
     autoplay: {
-      delay: 3000,
+      delay: 3000, // delay 3s
       disableOnInteraction: false,
     },
   };
@@ -152,42 +152,67 @@ const Home = () => {
     <>
       {/* // <!-- home start --> */}
       <div className="home">
-        {/* <!-- slider auto scroll --> */}
-        <div className="home-swiper">
-          {/* <!-- Additional required wrapper --> */}
-          <Slider {...settings1}>
-            <div className="swiper-slide">
-              <a href="">
-                <img src={Mocaw1} alt="" />
-              </a>
+        <div className="home__slider">
+          {/* <!-- slider auto scroll --> */}
+          <div className="home-swiper">
+            {/* <!-- Additional required wrapper --> */}
+            <Slider {...settings1}>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={Mocaw1} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={BannerSC100w2} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={vqmmw4} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={Mocaw3} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={ToaSangw5} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={Antoanw6} alt="" />
+                </a>
+              </div>
+            </Slider>
+          </div>
+
+          {/* home form input booking */}
+          <div className="home__form-input">
+            <div className="form-input__slogan">
+              <div className="slogan__title">Đặt lịch giữ chỗ chỉ 30 giây</div>
+              <div className="slogan__text">
+                Cắt xong trả tiền, hủy lịch không sao
+              </div>
             </div>
-            <div className="swiper-slide">
-              <a href="">
-                <img src={BannerSC100w2} alt="" />
-              </a>
+            <div className="form-input__booking">
+              <div className="form-input__phone">
+                <input
+                  placeholder="Nhập SDT để đặt lịch"
+                  type="tel"
+                  class="phone__booking"
+                ></input>
+              </div>
+              <div className="form__button">
+                <button className="button__booking">ĐẶT LỊCH NGAY</button>
+              </div>
             </div>
-            <div className="swiper-slide">
-              <a href="">
-                <img src={vqmmw4} alt="" />
-              </a>
-            </div>
-            <div className="swiper-slide">
-              <a href="">
-                <img src={Mocaw3} alt="" />
-              </a>
-            </div>
-            <div className="swiper-slide">
-              <a href="">
-                <img src={ToaSangw5} alt="" />
-              </a>
-            </div>
-            <div className="swiper-slide">
-              <a href="">
-                <img src={Antoanw6} alt="" />
-              </a>
-            </div>
-          </Slider>
+          </div>
         </div>
+
         {/* <!-- service trải nghiệm dịch vụ --> */}
         <div className="layout layout__service">
           <div className="container">
