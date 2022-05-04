@@ -73,13 +73,13 @@ const Header = () => {
               </li>
 
               <li class="header__menu-item">
-                <a href="https://shop.30shine.com" target="_blank">
+                <a href="https://shop.30shine.com" target="__blank">
                   <div class="header__menu-text">30SHINE SHOP</div>
                 </a>
               </li>
 
               <li class="header__menu-item">
-                <a href="https://tuyendung.30shine.com/" target="_blank">
+                <a href="https://tuyendung.30shine.com/" target="__blank">
                   <div class="header__menu-text">TUYỂN DỤNG</div>
                 </a>
               </li>
