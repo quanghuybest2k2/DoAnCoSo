@@ -12,6 +12,8 @@ import ToaSangw5 from "../assets/img/banner/210814_Banner_toa_sang_w5.jpg";
 import Antoanw6 from "../assets/img/banner/210814_Banner_an_toan_w6.jpg";
 // import icon arrow right
 import chevronRight from "../assets/img/chevronRight.0f447c60.svg";
+// icon close
+import iconclose from "../assets/img/close.svg";
 // import trai nghiem dich vu
 import bannercombo1 from "../assets/img/trainghiemdichvu/20220104-30shine-banner-shine-combo-1.jpg";
 import CatGoi2 from "../assets/img/trainghiemdichvu/30shine-cat-goi-massage-2.jpg";
@@ -189,6 +191,39 @@ const Home = () => {
               </div>
             </Slider>
           </div>
+
+          {/* code form login  */}
+          <div className="form__mask">
+            <div className="form__mask-modal">
+              <div className="form__modal-content">
+                <button type="button" className="close__btn">
+                  <span>
+                    <img src={iconclose} alt="" />
+                  </span>
+                </button>
+                <div className="form__modal-header">
+                  <div className="form__modal-title">ĐĂNG NHẬP</div>
+                </div>
+                <div className="form__modal-body">
+                  <div className="model__body-inner">
+                    <div className="form__text">
+                      Số điện thoại của anh là gì ạ ?
+                    </div>
+                    <div className="form__modal-input">
+                      <input
+                        type="tel"
+                        placeholder="Ví dụ: 0912.xxx.xxx"
+                      ></input>
+                    </div>
+                    <button className="form__modal-btn">
+                      <span>TIẾP TỤC</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* end */}
 
           {/* home form input booking */}
           <div className="home__form-input">
