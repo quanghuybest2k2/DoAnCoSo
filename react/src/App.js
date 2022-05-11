@@ -23,7 +23,7 @@ function App() {
                     <KhamPhaKieuToc />
                 </Route>
                 <Route path="/login">
-                    <Login />
+                    <Login />``
                 </Route>
             </Switch>
         </Layout>
