@@ -41,5 +41,3 @@ D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\TraiNghi
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\HanhTrinhToaSang.cshtml.g.cs
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\KhamPhaKieuToc.cshtml.g.cs
 D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\DangNhap.cshtml.g.cs
-D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\ShineShop.cshtml.g.cs
-D:\Đồ án cơ sở\DoAnCoSo\Blazor\obj\Debug\net5.0\Razor\Views\Home\TuyenDung.cshtml.g.cs
