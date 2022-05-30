@@ -100,6 +100,16 @@ import gannhat2 from "../assets/img/maps/salon-hanoi.png";
 import gannhat3 from "../assets/img/maps/salon-danang.png";
 import gannhat4 from "../assets/img/maps/salon-other.png";
 
+// image responsive
+import imgres1 from "../assets/img/imageresponsive/20220119_BannerSC100_m.jpg";
+import imgres2 from "../assets/img/imageresponsive/20220210_Banner_30Shine_Moca_m.jpg";
+import imgres3 from "../assets/img/imageresponsive/20220316_banner_vqmm_m.jpg";
+import imgres4 from "../assets/img/imageresponsive/210814_Banner_an_toan_m.jpg";
+import imgres5 from "../assets/img/imageresponsive/210814_Banner_toa_sang_m.jpg";
+import imgres6 from "../assets/img/imageresponsive/220126_BannerUon_m.jpg";
+// trai nghiem dich vu
+import bannertrainghiemdv from "../assets/img/imageresponsive/20220104-30shine-banner-shine-combo-2.jpg";
+
 import React from "react";
 import Slider from "react-slick";
 // viết jquery
@@ -192,6 +202,42 @@ const Home = () => {
             </Slider>
           </div>
 
+          <div className="home-swiper-responsive">
+            {/* <!-- Additional required wrapper --> */}
+            <Slider {...settings1}>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={imgres1} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={imgres2} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={imgres3} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={imgres4} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={imgres5} alt="" />
+                </a>
+              </div>
+              <div className="swiper-slide">
+                <a href="">
+                  <img src={imgres6} alt="" />
+                </a>
+              </div>
+            </Slider>
+          </div>
+
           {/* code form login  */}
           <div className="form__mask">
             <div className="form__mask-modal">
@@ -272,6 +318,15 @@ const Home = () => {
                 </div>
               </Link>
             </div>
+            {/* responsive */}
+            <div className="layout__banner-responsive">
+              <Link to="/trai-nghiem-dich-vu">
+                <div className="layout__banner-media">
+                  <img src={bannertrainghiemdv} alt="" />
+                </div>
+              </Link>
+            </div>
+
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">

@@ -60,7 +60,6 @@ const Header = () => {
                   <div class="header__menu-text">TRẢI NGHIỆM DỊCH VỤ</div>
                 </Link>
               </li>
-
               <li class="header__menu-item">
                 <Link to="/hanh-trinh-toa-sang" onClick={menuToggleHandler}>
                   <div class="header__menu-text">HÀNH TRÌNH TỎA SÁNG</div>

@@ -715,3 +715,118 @@
   border-radius: 3rem;
   z-index: 90;
 }
+
+/* responsive */
+
+@media only screen and (min-width: 1023px) {
+  .home-swiper {
+    display: block;
+  }
+  .home-swiper-responsive,
+  .layout__banner-responsive {
+    display: none;
+  }
+}
+
+/* phone */
+@media only screen and (max-width: 768px) {
+  #root {
+    max-width: 100%;
+  }
+  .header__navbar-menu {
+    display: none;
+  }
+  .home-swiper,
+  .layout__banner {
+    display: none;
+  }
+  .home-swiper-responsive,
+  .layout__banner-responsive {
+    display: block;
+  }
+
+  /* form input booking */
+  .home__form-input {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 1.5rem;
+    position: relative;
+  }
+  .form-input__slogan {
+    padding-bottom: 0.5rem;
+    color: var(--white-cl-f);
+  }
+  .slogan__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Oswald;
+  }
+  .slogan__text {
+    font-size: 1.4rem;
+  }
+  .form-input__booking {
+    display: flex;
+  }
+  .form-input__phone {
+    flex: auto;
+    margin-right: 1rem;
+  }
+  .phone__booking {
+    padding-left: 1rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    width: 100%;
+    border-radius: 1px solid transparent;
+    font-weight: 600;
+    outline: none;
+    border: none;
+  }
+  .form__button > button {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.6rem;
+    font-family: Oswald;
+    cursor: pointer;
+    background-color: #fc3;
+    color: #000 !important;
+    height: 4rem;
+    border: none;
+  }
+  .head__title {
+    font-size: 2.4rem;
+  }
+  .head__sub-title {
+    font-size: 1.6rem;
+  }
+  .layout__head-view-all > span {
+    display: none;
+  }
+  .layout__list-item {
+    padding: 1.2rem 3rem 1.2rem 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .layout__list-item:before {
+    content: "";
+    background-image: url("https://30shine.com/static/media/chevronRightV3.aee16f24.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.5rem !important;
+  }
+
+  .layout__item-img {
+    flex: none;
+  }
+  .layout__item-img > img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .item__title {
+    font-size: 1.8rem;
+  }
+}
