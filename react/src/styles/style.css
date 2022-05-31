@@ -726,6 +726,10 @@
   .layout__banner-responsive {
     display: none;
   }
+
+  .responsive-mobile {
+    display: none;
+  }
 }
 
 /* phone */
@@ -737,11 +741,13 @@
     display: none;
   }
   .home-swiper,
-  .layout__banner {
+  .layout__banner,
+  .responsive-pc {
     display: none;
   }
   .home-swiper-responsive,
-  .layout__banner-responsive {
+  .layout__banner-responsive,
+  .responsive-mobile {
     display: block;
   }
 
@@ -827,6 +833,16 @@
     height: 8rem;
   }
   .item__title {
+    font-size: 1.8rem;
+  }
+  .banner__wrapper {
+    width: 100%;
+    padding: 0 0.5rem !important;
+  }
+  .banner__text {
+    font-size: 1.5rem;
+  }
+  .banner__title {
     font-size: 1.8rem;
   }
 }

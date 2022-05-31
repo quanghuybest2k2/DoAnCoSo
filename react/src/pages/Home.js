@@ -109,6 +109,8 @@ import imgres5 from "../assets/img/imageresponsive/210814_Banner_toa_sang_m.jpg"
 import imgres6 from "../assets/img/imageresponsive/220126_BannerUon_m.jpg";
 // trai nghiem dich vu
 import bannertrainghiemdv from "../assets/img/imageresponsive/20220104-30shine-banner-shine-combo-2.jpg";
+import bannerkhonggian from "../assets/img/imageresponsive/30shine-banner-khong-gian-salon-1.jpg";
+import kieutocbaner2 from "../assets/img/imageresponsive/30shine-banner-kham-pha-kieu-toc-mb.jpg";
 
 import React from "react";
 import Slider from "react-slick";
@@ -158,6 +160,29 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3, // số slide hiển thị
+    slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
+  };
+
+  // responsive
+  var settings31 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1.1, // số slide hiển thị
+    slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
+  };
+  var settings21 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1.1, // số slide hiển thị
+    slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
+  };
+  var settings351 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1.1, // số slide hiển thị
     slidesToScroll: 1, //số slide chọn, vd value = 1 thì hiện 9 nút (lướt từng cái), value = 2 thì 5 nút (chọn 1 lần 2 ảnh)(10 ảnh)
   };
   return (
@@ -492,43 +517,85 @@ const Home = () => {
               </div>
             </div>
 
-            <Slider {...settings3}>
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={tantam1} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Nói gì với stylist để anh có kiểu tóc ưng ý
-                  </div>
-                </a>
-              </div>
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={tantam2} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Supporter thân thiện - Đón tiếp, lắng nghe và hỗ trợ bạn mọi
-                    lúc
-                  </div>
-                </a>
-              </div>
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={tantam3} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">Những câu hỏi thường gặp</div>
-                </a>
-              </div>
-            </Slider>
+            <div className="responsive-pc">
+              <Slider {...settings3}>
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={tantam1} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Nói gì với stylist để anh có kiểu tóc ưng ý
+                    </div>
+                  </a>
+                </div>
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={tantam2} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Supporter thân thiện - Đón tiếp, lắng nghe và hỗ trợ bạn
+                      mọi lúc
+                    </div>
+                  </a>
+                </div>
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={tantam3} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">Những câu hỏi thường gặp</div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
+
+            <div className="responsive-mobile">
+              <Slider {...settings31}>
+                <div className="swiper__slide ">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={tantam1} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Nói gì với stylist để anh có kiểu tóc ưng ý
+                    </div>
+                  </a>
+                </div>
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={tantam2} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Supporter thân thiện - Đón tiếp, lắng nghe và hỗ trợ bạn
+                      mọi lúc
+                    </div>
+                  </a>
+                </div>
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={tantam3} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">Những câu hỏi thường gặp</div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
         {/* <!-- layout blog hành trình tỏa sáng --> */}
@@ -548,63 +615,127 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <Slider {...settings2}>
-              {/* <!-- 1 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={ngoaihinh} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến cô
-                    hoa khôi rung động
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 2 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={mullet} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới cực
-                    cuốn hút
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 3 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={hotboy} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Bạn sinh viên IT lột xác thành hot boy vạn người mê
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 4 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={kientruc} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột xác
-                    kiểu tóc mới cực đẹp
-                  </div>
-                </a>
-              </div>
-            </Slider>
+            {/* pc */}
+            <div className="responsive-pc">
+              <Slider {...settings2}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={ngoaihinh} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến cô
+                      hoa khôi rung động
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={mullet} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới
+                      cực cuốn hút
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={hotboy} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Bạn sinh viên IT lột xác thành hot boy vạn người mê
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={kientruc} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột xác
+                      kiểu tóc mới cực đẹp
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
+
+            {/* mobile */}
+            <div className="responsive-mobile">
+              <Slider {...settings21}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={ngoaihinh} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến cô
+                      hoa khôi rung động
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={mullet} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới
+                      cực cuốn hút
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={hotboy} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Bạn sinh viên IT lột xác thành hot boy vạn người mê
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={kientruc} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột xác
+                      kiểu tóc mới cực đẹp
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
         {/* <!-- gril beautyfull  --> */}
@@ -618,196 +749,395 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Slider {...settings35}>
-              {/* <!-- 1 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril1} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Tú Anh - 255 Nguyễn An Ninh, Bình Dương
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, Thân thiện, Sẵn sàng
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 2 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril2} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Trà My (Mina) - 152 Thống Nhất, Nha Trang
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, Nhiệt Tình, Cẩn Thận
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 3 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril3} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Khánh Hằng - 152 Thống Nhất, Nha Trang
-                  </div>
-                  <div className="item__subTitle">Vui vẻ</div>
-                </a>
-              </div>
-              {/* <!-- 4 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril4} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Ái Hiền - 113 Trần Hưng Đạo, An Giang
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, hòa nhã, tư vấn khéo
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 5 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril5} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Thanh Hồng - 12 Lạc Trung, Hà Nội
-                  </div>
-                  <div className="item__subTitle">
-                    Xinh xắn, tư vấn khéo, tận tâm
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 6 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril6} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Thu Trang - 36 Phan Huy Ích, TP.HCM
-                  </div>
-                  <div className="item__subTitle">
-                    Hòa đồng, dể thương, vui vẻ
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 7 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril7} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Như Ý - 168 Đặng Văn Bi, TP.HCM
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, hoà đồng, hoạt bát
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 8 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril8} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa
-                  </div>
-                  <div className="item__subTitle">Vui vẻ, khéo léo, tự tin</div>
-                </a>
-              </div>
-              {/* <!-- 9 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril9} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Quỳnh Nhi - 194 Lê Văn Việt, TP.HCM
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, chăm sóc khách, luôn hỏi ý khách
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 10 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril10} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Hương Giang - 702 Đường Láng, Hà Nội
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, hòa đồng, nhẹ nhàng
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 11 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril11} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Thu Huyền - 175 Phùng Hưng, Hà Nội
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, nhiệt tình, xinh gái
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 12 --> */}
-              <div className="swiper__slide">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={gril12} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Huế (Mít) - 407 Trường Chinh, Hà Nội
-                  </div>
-                  <div className="item__subTitle">
-                    Vui vẻ, biết quan tâm, thân thiện
-                  </div>
-                </a>
-              </div>
-            </Slider>
+
+            <div className="responsive-pc">
+              <Slider {...settings35}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril1} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Tú Anh - 255 Nguyễn An Ninh, Bình Dương
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, Thân thiện, Sẵn sàng
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril2} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Trà My (Mina) - 152 Thống Nhất, Nha Trang
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, Nhiệt Tình, Cẩn Thận
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril3} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Khánh Hằng - 152 Thống Nhất, Nha Trang
+                    </div>
+                    <div className="item__subTitle">Vui vẻ</div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril4} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Ái Hiền - 113 Trần Hưng Đạo, An Giang
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, hòa nhã, tư vấn khéo
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 5 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril5} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thanh Hồng - 12 Lạc Trung, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Xinh xắn, tư vấn khéo, tận tâm
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 6 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril6} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thu Trang - 36 Phan Huy Ích, TP.HCM
+                    </div>
+                    <div className="item__subTitle">
+                      Hòa đồng, dể thương, vui vẻ
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 7 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril7} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Như Ý - 168 Đặng Văn Bi, TP.HCM
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, hoà đồng, hoạt bát
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 8 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril8} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, khéo léo, tự tin
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 9 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril9} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Quỳnh Nhi - 194 Lê Văn Việt, TP.HCM
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, chăm sóc khách, luôn hỏi ý khách
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 10 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril10} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Hương Giang - 702 Đường Láng, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, hòa đồng, nhẹ nhàng
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 11 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril11} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thu Huyền - 175 Phùng Hưng, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, nhiệt tình, xinh gái
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 12 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril12} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Huế (Mít) - 407 Trường Chinh, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, biết quan tâm, thân thiện
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
+            <div className="responsive-mobile">
+              <Slider {...settings351}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril1} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Tú Anh - 255 Nguyễn An Ninh, Bình Dương
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, Thân thiện, Sẵn sàng
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril2} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Trà My (Mina) - 152 Thống Nhất, Nha Trang
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, Nhiệt Tình, Cẩn Thận
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril3} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Khánh Hằng - 152 Thống Nhất, Nha Trang
+                    </div>
+                    <div className="item__subTitle">Vui vẻ</div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril4} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Ái Hiền - 113 Trần Hưng Đạo, An Giang
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, hòa nhã, tư vấn khéo
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 5 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril5} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thanh Hồng - 12 Lạc Trung, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Xinh xắn, tư vấn khéo, tận tâm
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 6 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril6} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thu Trang - 36 Phan Huy Ích, TP.HCM
+                    </div>
+                    <div className="item__subTitle">
+                      Hòa đồng, dể thương, vui vẻ
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 7 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril7} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Như Ý - 168 Đặng Văn Bi, TP.HCM
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, hoà đồng, hoạt bát
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 8 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril8} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, khéo léo, tự tin
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 9 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril9} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Quỳnh Nhi - 194 Lê Văn Việt, TP.HCM
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, chăm sóc khách, luôn hỏi ý khách
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 10 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril10} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Hương Giang - 702 Đường Láng, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, hòa đồng, nhẹ nhàng
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 11 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril11} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Thu Huyền - 175 Phùng Hưng, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, nhiệt tình, xinh gái
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 12 --> */}
+                <div className="swiper__slide">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={gril12} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Huế (Mít) - 407 Trường Chinh, Hà Nội
+                    </div>
+                    <div className="item__subTitle">
+                      Vui vẻ, biết quan tâm, thân thiện
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
         {/* <!-- ko gian và thiết bị --> */}
@@ -815,28 +1145,51 @@ const Home = () => {
           <div className="container">
             <div className="layout__head">
               <div>
-                <div className="head__title">30 Shine's Angels</div>
+                <div className="head__title">Không gian & thiết bị</div>
                 <div className="head__title head__sub-title">
-                  Những thiên thần xinh đẹp hết lòng vì khách hàng
+                  Nạp năng lượng với trải nghiệm không gian mở
                 </div>
               </div>
             </div>
-            <div className="layout__banner2">
-              <div>
-                <div className="layout__banner2-media">
-                  <img src={khongian1} alt="" />
+            {/* pc */}
+            <div className="responsive-pc">
+              <div className="layout__banner2 ">
+                <div>
+                  <div className="layout__banner2-media">
+                    <img src={khongian1} alt="" />
+                  </div>
                 </div>
-              </div>
-              <div className="banner__wrapper">
-                <div className="banner__text">
-                  Phá vỡ giới hạn của một tiệm tóc truyền thống, 30Shine mang
-                  đến không gian trải nghiệm hoàn toàn mới với diện tích lớn
-                  trên 200m2/ 16 ghế cắt. Tất cả đều được đặt tại vị trí dễ tìm
-                  trên những con phố lớn, hòa vào cuộc sống sôi động của người
-                  đàn ông hiện đại.
+                <div className="banner__wrapper">
+                  <div className="banner__text">
+                    Phá vỡ giới hạn của một tiệm tóc truyền thống, 30Shine mang
+                    đến không gian trải nghiệm hoàn toàn mới với diện tích lớn
+                    trên 200m2/ 16 ghế cắt. Tất cả đều được đặt tại vị trí dễ
+                    tìm trên những con phố lớn, hòa vào cuộc sống sôi động của
+                    người đàn ông hiện đại.
+                  </div>
                 </div>
               </div>
             </div>
+            {/* mobile */}
+            <div className="responsive-mobile">
+              <div className="layout__banner2">
+                <div>
+                  <div className="layout__banner2-media">
+                    <img src={bannerkhonggian} alt="" />
+                  </div>
+                </div>
+                <div className="banner__wrapper">
+                  <div className="banner__text">
+                    Phá vỡ giới hạn của một tiệm tóc truyền thống, 30Shine mang
+                    đến không gian trải nghiệm hoàn toàn mới với diện tích lớn
+                    trên 200m2/ 16 ghế cắt. Tất cả đều được đặt tại vị trí dễ
+                    tìm trên những con phố lớn, hòa vào cuộc sống sôi động của
+                    người đàn ông hiện đại.
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">
@@ -924,62 +1277,126 @@ const Home = () => {
                 </div>
               </div>
             </a>
-            <Slider {...settings2}>
-              {/* <!-- 1 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={camhung1} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Ca sĩ Lê Bảo Bình: Thay đổi để không phải "Bỏ lỡ một người"
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 2 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={camhung2} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 3 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={camhung3} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Hoàng Dũng: "Ngoại hình hết sức quan trọng, chỉ sau tài
-                    năng"
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 4 --> */}
-              <div className="swiper__slide2">
-                <a href="">
-                  <div className="blog__media">
-                    <img src={camhung4} alt="" />
-                  </div>
-                </a>
-                <a href="">
-                  <div className="blog__title">
-                    Diễn viên Thanh Sơn "Cả Một Đời Ân Oán" tìm lại phong cách
-                    trẻ trung đúng tuổi thật
-                  </div>
-                </a>
-              </div>
-            </Slider>
+
+            <div className="responsive-pc">
+              <Slider {...settings2}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung1} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Ca sĩ Lê Bảo Bình: Thay đổi để không phải "Bỏ lỡ một
+                      người"
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung2} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung3} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Hoàng Dũng: "Ngoại hình hết sức quan trọng, chỉ sau tài
+                      năng"
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung4} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Diễn viên Thanh Sơn "Cả Một Đời Ân Oán" tìm lại phong cách
+                      trẻ trung đúng tuổi thật
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
+
+            <div className="responsive-mobile">
+              <Slider {...settings21}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung1} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Ca sĩ Lê Bảo Bình: Thay đổi để không phải "Bỏ lỡ một
+                      người"
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung2} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung3} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Hoàng Dũng: "Ngoại hình hết sức quan trọng, chỉ sau tài
+                      năng"
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide2">
+                  <a href="">
+                    <div className="blog__media">
+                      <img src={camhung4} alt="" />
+                    </div>
+                  </a>
+                  <a href="">
+                    <div className="blog__title">
+                      Diễn viên Thanh Sơn "Cả Một Đời Ân Oán" tìm lại phong cách
+                      trẻ trung đúng tuổi thật
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
         {/* <!-- Khám phá kiểu tóc --> */}
@@ -999,22 +1416,45 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <div className="layout__banner2">
-              <div>
-                <Link to="/kham-pha-kieu-toc">
-                  <div className="layout__banner2-media">
-                    <img src={kieutocbaner1} alt="" />
+
+            <div className="responsive-pc">
+              <div className="layout__banner2">
+                <div>
+                  <Link to="/kham-pha-kieu-toc">
+                    <div className="layout__banner2-media">
+                      <img src={kieutocbaner1} alt="" />
+                    </div>
+                  </Link>
+                </div>
+                <div className="banner__wrapper">
+                  <div className="banner__title">KHÁM PHÁ KIỂU TÓC</div>
+                  <div className="banner__text">
+                    Nguồn cảm hứng cho kiểu tóc mới của bạn từ hàng ngàn mẫu tóc
+                    hot trend do 30Shine thiết kế
                   </div>
-                </Link>
-              </div>
-              <div className="banner__wrapper">
-                <div className="banner__title">KHÁM PHÁ KIỂU TÓC</div>
-                <div className="banner__text">
-                  Nguồn cảm hứng cho kiểu tóc mới của bạn từ hàng ngàn mẫu tóc
-                  hot trend do 30Shine thiết kế
                 </div>
               </div>
             </div>
+
+            <div className="responsive-mobile">
+              <div className="layout__banner2">
+                <div>
+                  <Link to="/kham-pha-kieu-toc">
+                    <div className="layout__banner2-media">
+                      <img src={kieutocbaner2} alt="" />
+                    </div>
+                  </Link>
+                </div>
+                <div className="banner__wrapper">
+                  <div className="banner__title">KHÁM PHÁ KIỂU TÓC</div>
+                  <div className="banner__text">
+                    Nguồn cảm hứng cho kiểu tóc mới của bạn từ hàng ngàn mẫu tóc
+                    hot trend do 30Shine thiết kế
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-6">
