@@ -195,32 +195,32 @@ const Home = () => {
             {/* <!-- Additional required wrapper --> */}
             <Slider {...settings1}>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={Mocaw1} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={BannerSC100w2} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={vqmmw4} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={Mocaw3} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={ToaSangw5} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={Antoanw6} alt="" />
                 </a>
               </div>
@@ -231,32 +231,32 @@ const Home = () => {
             {/* <!-- Additional required wrapper --> */}
             <Slider {...settings1}>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={imgres1} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={imgres2} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={imgres3} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={imgres4} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={imgres5} alt="" />
                 </a>
               </div>
               <div className="swiper-slide">
-                <a href="">
+                <a href=".">
                   <img src={imgres6} alt="" />
                 </a>
               </div>
@@ -355,7 +355,7 @@ const Home = () => {
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={CatGoi2} alt="" />
@@ -370,7 +370,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={uondv2} alt="" />
@@ -383,7 +383,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={nhuon2} alt="" />
@@ -396,7 +396,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={dichvukhac2} alt="" />
@@ -416,7 +416,7 @@ const Home = () => {
         {/* <!-- service top 1 dịch được yêu thích nhất --> */}
         <div className="layout layout__service">
           <div className="container">
-            <a href="">
+            <a href=".">
               <div className="layout__head">
                 <div>
                   <div className="head__title">
@@ -430,7 +430,7 @@ const Home = () => {
               </div>
             </a>
             <div className="layout__banner">
-              <a href="">
+              <a href=".">
                 <div className="layout__banner-media">
                   <img src={khoiuonpc} alt="" />
                 </div>
@@ -440,7 +440,7 @@ const Home = () => {
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={uon1} alt="" />
@@ -457,7 +457,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={uon2} alt="" />
@@ -472,7 +472,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={uon3} alt="" />
@@ -487,7 +487,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={uon4} alt="" />
@@ -520,24 +520,24 @@ const Home = () => {
             <div className="responsive-pc">
               <Slider {...settings3}>
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={tantam1} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Nói gì với stylist để anh có kiểu tóc ưng ý
                     </div>
                   </a>
                 </div>
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={tantam2} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Supporter thân thiện - Đón tiếp, lắng nghe và hỗ trợ bạn
                       mọi lúc
@@ -545,12 +545,12 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={tantam3} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">Những câu hỏi thường gặp</div>
                   </a>
                 </div>
@@ -560,24 +560,24 @@ const Home = () => {
             <div className="responsive-mobile">
               <Slider {...settings31}>
                 <div className="swiper__slide ">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={tantam1} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Nói gì với stylist để anh có kiểu tóc ưng ý
                     </div>
                   </a>
                 </div>
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={tantam2} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Supporter thân thiện - Đón tiếp, lắng nghe và hỗ trợ bạn
                       mọi lúc
@@ -585,12 +585,12 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={tantam3} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">Những câu hỏi thường gặp</div>
                   </a>
                 </div>
@@ -620,12 +620,12 @@ const Home = () => {
               <Slider {...settings2}>
                 {/* <!-- 1 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={ngoaihinh} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến cô
                       hoa khôi rung động
@@ -634,12 +634,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 2 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={mullet} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới
                       cực cuốn hút
@@ -648,12 +648,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 3 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={hotboy} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Bạn sinh viên IT lột xác thành hot boy vạn người mê
                     </div>
@@ -661,12 +661,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 4 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={kientruc} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột xác
                       kiểu tóc mới cực đẹp
@@ -681,12 +681,12 @@ const Home = () => {
               <Slider {...settings21}>
                 {/* <!-- 1 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={ngoaihinh} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến cô
                       hoa khôi rung động
@@ -695,12 +695,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 2 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={mullet} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới
                       cực cuốn hút
@@ -709,12 +709,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 3 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={hotboy} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Bạn sinh viên IT lột xác thành hot boy vạn người mê
                     </div>
@@ -722,12 +722,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 4 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={kientruc} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột xác
                       kiểu tóc mới cực đẹp
@@ -754,12 +754,12 @@ const Home = () => {
               <Slider {...settings35}>
                 {/* <!-- 1 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril1} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Tú Anh - 255 Nguyễn An Ninh, Bình Dương
                     </div>
@@ -770,12 +770,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 2 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril2} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Trà My (Mina) - 152 Thống Nhất, Nha Trang
                     </div>
@@ -786,12 +786,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 3 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril3} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Khánh Hằng - 152 Thống Nhất, Nha Trang
                     </div>
@@ -800,12 +800,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 4 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril4} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Ái Hiền - 113 Trần Hưng Đạo, An Giang
                     </div>
@@ -816,12 +816,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 5 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril5} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thanh Hồng - 12 Lạc Trung, Hà Nội
                     </div>
@@ -832,12 +832,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 6 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril6} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thu Trang - 36 Phan Huy Ích, TP.HCM
                     </div>
@@ -848,12 +848,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 7 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril7} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Như Ý - 168 Đặng Văn Bi, TP.HCM
                     </div>
@@ -864,12 +864,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 8 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril8} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa
                     </div>
@@ -880,12 +880,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 9 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril9} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Quỳnh Nhi - 194 Lê Văn Việt, TP.HCM
                     </div>
@@ -896,12 +896,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 10 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril10} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Hương Giang - 702 Đường Láng, Hà Nội
                     </div>
@@ -912,12 +912,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 11 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril11} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thu Huyền - 175 Phùng Hưng, Hà Nội
                     </div>
@@ -928,12 +928,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 12 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril12} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Huế (Mít) - 407 Trường Chinh, Hà Nội
                     </div>
@@ -948,12 +948,12 @@ const Home = () => {
               <Slider {...settings351}>
                 {/* <!-- 1 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril1} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Tú Anh - 255 Nguyễn An Ninh, Bình Dương
                     </div>
@@ -964,12 +964,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 2 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril2} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Trà My (Mina) - 152 Thống Nhất, Nha Trang
                     </div>
@@ -980,12 +980,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 3 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril3} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Khánh Hằng - 152 Thống Nhất, Nha Trang
                     </div>
@@ -994,12 +994,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 4 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril4} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Ái Hiền - 113 Trần Hưng Đạo, An Giang
                     </div>
@@ -1010,12 +1010,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 5 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril5} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thanh Hồng - 12 Lạc Trung, Hà Nội
                     </div>
@@ -1026,12 +1026,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 6 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril6} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thu Trang - 36 Phan Huy Ích, TP.HCM
                     </div>
@@ -1042,12 +1042,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 7 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril7} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Như Ý - 168 Đặng Văn Bi, TP.HCM
                     </div>
@@ -1058,12 +1058,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 8 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril8} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa
                     </div>
@@ -1074,12 +1074,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 9 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril9} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Quỳnh Nhi - 194 Lê Văn Việt, TP.HCM
                     </div>
@@ -1090,12 +1090,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 10 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril10} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Hương Giang - 702 Đường Láng, Hà Nội
                     </div>
@@ -1106,12 +1106,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 11 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril11} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Thu Huyền - 175 Phùng Hưng, Hà Nội
                     </div>
@@ -1122,12 +1122,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 12 --> */}
                 <div className="swiper__slide">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={gril12} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Huế (Mít) - 407 Trường Chinh, Hà Nội
                     </div>
@@ -1193,7 +1193,7 @@ const Home = () => {
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={khongian2} alt="" />
@@ -1208,7 +1208,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={khongian3} alt="" />
@@ -1225,7 +1225,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={khongian4} alt="" />
@@ -1240,7 +1240,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={khongian5} alt="" />
@@ -1261,7 +1261,7 @@ const Home = () => {
         {/* <!-- Người truyền cảm hứng --> */}
         <div className="layout layout__blog">
           <div className="container">
-            <a href="">
+            <a href=".">
               <div className="layout__head">
                 <div>
                   <div className="head__title">
@@ -1282,12 +1282,12 @@ const Home = () => {
               <Slider {...settings2}>
                 {/* <!-- 1 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung1} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Ca sĩ Lê Bảo Bình: Thay đổi để không phải "Bỏ lỡ một
                       người"
@@ -1296,12 +1296,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 2 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung2} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại
                     </div>
@@ -1309,12 +1309,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 3 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung3} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Hoàng Dũng: "Ngoại hình hết sức quan trọng, chỉ sau tài
                       năng"
@@ -1323,12 +1323,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 4 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung4} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Diễn viên Thanh Sơn "Cả Một Đời Ân Oán" tìm lại phong cách
                       trẻ trung đúng tuổi thật
@@ -1342,12 +1342,12 @@ const Home = () => {
               <Slider {...settings21}>
                 {/* <!-- 1 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung1} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Ca sĩ Lê Bảo Bình: Thay đổi để không phải "Bỏ lỡ một
                       người"
@@ -1356,12 +1356,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 2 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung2} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại
                     </div>
@@ -1369,12 +1369,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 3 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung3} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Hoàng Dũng: "Ngoại hình hết sức quan trọng, chỉ sau tài
                       năng"
@@ -1383,12 +1383,12 @@ const Home = () => {
                 </div>
                 {/* <!-- 4 --> */}
                 <div className="swiper__slide2">
-                  <a href="">
+                  <a href=".">
                     <div className="blog__media">
                       <img src={camhung4} alt="" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href=".">
                     <div className="blog__title">
                       Diễn viên Thanh Sơn "Cả Một Đời Ân Oán" tìm lại phong cách
                       trẻ trung đúng tuổi thật
@@ -1458,7 +1458,7 @@ const Home = () => {
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-6">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={kieutoc2} alt="" />
@@ -1473,7 +1473,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-6">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={kieutoc3} alt="" />
@@ -1505,12 +1505,12 @@ const Home = () => {
             <Slider {...settings3}>
               {/* <!-- 1 --> */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={antam1} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">
                     Phòng chống Covid-19 - Vì sức khoẻ khách hàng, nhân viên và
                     cộng đồng
@@ -1519,12 +1519,12 @@ const Home = () => {
               </div>
               {/* <!-- 2 --> */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={antam2} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">
                     Mỹ phẩm & sản phẩm - Cam kết chất lượng - Đảm bảo xuất xứ
                   </div>
@@ -1532,12 +1532,12 @@ const Home = () => {
               </div>
               {/* <!-- 3 --> */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={antam3} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">Bảo quản xe cộ, đồ đạc</div>
                 </a>
               </div>
@@ -1547,7 +1547,7 @@ const Home = () => {
         {/* <!-- ưu đãi --> */}
         <div className="layout layout__blog">
           <div className="container">
-            <a href="">
+            <a href=".">
               <div className="layout__head">
                 <div>
                   <div className="head__title">Ưu đãi</div>
@@ -1565,67 +1565,67 @@ const Home = () => {
             <Slider {...settings35}>
               {/* <!-- 1 --> */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={uudai1} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">Renewal Shine Box</div>
                 </a>
               </div>
               {/* <!-- 2 --> */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={uudai2} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">Balance Skin Shine Box</div>
                 </a>
               </div>
               {/* <!-- 3 --> */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={uudai3} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">Firming Shine Box </div>
                 </a>
               </div>
               {/* <!-- 4 --> */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={uudai4} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">Brightening Shine Box</div>
                 </a>
               </div>
               {/* 5 */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={uudai5} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">Smoothing Shine Box </div>
                 </a>
               </div>
               {/* 6 */}
               <div className="swiper__slide">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={uudai6} alt="" />
                   </div>
                 </a>
-                <a href="">
+                <a href=".">
                   <div className="blog__title">Shimmering Shine Box </div>
                 </a>
               </div>
@@ -1675,12 +1675,12 @@ const Home = () => {
                 <div className="swiper__wrapper ">
                   {/* <!-- 1 --> */}
                   <div className="swiper__slide">
-                    <a href="">
+                    <a href=".">
                       <div className="blog__media">
                         <img src={member1} alt="" />
                       </div>
                     </a>
-                    <a href="">
+                    <a href=".">
                       <div className="blog__title">
                         Silver/Gold Member và hàng ngàn quyền lợi
                       </div>
@@ -1705,7 +1705,7 @@ const Home = () => {
             <Slider {...settings}>
               {/* <!-- 1 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment1} alt="" />
                   </div>
@@ -1713,7 +1713,7 @@ const Home = () => {
               </div>
               {/* <!-- 2 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment2} alt="" />
                   </div>
@@ -1721,7 +1721,7 @@ const Home = () => {
               </div>
               {/* <!-- 3 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment3} alt="" />
                   </div>
@@ -1729,7 +1729,7 @@ const Home = () => {
               </div>
               {/* <!-- 4 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment4} alt="" />
                   </div>
@@ -1737,7 +1737,7 @@ const Home = () => {
               </div>
               {/* <!-- 5 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment5} alt="" />
                   </div>
@@ -1745,7 +1745,7 @@ const Home = () => {
               </div>
               {/* <!-- 6 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment6} alt="" />
                   </div>
@@ -1753,7 +1753,7 @@ const Home = () => {
               </div>
               {/* <!-- 7 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment7} alt="" />
                   </div>
@@ -1761,7 +1761,7 @@ const Home = () => {
               </div>
               {/* <!-- 8 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment8} alt="" />
                   </div>
@@ -1769,7 +1769,7 @@ const Home = () => {
               </div>
               {/* <!-- 9 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment9} alt="" />
                   </div>
@@ -1777,7 +1777,7 @@ const Home = () => {
               </div>
               {/* <!-- 10 --> */}
               <div className="swiper__slide3">
-                <a href="">
+                <a href=".">
                   <div className="blog__media">
                     <img src={moment10} alt="" />
                   </div>
@@ -1790,7 +1790,7 @@ const Home = () => {
         {/* <!-- cam kết 30shine care --> */}
         <div className="layout layout__blog">
           <div className="container">
-            <a href="">
+            <a href=".">
               <div className="layout__head">
                 <div>
                   <div className="head__title">Cam kết 30Shine Care</div>
@@ -1806,7 +1806,7 @@ const Home = () => {
             </a>
             <div className="layout__banner2">
               <div>
-                <a href="">
+                <a href=".">
                   <div className="layout__banner2-media">
                     <img src={camketbn} alt="" />
                   </div>
@@ -1824,7 +1824,7 @@ const Home = () => {
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={camket7} alt="" />
@@ -1839,7 +1839,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={camket30} alt="" />
@@ -1854,7 +1854,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={camket15} alt="" />
@@ -1867,7 +1867,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={camket20} alt="" />
@@ -1888,7 +1888,7 @@ const Home = () => {
         {/* <!-- Tìm 30Shine gần nhất --> */}
         <div className="layout layout__blog">
           <div className="container">
-            <a href="">
+            <a href=".">
               <div className="layout__head">
                 <div>
                   <div className="head__title">Tìm 30Shine gần nhất</div>
@@ -1906,7 +1906,7 @@ const Home = () => {
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={gannhat1} alt="" />
@@ -1919,7 +1919,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={gannhat2} alt="" />
@@ -1932,7 +1932,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={gannhat3} alt="" />
@@ -1945,7 +1945,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-xl-3">
-                  <a href="">
+                  <a href=".">
                     <div className="layout__list-item">
                       <div className="layout__item-img">
                         <img src={gannhat4} alt="" />
