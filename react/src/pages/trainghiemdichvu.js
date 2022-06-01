@@ -20,6 +20,12 @@ import dichvukhac1 from "../assets/img/PageTraiNghiemDichVu/20220105-30shine-cat
 import dichvukhac2 from "../assets/img/PageTraiNghiemDichVu/30shine-kid-combo-cho-be-2.jpg";
 import dichvukhac3 from "../assets/img/PageTraiNghiemDichVu/20220104-dich-vu-lay-ray-tai.jpg";
 import dichvukhac4 from "../assets/img/PageTraiNghiemDichVu/30shine-goi-masage-duong-sinh-2.jpg";
+
+// image responsive
+import trainghiemdichvu2 from "../assets/img/PageTraiNghiemDichVu/combo-cat-goi-s-vip-6.jpg";
+import banneruon2 from "../assets/img/PageTraiNghiemDichVu/20220104-banner-uon-2.jpg";
+import phuchoi from "../assets/img/PageTraiNghiemDichVu/30shine-phuc-hoi-amino-matrix-6-buoc-2.jpg";
+
 const TraiNghiemDichVu = () => {
   return (
     <>
@@ -40,28 +46,28 @@ const TraiNghiemDichVu = () => {
                 Dịch vụ chăm sóc tóc đặc biệt dùng kèm <span>Shine Combo</span>
               </div>
               <div className="service-row">
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvu1} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvu2} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvu3} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvu4} alt="" />
@@ -74,49 +80,76 @@ const TraiNghiemDichVu = () => {
           {/* vipcombo */}
           <div className="service__block">
             <div className="service__tile">Vip Combo</div>
-            <div className="service__list">
-              <div className="service-row service-row__margin">
-                <a href="">
-                  <div className="service_img col-xl-12">
-                    <img src={vipcombo} width="100%" alt="" />
-                  </div>
-                </a>
+            <div className="responsive-pc">
+              <div className="service__list">
+                <div className="service-row service-row__margin">
+                  <a href="">
+                    <div className="service_img col-xl-12">
+                      <img src={vipcombo} width="100%" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="responsive-mobile">
+              <div className="service__list">
+                <div className="service-row service-row__margin">
+                  <a href="">
+                    <div className="service_img col-xl-12">
+                      <img src={trainghiemdichvu2} width="100%" alt="" />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           {/* Uon */}
           <div className="service__block">
             <div className="service__tile">Uốn</div>
-            <div className="service__list">
-              <div className="service-row service-row__margin">
-                <a href="">
-                  <div className="service_img col-xl-12">
-                    <img src={uon} width="100%" alt="" />
-                  </div>
-                </a>
+            <div className="responsive-pc">
+              <div className="service__list">
+                <div className="service-row service-row__margin">
+                  <a href="">
+                    <div className="service_img col-xl-12">
+                      <img src={uon} width="100%" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="responsive-mobile">
+              <div className="service__list">
+                <div className="service-row service-row__margin">
+                  <a href="">
+                    <div className="service_img col-xl-12">
+                      <img src={banneruon2} width="100%" alt="" />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           {/* dịch vụ nhuộm */}
           <div className="service__block">
-            <div className="service__tile">Shine Combo cắt gội 10 bước</div>
+            <div className="service__tile">Dịch vụ nhuộm</div>
             <div className="service__list">
               <div className="service-row">
-                <div className="service_image col-xl-4">
+                <div className="service_image col-xl-4 col-6">
                   <a href="">
                     <div>
                       <img src={dichvunhuom1} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-4">
+                <div className="service_image col-xl-4 col-6">
                   <a href="">
                     <div>
                       <img src={dichvunhuom2} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-4">
+                <div className="service_image col-xl-4 col-6">
                   <a href="">
                     <div>
                       <img src={dichvunhuom3} alt="" />
@@ -128,17 +161,28 @@ const TraiNghiemDichVu = () => {
           </div>
           {/* dưỡng phục hồi */}
           <div className="service__block">
-            <div className="service__tile">Shine Combo cắt gội 10 bước</div>
+            <div className="service__tile">Dưỡng - Phục hồi</div>
             <div className="service__list">
               <div className="service-row">
-                <div className="service_image col-xl-9">
-                  <a href="">
-                    <div>
-                      <img src={duongphuchoi1} alt="" />
-                    </div>
-                  </a>
+                <div className="responsive-pc ">
+                  <div className="service_image col-xl-9">
+                    <a href="">
+                      <div>
+                        <img src={duongphuchoi1} alt="" />
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <div className="service_image col-xl-3">
+                <div className="responsive-mobile">
+                  <div className="service_image col-xl-12 service_image-phuchoi">
+                    <a href="">
+                      <div>
+                        <img src={phuchoi} alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={duongphuchoi2} alt="" />
@@ -150,31 +194,31 @@ const TraiNghiemDichVu = () => {
           </div>
           {/* dịch vụ khác */}
           <div className="service__block">
-            <div className="service__tile">Shine Combo cắt gội 10 bước</div>
+            <div className="service__tile">Dịch vụ khác</div>
             <div className="service__list">
               <div className="service-row">
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvukhac1} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvukhac2} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvukhac3} alt="" />
                     </div>
                   </a>
                 </div>
-                <div className="service_image col-xl-3">
+                <div className="service_image col-xl-3 col-6">
                   <a href="">
                     <div>
                       <img src={dichvukhac4} alt="" />

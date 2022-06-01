@@ -111,6 +111,8 @@ import imgres6 from "../assets/img/imageresponsive/220126_BannerUon_m.jpg";
 import bannertrainghiemdv from "../assets/img/imageresponsive/20220104-30shine-banner-shine-combo-2.jpg";
 import bannerkhonggian from "../assets/img/imageresponsive/30shine-banner-khong-gian-salon-1.jpg";
 import kieutocbaner2 from "../assets/img/imageresponsive/30shine-banner-kham-pha-kieu-toc-mb.jpg";
+import bannershop2 from "../assets/img/imageresponsive/banner-shop-2.jpg";
+import camketbanner from "../assets/img/imageresponsive/banner-30shine-care-4-m.jpg";
 
 import React from "react";
 import Slider from "react-slick";
@@ -228,6 +230,9 @@ const Home = () => {
           </div>
 
           <div className="home-swiper-responsive">
+            <div className="banner-slogan">
+              Thư dãn 30 phút và bạn sẽ tỏa sáng
+            </div>
             {/* <!-- Additional required wrapper --> */}
             <Slider {...settings1}>
               <div className="swiper-slide">
@@ -1502,46 +1507,91 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Slider {...settings3}>
-              {/* <!-- 1 --> */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={antam1} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">
-                    Phòng chống Covid-19 - Vì sức khoẻ khách hàng, nhân viên và
-                    cộng đồng
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 2 --> */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={antam2} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">
-                    Mỹ phẩm & sản phẩm - Cam kết chất lượng - Đảm bảo xuất xứ
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 3 --> */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={antam3} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">Bảo quản xe cộ, đồ đạc</div>
-                </a>
-              </div>
-            </Slider>
+            <div className="responsive-pc">
+              <Slider {...settings3}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={antam1} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">
+                      Phòng chống Covid-19 - Vì sức khoẻ khách hàng, nhân viên
+                      và cộng đồng
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={antam2} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">
+                      Mỹ phẩm & sản phẩm - Cam kết chất lượng - Đảm bảo xuất xứ
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={antam3} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Bảo quản xe cộ, đồ đạc</div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
+
+            <div className="responsive-mobile">
+              <Slider {...settings21}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={antam1} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">
+                      Phòng chống Covid-19 - Vì sức khoẻ khách hàng, nhân viên
+                      và cộng đồng
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={antam2} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">
+                      Mỹ phẩm & sản phẩm - Cam kết chất lượng - Đảm bảo xuất xứ
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={antam3} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Bảo quản xe cộ, đồ đạc</div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
         {/* <!-- ưu đãi --> */}
@@ -1562,74 +1612,147 @@ const Home = () => {
               </div>
             </a>
 
-            <Slider {...settings35}>
-              {/* <!-- 1 --> */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={uudai1} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">Renewal Shine Box</div>
-                </a>
-              </div>
-              {/* <!-- 2 --> */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={uudai2} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">Balance Skin Shine Box</div>
-                </a>
-              </div>
-              {/* <!-- 3 --> */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={uudai3} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">Firming Shine Box </div>
-                </a>
-              </div>
-              {/* <!-- 4 --> */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={uudai4} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">Brightening Shine Box</div>
-                </a>
-              </div>
-              {/* 5 */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={uudai5} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">Smoothing Shine Box </div>
-                </a>
-              </div>
-              {/* 6 */}
-              <div className="swiper__slide">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={uudai6} alt="" />
-                  </div>
-                </a>
-                <a href=".">
-                  <div className="blog__title">Shimmering Shine Box </div>
-                </a>
-              </div>
-            </Slider>
+            <div className="responsive-pc">
+              <Slider {...settings35}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai1} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Renewal Shine Box</div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai2} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Balance Skin Shine Box</div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai3} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Firming Shine Box </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai4} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Brightening Shine Box</div>
+                  </a>
+                </div>
+                {/* 5 */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai5} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Smoothing Shine Box </div>
+                  </a>
+                </div>
+                {/* 6 */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai6} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Shimmering Shine Box </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
+
+            <div className="responsive-mobile">
+              <Slider {...settings21}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai1} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Renewal Shine Box</div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai2} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Balance Skin Shine Box</div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai3} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Firming Shine Box </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai4} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Brightening Shine Box</div>
+                  </a>
+                </div>
+                {/* 5 */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai5} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Smoothing Shine Box </div>
+                  </a>
+                </div>
+                {/* 6 */}
+                <div className="swiper__slide">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={uudai6} alt="" />
+                    </div>
+                  </a>
+                  <a href=".">
+                    <div className="blog__title">Shimmering Shine Box </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
         {/* <!-- 30 shine shop  --> */}
@@ -1649,12 +1772,15 @@ const Home = () => {
                 </div>
               </div>
             </a>
-            <div className="layout__banner">
-              <a href="https://shop.30shine.com/" target="__blank">
-                <div className="layout__banner-media">
-                  <img src={bannershop} alt="" />
-                </div>
-              </a>
+
+            <div className="responsive-pc">
+              <div className="layout__banner">
+                <a href="https://shop.30shine.com/" target="__blank">
+                  <div className="layout__banner-media">
+                    <img src={bannershop} alt="" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1702,88 +1828,174 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Slider {...settings}>
-              {/* <!-- 1 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment1} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 2 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment2} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 3 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment3} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 4 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment4} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 5 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment5} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 6 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment6} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 7 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment7} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 8 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment8} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 9 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment9} alt="" />
-                  </div>
-                </a>
-              </div>
-              {/* <!-- 10 --> */}
-              <div className="swiper__slide3">
-                <a href=".">
-                  <div className="blog__media">
-                    <img src={moment10} alt="" />
-                  </div>
-                </a>
-              </div>
-            </Slider>
+            <div className="responsive-pc">
+              <Slider {...settings}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment1} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment2} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment3} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment4} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 5 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment5} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 6 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment6} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 7 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment7} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 8 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment8} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 9 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment9} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 10 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment10} alt="" />
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
+            <div className="responsive-mobile">
+              <Slider {...settings21}>
+                {/* <!-- 1 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment1} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 2 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment2} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 3 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment3} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 4 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment4} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 5 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment5} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 6 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment6} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 7 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment7} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 8 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment8} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 9 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment9} alt="" />
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- 10 --> */}
+                <div className="swiper__slide3">
+                  <a href=".">
+                    <div className="blog__media">
+                      <img src={moment10} alt="" />
+                    </div>
+                  </a>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
 
@@ -1804,23 +2016,47 @@ const Home = () => {
                 </div>
               </div>
             </a>
-            <div className="layout__banner2">
-              <div>
-                <a href=".">
-                  <div className="layout__banner2-media">
-                    <img src={camketbn} alt="" />
-                  </div>
-                </a>
-              </div>
-              <div className="banner__wrapper">
-                <div className="banner__title">
-                  VÌ CHẤT LƯỢNG PHỤC VỤ LÀ HÀNG ĐẦU
+
+            <div className="responsive-pc">
+              <div className="layout__banner2">
+                <div>
+                  <a href=".">
+                    <div className="layout__banner2-media">
+                      <img src={camketbn} alt="" />
+                    </div>
+                  </a>
                 </div>
-                <div className="banner__text">
-                  Áp dụng tại salon bất kỳ trên toàn hệ thống 30Shine
+                <div className="banner__wrapper">
+                  <div className="banner__title">
+                    VÌ CHẤT LƯỢNG PHỤC VỤ LÀ HÀNG ĐẦU
+                  </div>
+                  <div className="banner__text">
+                    Áp dụng tại salon bất kỳ trên toàn hệ thống 30Shine
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div className="responsive-mobile">
+              <div className="layout__banner2">
+                <div>
+                  <a href=".">
+                    <div className="layout__banner2-media">
+                      <img src={camketbanner} alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div className="banner__wrapper">
+                  <div className="banner__title">
+                    VÌ CHẤT LƯỢNG PHỤC VỤ LÀ HÀNG ĐẦU
+                  </div>
+                  <div className="banner__text">
+                    Áp dụng tại salon bất kỳ trên toàn hệ thống 30Shine
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="layout__list ">
               <div className="layout__list-wraper row">
                 <div className="col-xl-3">
