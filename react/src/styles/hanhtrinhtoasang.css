@@ -22,6 +22,7 @@
 }
 .article_row {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 }

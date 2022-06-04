@@ -136,7 +136,21 @@
   justify-content: center;
 }
 .tag__icon > img,
-.tag__icon > a > img{
+.tag__icon > a > img {
   width: 2rem;
   height: 2rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .article_page-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .article_page-subtile {
+    font-size: 1.5rem;
+  }
+  .article__title {
+    font-size: 1.8rem;
+  }
 }

@@ -14,7 +14,7 @@ import hanhtrinh6 from "../assets/img/Pagehanhtrinhtoasang/30shine-dien-vien-hoa
 // row 3
 import hanhtrinh7 from "../assets/img/Pagehanhtrinhtoasang/30shine-thay-doi-ngoai-hinh.jpg";
 import hanhtrinh8 from "../assets/img/Pagehanhtrinhtoasang/30shine-nam-sinh-kien-truc-lot-xac.jpg";
-import hanhtrinh9 from "../assets/img/Pagehanhtrinhtoasang/30shine-thay-doi-ngoai-hinh.jpg";
+import hanhtrinh9 from "../assets/img/Pagehanhtrinhtoasang/30shine-mat-tron-de-dau-nam.jpg";
 import hanhtrinh10 from "../assets/img/Pagehanhtrinhtoasang/30shine-mat-tron-nhu-mam-vi-de-sai-kieu-toc.jpg";
 // row 4 in column 2
 import hanhtrinh11 from "../assets/img/Pagehanhtrinhtoasang/30shine-nam-sinh-dai-hoc-van-hoa.jpg";
